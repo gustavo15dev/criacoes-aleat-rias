@@ -1,0 +1,197 @@
+/* ---------------------------------------------------- */
+/* 1. CONFIGURAÇÕES GERAIS (BODY E CORREÇÃO DE Z-INDEX) */
+/* ---------------------------------------------------- */
+body {
+    /* Remove margens padrão e define uma fonte base */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    
+    /* CORREÇÃO CRUCIAL PARA FAZER O TÍTULO APARECER: */
+    position: relative; /* Define um contexto de empilhamento */
+    z-index: 1;         /* Garante que o corpo e o conteúdo fiquem ACIMA do fundo (-1) */
+    
+    /* Cor do texto padrão (vai aparecer em páginas sem tema escuro, como index.html) */
+    color: #000000; 
+    background-color: transparent; /* Garante que o body não cubra o gradiente */
+}
+
+/* Fundo Gradiente (Obtido do Uiverse.io) */
+.container {
+  width: 100%;
+  height: 100vh; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: -1; /* Mantém o fundo BEM ATRÁS */
+  
+  background: radial-gradient(
+    125% 125% at -2% 101%,
+    rgba(245, 87, 2, 1) 10.5%,
+    rgba(245, 120, 2, 1) 16%,
+    rgba(245, 140, 2, 1) 17.5%,
+    rgba(245, 170, 100, 1) 25%,
+    rgba(238, 174, 202, 1) 40%,
+    rgba(202, 179, 214, 1) 65%,
+    rgba(148, 201, 233, 1) 100%
+  );
+}
+
+
+/* ---------------------------------------------------- */
+/* 2. ESTILO DO TÍTULO E BOTÃO (index.html) */
+/* ---------------------------------------------------- */
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 56px;
+    position: relative; /* Garante que o H1 esteja no contexto de empilhamento */
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    position: relative; /* Garante que o H2 esteja no contexto de empilhamento */
+    margin-top: -20px; /* Ajusta a distância entre o H1 e o H2 */
+}
+
+.titulo-gradiente {
+  background: -webkit-linear-gradient(#ff0026, #b301ff, #001eff); 
+  background: linear-gradient(#ff0026, #b301ff, #001eff);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+/* Estilo da tag BUTTON */
+button {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #696969;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    margin: 20px auto; 
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    position: relative; /* Garante que o botão esteja no contexto de empilhamento */
+}
+
+button:hover {
+    background-color: #3c3b3b; 
+}
+
+
+/* ---------------------------------------------------- */
+/* 3. MENU LATERAL FLUTUANTE (relogio.html e páginas dos países) */
+/* ---------------------------------------------------- */
+#menu-lateral {
+    /* Altura total da tela menos uma margem de 20px em cima e 20px embaixo */
+    height: calc(100vh - 40px); 
+    width: 200px; 
+    
+    position: fixed; 
+    z-index: 1000; /* Deve ficar sempre na frente */
+    
+    top: 20px;    
+    left: 20px;   
+    
+    background-color: #1f1f1f; 
+    overflow-x: hidden; 
+    padding-top: 20px; 
+    
+    border-radius: 15px; 
+    
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.6); 
+    
+    transition: all 0.3s ease-in-out; 
+}
+
+/* Estilo dos Links/Botões no Menu */
+#menu-lateral a {
+    display: block;
+    margin: 10px 15px; 
+    padding: 12px 15px;
+    
+    text-decoration: none; 
+    font-size: 16px;
+    color: #e0e0e0; 
+    text-align: center; 
+    
+    border-radius: 8px; 
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+#menu-lateral a:hover {
+    color: #000000; 
+    background-color: #55aaff; 
+    box-shadow: 0 0 10px rgba(85, 170, 255, 0.5); 
+}
+
+/* Conteúdo Principal (Deslocamento) */
+#conteudo-principal {
+    margin-left: 240px; 
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out; 
+    /* Como o menu é flutuante, o conteúdo deve ter uma cor de texto que contraste */
+    color: #ffffff; /* Ajustei a cor para branco para contrastar com o fundo gradiente */
+}
+
+/* Estilo dos Relógios (Ajustado para o novo fundo) */
+#relogio, #japao-relogio, #eua-relogio, [id$="-relogio"] {
+    /* Mantive o estilo do relógio para alto contraste */
+    border: 3px solid white; 
+    padding: 15px 30px; 
+    border-radius: 8px; 
+    font-size: 2em;
+    font-family: monospace;
+    display: inline-block; 
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Um fundo sutil para destaque */
+}
+
+/* 1. Remove o sublinhado de todos os links (tags <a>) */
+a {
+    text-decoration: none;
+}
+
+/* 2. Se o botão for clicável, ele é um link (a), remova o sublinhado dele também */
+a button {
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------- */
+/* NOVO ESTILO: CONTÊINER DOS BOTÕES LADO A LADO */
+/* ---------------------------------------------------- */
+#botoes-plataformas {
+    /* Ativa o Flexbox */
+    display: flex; 
+    
+    /* Permite que os itens quebrem para a próxima linha */
+    flex-wrap: wrap; 
+    
+    /* Centraliza o grupo de botões horizontalmente na tela */
+    justify-content: center; 
+    
+    /* Adiciona espaço acima e abaixo do grupo */
+    margin-top: 30px; 
+    padding: 10px;
+}
+
+
+/* ---------------------------------------------------- */
+/* AJUSTE NO ESTILO DO BOTÃO (Para ter margem entre eles) */
+/* ---------------------------------------------------- */
+/* Aplique esta margem a todos os elementos dentro do contêiner */
+#botoes-plataformas a {
+    /* Dá um espaço entre os botões */
+    margin: 10px; 
+    
+    /* Remove o sublinhado do link que envolve o botão */
+    text-decoration: none; 
+}
