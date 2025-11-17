@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Experimentos - Dora AI</title>
+    <link rel="stylesheet" href="conversa.css">
+</head>
+<body>
+    <div id="conteudo-principal">
+        <div class="header">
+            <div class="header-content">
+                <h1>🤖 Dora AI</h1>
+                <p>Sua amiga de IA para conversação simples</p>
+            </div>
+            <button class="voltar-btn" onclick="window.location.href = '../index.html'">← Voltar</button>
+        </div>
+
+        <div id="chat-box">
+            <div class="mensagem bot">Olá! Sou a Dora AI. Como posso te ajudar?</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="input-mensagem" placeholder="Digite algo..." onkeypress="if(event.key==='Enter') enviarMensagem();">
+            <button onclick="enviarMensagem()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="conversa.js"></script>
+</body>
+</html>
