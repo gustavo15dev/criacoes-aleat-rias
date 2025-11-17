@@ -318,3 +318,200 @@ a button {
 .card button:hover {
     background-color: #555555; /* Um pouco mais escuro no hover */
 }
+
+/* ---------------------------------------------------- */
+/* 5. MEDIA QUERIES RESPONSIVAS */
+/* ---------------------------------------------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    #menu-lateral {
+        width: 150px;
+        left: 10px;
+        top: 10px;
+        height: calc(100vh - 20px);
+    }
+    
+    #conteudo-principal {
+        margin-left: 170px;
+        padding: 15px;
+    }
+    
+    #busca-input {
+        width: 250px;
+    }
+    
+    .card {
+        width: 280px;
+    }
+    
+    #container-cards {
+        gap: 20px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    
+    #relogio, #japao-relogio, #eua-relogio, [id$="-relogio"] {
+        font-size: 1.5em;
+        padding: 10px 20px;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    #menu-lateral {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        border-radius: 0;
+    }
+    
+    #conteudo-principal {
+        margin-left: 0;
+        padding: 10px;
+    }
+    
+    #busca-input {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    #container-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 90%;
+        max-width: 200px;
+    }
+    
+    #relogio, #japao-relogio, #eua-relogio, [id$="-relogio"] {
+        font-size: 1.2em;
+        padding: 8px 16px;
+        display: block;
+        margin: 5px auto;
+    }
+    
+    #botoes-plataformas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #botoes-plataformas a {
+        width: 90%;
+        max-width: 250px;
+    }
+}
+
+/* Pequenos celulares */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    #busca-input {
+        width: 95%;
+    }
+    
+    .card {
+        width: 95%;
+    }
+    
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Ajustes para conversas/conversa.css */
+/* Adicione isso no final do conversa.css também */
+
+@media (max-width: 768px) {
+    #conteudo-principal {
+        height: auto;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .header-buttons {
+        justify-content: center;
+    }
+    
+    #chat-box {
+        height: 400px;
+        padding: 10px;
+    }
+    
+    .input-area {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    #input-mensagem {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .mensagem {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #chat-box {
+        height: 300px;
+    }
+    
+    .header-content h1 {
+        font-size: 24px;
+    }
+    
+    .header-content p {
+        font-size: 14px;
+    }
+    
+    .admin-btn, .voltar-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}

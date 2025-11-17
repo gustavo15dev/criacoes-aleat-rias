@@ -94,3 +94,109 @@ button:hover {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* ---------------------------------------------------- */
+/* 6. MEDIA QUERIES RESPONSIVAS PARA LABIRINTO */
+/* ---------------------------------------------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    #labirinto {
+        width: 300px;
+        margin: 20px auto;
+    }
+    
+    #labirinto div {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .nivel {
+        font-size: 18px;
+    }
+    
+    button {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+    #labirinto {
+        width: 250px;
+        margin: 15px auto;
+    }
+    
+    #labirinto div {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .nivel {
+        font-size: 16px;
+    }
+    
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+        width: 100%;
+        max-width: 200px;
+        margin: 10px auto;
+        display: block;
+    }
+    
+    #conteudo-principal {
+        padding: 10px;
+    }
+}
+
+/* Pequenos celulares */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 11px;
+    }
+    
+    #labirinto {
+        width: 200px;
+        margin: 10px auto;
+    }
+    
+    #labirinto div {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .nivel {
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

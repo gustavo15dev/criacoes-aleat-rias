@@ -424,3 +424,128 @@ button:hover {
     gap: 10px;
     flex-direction: column;
 }
+
+/* ---------------------------------------------------- */
+/* 6. MEDIA QUERIES RESPONSIVAS PARA CONVERSA */
+/* ---------------------------------------------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    #conteudo-principal {
+        height: auto;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .header-buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    #chat-box {
+        height: 400px;
+        padding: 10px;
+    }
+    
+    .input-area {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    #input-mensagem {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    button {
+        width: 100%;
+    }
+    
+    .mensagem {
+        max-width: 90%;
+    }
+    
+    .header-content h1 {
+        font-size: 24px;
+    }
+    
+    .header-content p {
+        font-size: 14px;
+    }
+    
+    .admin-btn, .voltar-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin-left: 5px;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    #chat-box {
+        height: 300px;
+    }
+    
+    .header-content h1 {
+        font-size: 20px;
+    }
+    
+    .header-content p {
+        font-size: 12px;
+    }
+    
+    .admin-btn, .voltar-btn {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+    
+    #input-mensagem {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .mensagem {
+        max-width: 85%;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+    
+    .copiar-btn {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+}
+
+/* Pequenos celulares */
+@media (max-width: 320px) {
+    #chat-box {
+        height: 250px;
+    }
+    
+    .header-content h1 {
+        font-size: 18px;
+    }
+    
+    .header-content p {
+        font-size: 11px;
+    }
+    
+    .mensagem {
+        font-size: 13px;
+    }
+    
+    #input-mensagem {
+        font-size: 13px;
+    }
+}

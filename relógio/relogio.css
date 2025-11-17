@@ -210,3 +210,117 @@ img {
     min-width: 200px; /* Largura mínima para o relógio */
     flex-grow: 1; /* Permite que ocupe o espaço disponível */
 }
+
+/* ---------------------------------------------------- */
+/* 6. MEDIA QUERIES RESPONSIVAS PARA RELÓGIOS */
+/* ---------------------------------------------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    #relogio, #japao-relogio, #eua-relogio, [id$="-relogio"] {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+    
+    #menu-lateral {
+        width: 150px;
+        left: 10px;
+        top: 10px;
+        height: calc(100vh - 20px);
+    }
+    
+    #conteudo-principal {
+        margin-left: 170px;
+        padding: 15px;
+    }
+    
+    img {
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    #relogio, #japao-relogio, #eua-relogio, [id$="-relogio"] {
+        font-size: 1.5em;
+        padding: 8px 16px;
+        display: block;
+        margin: 5px auto;
+    }
+    
+    #menu-lateral {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        border-radius: 0;
+    }
+    
+    #conteudo-principal {
+        margin-left: 0;
+        padding: 10px;
+    }
+    
+    img {
+        max-width: 150px;
+        height: auto;
+    }
+    
+    #painel-horarios {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .relogio-item {
+        min-width: auto;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Pequenos celulares */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    #relogio, #japao-relogio, #eua-relogio, [id$="-relogio"] {
+        font-size: 1.2em;
+        padding: 6px 12px;
+    }
+}
