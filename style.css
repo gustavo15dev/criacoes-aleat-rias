@@ -37,7 +37,6 @@ body {
   );
 }
 
-
 /* ---------------------------------------------------- */
 /* 2. ESTILO DO TÍTULO E BOTÃO (index.html) */
 /* ---------------------------------------------------- */
@@ -85,7 +84,6 @@ button {
 button:hover {
     background-color: #3c3b3b; 
 }
-
 
 /* ---------------------------------------------------- */
 /* 3. MENU LATERAL FLUTUANTE (relogio.html e páginas dos países) */
@@ -183,7 +181,6 @@ a button {
     padding: 10px;
 }
 
-
 /* ---------------------------------------------------- */
 /* AJUSTE NO ESTILO DO BOTÃO (Para ter margem entre eles) */
 /* ---------------------------------------------------- */
@@ -200,6 +197,32 @@ a button {
 /* 4. ESTILO DOS CARDS NA PÁGINA INICIAL (NOVO DESIGN) */
 /* ---------------------------------------------------- */
 
+#busca-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#busca-input {
+    width: 300px;
+    padding: 12px 20px;
+    border: 2px solid #6a5acd;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(106, 90, 205, 0.2);
+    transition: all 0.3s;
+}
+
+#busca-input:focus {
+    border-color: #4b0082;
+    box-shadow: 0 4px 15px rgba(75, 0, 130, 0.3);
+    transform: scale(1.02);
+}
+
 #container-cards {
     display: flex;
     flex-wrap: wrap;
@@ -212,8 +235,7 @@ a button {
 .card {
     width: 300px;
     background-color: #ffffff; /* Branco puro */
-    border-radius: 16px;
-    margin: 10px 15px; /* Adiciona margem para não grudar nas bordas do card */
+    border-radius: 16px; /* Borda arredondada total */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -264,6 +286,17 @@ a button {
 .card-content li {
     margin: 5px 0;
     font-size: 13px;
+}
+
+/* Estatísticas no card */
+.card-stats {
+    background: rgba(106, 90, 205, 0.1);
+    color: #6a5acd;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border-top: 1px solid #eee;
 }
 
 /* Botão "Abrir" - TODAS AS BORDAS ARREDONDADAS */

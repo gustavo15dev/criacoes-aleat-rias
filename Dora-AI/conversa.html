@@ -10,10 +10,13 @@
     <div id="conteudo-principal">
         <div class="header">
             <div class="header-content">
-                <h1>🤖 Dora AI</h1>
+                <h1>Dora AI</h1>
                 <p>Sua amiga de IA para conversação simples</p>
             </div>
-            <button class="voltar-btn" onclick="window.location.href = '../index.html'">← Voltar</button>
+            <div class="header-buttons">
+                <button class="admin-btn" onclick="window.location.href = 'admin.html'">Admin</button>
+                <button class="voltar-btn" onclick="window.location.href = '../index.html'">← Voltar</button>
+            </div>
         </div>
 
         <div id="chat-box">
@@ -21,8 +24,20 @@
         </div>
 
         <div class="input-area">
-            <input type="text" id="input-mensagem" placeholder="Digite algo..." onkeypress="if(event.key==='Enter') enviarMensagem();">
-            <button onclick="enviarMensagem()">Enviar</button>
+            <div id="carrossel-prompts">
+                <button class="prompt-btn" onclick="enviarPrompt('Oi')">Oi</button>
+                <button class="prompt-btn" onclick="enviarPrompt('Tudo bem?')">Tudo bem?</button>
+                <button class="prompt-btn" onclick="enviarPrompt('Me conta uma curiosidade')">Me conta uma curiosidade</button>
+                <button class="prompt-btn" onclick="enviarPrompt('Como vai?')">Como vai?</button>
+                <button class="prompt-btn" onclick="enviarPrompt('Me elogie')">Me elogie</button>
+                <button class="prompt-btn" onclick="enviarPrompt('Qual o seu nome?')">Qual o seu nome?</button>
+                <button class="prompt-btn" onclick="enviarPrompt('Me diga uma frase motivacional')">Frase motivacional</button>
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="input-mensagem" placeholder="Digite algo..." onkeypress="if(event.key==='Enter') enviarMensagem();">
+                <button onclick="enviarMensagem()">Enviar</button>
+            </div>
         </div>
     </div>
 

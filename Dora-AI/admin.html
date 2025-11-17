@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dora AI</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a5acd;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(30, 30, 50, 0.8);
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background: rgba(20, 20, 30, 0.8);
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #6a5acd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background: #5a4cb0;
+        }
+
+        .treinamentos-lista {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .treinamento-item {
+            background: rgba(40, 40, 60, 0.8);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .acoes {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin - Dora AI</h1>
+    <a href="conversa.html" style="color: #6a5acd; text-decoration: none;">← Voltar para Conversa</a>
+    <div class="form-container">
+        <h2>Adicionar Treinamento</h2>
+        <input type="text" id="input-pergunta" placeholder="Pergunta">
+        <textarea id="input-resposta" placeholder="Resposta" rows="3"></textarea>
+        <button onclick="adicionarTreinamento()">Adicionar</button>
+    </div>
+
+    <div class="treinamentos-lista">
+        <h2>Treinamentos Atuais</h2>
+        <div id="lista-treinamentos"></div>
+    </div>
+
+    <script>
+        let treinamentos = [];
+
+        // Carrega treinamentos
+        fetch('training.json')
+            .then(response => response.json())
+            .then(data => {
+                treinamentos = data;
+                renderizarLista();
+            })
+            .catch(error => console.error('Erro ao carregar treinamentos:', error));
+
+        function renderizarLista() {
+            const container = document.getElementById('lista-treinamentos');
+            container.innerHTML = '';
+
+            treinamentos.forEach((t, index) => {
+                const div = document.createElement('div');
+                div.className = 'treinamento-item';
+                div.innerHTML = `
+                    <div>
+                        <strong>Pergunta:</strong> ${t.pergunta}<br>
+                        <strong>Resposta:</strong> ${t.resposta}
+                    </div>
+                    <div class="acoes">
+                        <button onclick="editarTreinamento(${index})">Editar</button>
+                        <button onclick="removerTreinamento(${index})">Remover</button>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function adicionarTreinamento() {
+            const pergunta = document.getElementById('input-pergunta').value.trim();
+            const resposta = document.getElementById('input-resposta').value.trim();
+
+            if (!pergunta || !resposta) {
+                alert('Preencha todos os campos!');
+                return;
+            }
+
+            treinamentos.push({ pergunta, resposta });
+            renderizarLista();
+            document.getElementById('input-pergunta').value = '';
+            document.getElementById('input-resposta').value = '';
+        }
+
+        function removerTreinamento(index) {
+            treinamentos.splice(index, 1);
+            renderizarLista();
+        }
+
+        function editarTreinamento(index) {
+            const treinamento = treinamentos[index];
+            document.getElementById('input-pergunta').value = treinamento.pergunta;
+            document.getElementById('input-resposta').value = treinamento.resposta;
+
+            // Remove o antigo e adiciona o novo editado
+            treinamentos.splice(index, 1);
+            renderizarLista();
+        }
+    </script>
+</body>
+</html>

@@ -38,7 +38,7 @@ const niveis = [
     [1,0,0,0,0,0,0,0,0,1],
     [1,0,1,1,0,1,1,1,0,1],
     [1,0,0,0,0,0,0,0,0,1],
-    [1,1,1,1,0,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1,1],
     [1,0,0,0,0,0,0,0,0,1],
     [1,0,1,1,1,1,1,1,0,1],
     [1,0,0,0,0,0,0,0,0,1],
@@ -50,7 +50,7 @@ const niveis = [
     [1,0,0,0,0,0,0,0,0,1],
     [1,0,1,1,1,1,1,1,0,1],
     [1,0,0,0,0,0,0,0,0,1],
-    [1,1,1,1,1,1,1,1,0,0],
+    [1,1,1,1,1,1,1,1,1,1],
     [1,0,0,0,0,0,0,0,0,1],
     [1,0,1,1,1,1,1,1,0,1],
     [1,0,0,0,0,0,0,0,0,1],
@@ -62,7 +62,7 @@ const niveis = [
     [1,0,0,0,0,0,0,0,0,1],
     [1,0,1,1,1,1,1,1,0,1],
     [1,0,0,0,0,0,0,0,0,1],
-    [1,0,1,1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1,1,1,1],
     [1,0,0,0,0,0,0,0,0,1],
     [1,0,1,1,1,1,1,1,0,1],
     [1,0,0,0,0,0,0,0,0,1],
@@ -73,6 +73,10 @@ const niveis = [
 
 let nivelAtual = 0;
 let labirinto = niveis[nivelAtual];
+
+// Sons
+const somPasso = new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAA');
+const somVitoria = new Audio('data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAA');
 
 function desenharLabirinto() {
     const container = document.getElementById('labirinto');
@@ -107,8 +111,15 @@ function mover(dx, dy) {
         personagemX = novaX;
         personagemY = novaY;
         
+        // Toca som ao mover
+        somPasso.currentTime = 0;
+        somPasso.play().catch(e => console.log("Erro ao tocar som:", e));
+        
         if (labirinto[novaY][novaX] === 2) {
             clearInterval(timerInterval);
+            // Toca som de vitória
+            somVitoria.currentTime = 0;
+            somVitoria.play().catch(e => console.log("Erro ao tocar som de vitória:", e));
             mostrarTelaVitoria();
         }
         

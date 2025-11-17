@@ -14,11 +14,16 @@
      <h1>Sala de Experimentos</h1>
     <h2>Reunindo as plataformas mais <span class="titulo-gradiente">peculiares</span></h2>
 
+    <!-- Campo de Busca -->
+    <div id="busca-container">
+        <input type="text" id="busca-input" placeholder="Buscar projetos...">
+    </div>
+
     <!-- Container dos Cards -->
     <div id="container-cards">
         
         <!-- Card 1: Relógio Digital Universal -->
-        <div class="card">
+        <div class="card" data-projeto="relogio">
             <h3>Relógio Digital Universal</h3>
             <img src="imagens/relogio.png" alt="Prévia do Relógio Digital" class="card-image">
             <div class="card-content">
@@ -28,38 +33,91 @@
                     <li>Design escuro com números vermelhos brilhantes</li>
                 </ul>
             </div>
-            <a href="relógio/relogio.html"><button>Abrir</button></a>
+            <div class="card-stats">Acessado <span id="relogio-count">0</span> vezes</div>
+            <a href="relógio/relogio.html"><button onclick="atualizarEstatistica('relogio')">Abrir</button></a>
         </div>
 
-        <!-- Card 2: Labirinto com Setas (vai ser adicionado depois) -->
-        <div class="card">
+        <!-- Card 2: Labirinto com Setas -->
+        <div class="card" data-projeto="labirinto">
             <h3>Labirinto com Setas</h3>
             <img src="imagens/labirinto.png" alt="Prévia do Labirinto" class="card-image">
             <div class="card-content">
                 <ul>
                     <li>Jogo simples com setas do teclado</li>
-                    <li>5 níveis de dificuldade</li>
+                    <li>3 níveis de dificuldade</li>
                     <li>Objetivo: chegar ao fim sem tocar nas paredes</li>
                 </ul>
             </div>
-            <a href="labirinto/labirinto.html"><button>Abrir</button></a>
+            <div class="card-stats">Acessado <span id="labirinto-count">0</span> vezes</div>
+            <a href="labirinto/labirinto.html"><button onclick="atualizarEstatistica('labirinto')">Abrir</button></a>
         </div>
 
-        <!-- Card 3: Conversa Amigável (vai ser adicionado depois) -->
-        <div class="card">
+        <!-- Card 3: Conversa Amigável -->
+        <div class="card" data-projeto="conversa">
             <h3>Conversa Amigável</h3>
             <img src="imagens/dora-ai.png" alt="Prévia da Conversa Amigável" class="card-image">
             <div class="card-content">
                 <ul>
-                    <li>Converse comigo, é muito legal!</li>
+                    <li>Simulador de conversa empática</li>
                     <li>Diga algo e receba respostas acolhedoras</li>
                     <li>Ideal para momentos de ansiedade ou solidão</li>
                 </ul>
             </div>
-            <a href="Dora-AI/conversa.html"><button>Abrir</button></a>
+            <div class="card-stats">Acessado <span id="conversa-count">0</span> vezes</div>
+            <a href="Dora-AI/conversa.html"><button onclick="atualizarEstatistica('conversa')">Abrir</button></a>
+        </div>
+
+        <!-- Card 4: Frases Motivacionais -->
+        <div class="card" data-projeto="frases">
+            <h3>Frases Motivacionais</h3>
+            <img src="imagens/frases.png" alt="Prévia das Frases" class="card-image">
+            <div class="card-content">
+                <ul>
+                    <li>Frases motivacionais com animação</li>
+                    <li>Clique para gerar uma nova frase</li>
+                    <li>Perfeito para começar o dia com energia</li>
+                </ul>
+            </div>
+            <div class="card-stats">Acessado <span id="frases-count">0</span> vezes</div>
+            <a href="frases/frases.html"><button onclick="atualizarEstatistica('frases')">Abrir</button></a>
         </div>
 
     </div>
 
+    <script>
+        // Função para atualizar estatísticas
+        function atualizarEstatistica(projeto) {
+            let count = localStorage.getItem(projeto) || 0;
+            count = parseInt(count) + 1;
+            localStorage.setItem(projeto, count);
+            document.getElementById(projeto + '-count').textContent = count;
+        }
+
+        // Carrega estatísticas ao carregar a página
+        window.addEventListener('load', () => {
+            ['relogio', 'labirinto', 'conversa', 'frases'].forEach(projeto => {
+                let count = localStorage.getItem(projeto) || 0;
+                document.getElementById(projeto + '-count').textContent = count;
+            });
+        });
+
+        // Função para busca
+        document.getElementById('busca-input').addEventListener('input', function() {
+            const termo = this.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                const projeto = card.getAttribute('data-projeto');
+                const titulo = card.querySelector('h3').textContent.toLowerCase();
+                const descricao = card.querySelector('.card-content').textContent.toLowerCase();
+                
+                if (titulo.includes(termo) || descricao.includes(termo) || projeto.includes(termo)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

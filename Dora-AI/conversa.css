@@ -224,3 +224,203 @@ button:hover {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.2; }
 }
+
+/* Estilo dos botões no cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(20, 20, 30, 0.9);
+    border-bottom: 1px solid #444;
+}
+
+.header-content {
+    text-align: center;
+    flex: 1;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-btn, .voltar-btn {
+    background: rgba(100, 100, 150, 0.3);
+    color: #ccc;
+    border: 1px solid #555;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.admin-btn:hover, .voltar-btn:hover {
+    background: rgba(100, 100, 150, 0.5);
+    color: white;
+    border-color: #6a5acd;
+}
+
+/* Bloqueia seleção de texto nas respostas da IA */
+.mensagem.bot {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Estilo do botão de copiar */
+.copiar-btn {
+    background: rgba(100, 100, 150, 0.3);
+    color: #ccc;
+    border: 1px solid #555;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.copiar-btn:hover {
+    background: rgba(100, 100, 150, 0.5);
+    color: white;
+}
+
+/* Estilo do carrossel de prompts */
+#carrossel-prompts {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+#carrossel-prompts::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.prompt-btn {
+    background: rgba(100, 100, 150, 0.3);
+    color: #ccc;
+    border: 1px solid #555;
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.prompt-btn:hover {
+    background: rgba(100, 100, 150, 0.5);
+    color: white;
+    border-color: #6a5acd;
+    transform: translateY(-2px);
+}
+
+/* Estilo da área de input com carrossel */
+.input-area {
+    display: flex;
+    padding: 20px;
+    background: rgba(20, 20, 30, 0.9);
+    border-top: 1px solid #444;
+    gap: 10px;
+    flex-direction: column;
+}
+
+/* Estilo do carrossel de prompts */
+#carrossel-prompts {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    scroll-behavior: smooth; /* Rolagem suave */
+}
+
+#carrossel-prompts::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.prompt-btn {
+    background: rgba(100, 100, 150, 0.3);
+    color: #ccc;
+    border: 1px solid #555;
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.prompt-btn:hover {
+    background: rgba(100, 100, 150, 0.5);
+    color: white;
+    border-color: #6a5acd;
+    transform: translateY(-2px);
+}
+
+/* Estilo da área de input com carrossel */
+.input-area {
+    display: flex;
+    padding: 20px;
+    background: rgba(20, 20, 30, 0.9);
+    border-top: 1px solid #444;
+    gap: 10px;
+    flex-direction: column;
+}
+
+/* Estilo do carrossel de prompts */
+#carrossel-prompts {
+    display: flex;
+    overflow-x: hidden; /* Esconde a barra de rolagem */
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+#carrossel-prompts::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.prompt-btn {
+    background: rgba(100, 100, 150, 0.3);
+    color: #ccc;
+    border: 1px solid #555;
+    padding: 10px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.prompt-btn:hover {
+    background: rgba(100, 100, 150, 0.5);
+    color: white;
+    border-color: #6a5acd;
+    transform: translateY(-2px);
+}
+
+/* Estilo da área de input com carrossel */
+.input-area {
+    display: flex;
+    padding: 20px;
+    background: rgba(20, 20, 30, 0.9);
+    border-top: 1px solid #444;
+    gap: 10px;
+    flex-direction: column;
+}
