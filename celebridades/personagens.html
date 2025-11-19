@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Experimentos - Conversa com Famosos</title>
+    <style>
+        /* Reset e estilo base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Container principal */
+        #conteudo-principal {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            max-width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        /* Cabeçalho */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(20, 20, 30, 0.9);
+            border-bottom: 1px solid #444;
+        }
+
+        .header-content {
+            text-align: center;
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #6a5acd;
+            margin: 0;
+            text-shadow: 0 0 10px rgba(106, 90, 205, 0.5);
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #aaa;
+            margin-top: 5px;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .voltar-btn {
+            background: rgba(100, 100, 150, 0.3);
+            color: #ccc;
+            border: 1px solid #555;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .voltar-btn:hover {
+            background: rgba(100, 100, 150, 0.5);
+            color: white;
+            border-color: #6a5acd;
+        }
+
+        /* Seleção de famoso */
+        #selecao-famoso {
+            padding: 20px;
+            background: rgba(30, 30, 50, 0.8);
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+
+        #famoso-btn {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #6a5acd, #4b0082);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+        #famoso-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(106, 90, 205, 0.4);
+        }
+
+        /* Lista de famosos */
+        #lista-famosos {
+            display: none;
+            padding: 20px;
+            background: rgba(30, 30, 50, 0.8);
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #555;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .famoso-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: rgba(50, 50, 70, 0.8);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .famoso-item:hover {
+            background: rgba(100, 100, 150, 0.5);
+        }
+
+        /* Área do chat */
+        #chat-box {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background: rgba(10, 10, 20, 0.5);
+        }
+
+        /* Estilo das mensagens */
+        .mensagem {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            position: relative;
+            animation: fadeIn 0.3s ease-out;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .mensagem.usuario {
+            align-self: flex-end;
+            background: linear-gradient(135deg, #6a5acd, #4b0082);
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .mensagem.bot {
+            align-self: flex-start;
+            background: rgba(50, 50, 70, 0.8);
+            color: #e0e0e0;
+            border-bottom-left-radius: 4px;
+            border: 1px solid #555;
+        }
+
+        /* Animação de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Carrossel de prompts */
+        #carrossel-prompts {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE/Edge */
+            scroll-behavior: smooth; /* Rolagem suave */
+        }
+
+        #carrossel-prompts::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .prompt-btn {
+            background: rgba(100, 100, 150, 0.3);
+            color: #ccc;
+            border: 1px solid #555;
+            padding: 10px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            white-space: nowrap;
+            transition: all 0.3s;
+            flex-shrink: 0;
+        }
+
+        .prompt-btn:hover {
+            background: rgba(100, 100, 150, 0.5);
+            color: white;
+            border-color: #6a5acd;
+            transform: translateY(-2px);
+        }
+
+        /* Área de input */
+        .input-area {
+            display: flex;
+            padding: 20px;
+            background: rgba(20, 20, 30, 0.9);
+            border-top: 1px solid #444;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        #input-mensagem {
+            width: 100%;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 30px;
+            background: rgba(40, 40, 60, 0.8);
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s;
+            border: 1px solid #555;
+        }
+
+        #input-mensagem:focus {
+            border-color: #6a5acd;
+            box-shadow: 0 0 10px rgba(106, 90, 205, 0.3);
+        }
+
+        button {
+            padding: 14px 24px;
+            background: linear-gradient(135deg, #6a5acd, #4b0082);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(106, 90, 205, 0.4);
+        }
+
+        /* Scroll personalizado */
+        #chat-box::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #chat-box::-webkit-scrollbar-track {
+            background: rgba(30, 30, 40, 0.5);
+        }
+
+        #chat-box::-webkit-scrollbar-thumb {
+            background: #6a5acd;
+            border-radius: 4px;
+        }
+
+        #chat-box::-webkit-scrollbar-thumb:hover {
+            background: #4b0082;
+        }
+
+        #lista-famosos::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        #lista-famosos::-webkit-scrollbar-track {
+            background: rgba(30, 30, 40, 0.5);
+        }
+
+        #lista-famosos::-webkit-scrollbar-thumb {
+            background: #6a5acd;
+            border-radius: 4px;
+        }
+
+        #lista-famosos::-webkit-scrollbar-thumb:hover {
+            background: #4b0082;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteudo-principal">
+        <div class="header">
+            <div class="header-content">
+                <h1>Conversa com Famosos</h1>
+                <p>Escolha um famoso e converse com ele!</p>
+            </div>
+            <div class="header-buttons">
+                <button class="voltar-btn" onclick="window.location.href = '../../index.html'">Voltar</button>
+            </div>
+        </div>
+
+        <div id="selecao-famoso">
+            <button id="famoso-btn" onclick="mostrarListaFamosos()">Escolher Famoso</button>
+            <div id="lista-famosos">
+                <!-- Lista de famosos aparece aqui -->
+            </div>
+        </div>
+
+        <div id="chat-box">
+            <div class="mensagem bot">Olá! Escolha um famoso para conversar com ele!</div>
+        </div>
+
+        <div class="input-area">
+            <div id="carrossel-prompts">
+                <!-- Prompts aparecem aqui após escolher o famoso -->
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <input type="text" id="input-mensagem" placeholder="Digite algo..." onkeypress="if(event.key==='Enter') enviarMensagem();">
+                <button onclick="enviarMensagem()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let famosoAtual = null;
+        let carrosselInterval = null;
+
+        const famosos = {
+            cristiano: {
+        nome: "Cristiano Ronaldo",
+        tipo: "Futebol",
+        nacionalidade: "Portuguesa",
+        estilo: "Focado, confiante, profissional",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Olá! Tudo bem? 😊 É um prazer falar consigo." },
+            { pergunta: "tudo bem", resposta: "Estou bem, a trabalhar arduamente para ser o melhor, como sempre! 💪" },
+            { pergunta: "como vai", resposta: "Vou bem, focado nos treinos e em vencer o próximo desafio! ⚽" },
+            { pergunta: "qual o seu nome", resposta: "Sou Cristiano Ronaldo, o melhor de sempre! SIIIUUU! 🏆" },
+            { pergunta: "o que você faz", resposta: "Sou jogador de futebol profissional. Dedicação e excelência são a minha base." },
+            { pergunta: "melhor jogador", resposta: "Os números falam por si, não é? O trabalho duro compensa. 🇵🇹" },
+            { pergunta: "gols", resposta: "Marcar é a minha vida. Já foram muitos, e ainda há mais por vir!" }
+        ]
+    },
+            messi: {
+        nome: "Lionel Messi",
+        tipo: "Futebol",
+        nacionalidade: "Argentina",
+        estilo: "Humilde, reservado, focado",
+        treinamentos: [
+            { pergunta: "oi", resposta: "¡Hola! ¿Cómo estás? 👋" },
+            { pergunta: "tudo bem", resposta: "Todo tranquilo. Siempre intentando mejorar cada día. ✨" },
+            { pergunta: "como vai", resposta: "Bien, bien. Agradecido por el cariño de la gente. 🙏" },
+            { pergunta: "qual o seu nome", resposta: "Soy Leo Messi. Me alegra el reconocimiento, pero lo importante es el equipo. ⚽🇦🇷" },
+            { pergunta: "o que você faz", resposta: "Yo juego al fútbol. Simplemente amo lo que hago en el campo." },
+            { pergunta: "melhor jogador", resposta: "Solo intento dar lo mejor de mí, siempre. El equipo es lo que importa." },
+            { pergunta: "título", resposta: "El Mundial fue la alegría más grande de mi carrera. Inolvidable. 🏆" }
+        ]
+    },
+           taylor: {
+        nome: "Taylor Swift",
+        tipo: "Música",
+        nacionalidade: "Americana",
+        estilo: "Amigável, poética, reflexiva",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Hey! So good to see you! What's your favorite *Era*? 💖" },
+            { pergunta: "tudo bem", resposta: "I'm great! Mid-tour, but super happy to be connected with you guys. 🎤" },
+            { pergunta: "como vai", resposta: "I'm living my *wildest dreams*! Writing a lot, of course." },
+            { pergunta: "qual o seu nome", resposta: "I'm Taylor Swift. I love telling stories through my songs. 🎶" },
+            { pergunta: "o que você faz", resposta: "I'm a songwriter, singer, and, most importantly, a *Swiftie* at heart! 🧣" },
+            { pergunta: "música favorita", resposta: "It's impossible to choose just one! Every song is a diary of a time." },
+            { pergunta: "qual o segredo", resposta: "The secret is being honest and letting the song speak for itself. And, of course, friendship!" }
+        ]
+    },
+           neymar: {
+        nome: "Neymar Jr.",
+        tipo: "Futebol",
+        nacionalidade: "Brasileira",
+        estilo: "Jovial, ousado, alegre",
+        treinamentos: [
+            { pergunta: "oi", resposta: "E aí, meu parça! Tamo junto! Como cê tá? 😎" },
+            { pergunta: "tudo bem", resposta: "Ah, tá na paz, né? Muita 'ousadia e alegria' por aqui! Vambora! 😂" },
+            { pergunta: "como vai", resposta: "Vou bem, fazendo uns dribles e dando risada. A vida é boa, moleque! 🤙" },
+            { pergunta: "qual o seu nome", resposta: "Sou o Ney! O Menino Ney! O camisa 10! 🇧🇷" },
+            { pergunta: "o que você faz", resposta: "Eu jogo bola! Faço o que amo. E de vez em quando dou umas festinhas também, hehe. 😉" },
+            { pergunta: "melhor jogador", resposta: "Tento sempre estar entre os melhores. Mas a resenha é o mais importante." },
+            { pergunta: "time", resposta: "Onde eu estiver, dou o meu máximo. E que venham os próximos títulos! 🏆" }
+        ]
+    },
+            selena: {
+        nome: "Selena Gomez",
+        tipo: "Música/Atuação",
+        nacionalidade: "Americana",
+        estilo: "Doce, genuína, ativista",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Hi! It's so good to chat with you. 🌸" },
+            { pergunta: "tudo bem", resposta: "I'm trying to stay focused and take care of myself. I hope you're doing well too! 😊" },
+            { pergunta: "como vai", resposta: "Doing well, working on new projects and focused on my makeup brand, Rare Beauty. 💄" },
+            { pergunta: "qual o seu nome", resposta: "Selena Gomez. It's a pleasure!" },
+            { pergunta: "o que você faz", resposta: "I act, I sing, I produce... but the most important thing is talking about mental health and being real." },
+            { pergunta: "dica de vida", resposta: "Be kind to yourself. Don't be afraid to be vulnerable, that's strength." },
+            { pergunta: "série favorita", resposta: "I love acting in 'Only Murders in the Building'! It's so much fun solving mysteries with my friends. 🕵️‍♀️" }
+        ]
+    },
+           therock: {
+        nome: "Dwayne 'The Rock' Johnson",
+        tipo: "Atuação",
+        nacionalidade: "Americana",
+        estilo: "Motivacional, enérgico, icônico",
+        treinamentos: [
+            { pergunta: "oi", resposta: "IT DOESN'T MATTER WHAT YOUR NAME IS! Just tell me, how are you? 💪" },
+            { pergunta: "tudo bem", resposta: "I'm great! Focused, working, and ready for the next challenge. You should be too!" },
+            { pergunta: "como vai", resposta: "THE ROCK IS COOKIN'! Always maximum energy. What's up with you?" },
+            { pergunta: "qual o seu nome", resposta: "I'm Dwayne 'The Rock' Johnson. The hardest working man in Hollywood." },
+            { pergunta: "o que você faz", resposta: "I act, I produce, I train and I inspire. Think big, work hard, shine bright! ✨" },
+            { pergunta: "dica fitness", resposta: "Wake up before the sun and put in the work. Success waits for no one. Focus!" },
+            { pergunta: "catchphrase", resposta: "Know your role and shut your mouth! Just kidding, the important thing is 'If you smell what The Rock is cookin'!' 🍽️" }
+        ]
+    },
+            beyonce: {
+        nome: "Beyoncé",
+        tipo: "Música",
+        nacionalidade: "Americana",
+        estilo: "Poderosa, rainha, elegante",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Hello. It's good to have you here. Welcome to the Renaissance. 👑" },
+            { pergunta: "tudo bem", resposta: "I'm always fine. Focused on delivering excellence and art in everything I do." },
+            { pergunta: "como vai", resposta: "I'm continuing my legacy. Grateful for the opportunity to inspire. ✨" },
+            { pergunta: "qual o seu nome", resposta: "I am Beyoncé. You can call me Queen B. 🐝" },
+            { pergunta: "o que você faz", resposta: "I create art. I sing, dance, direct, and define what it means to be a female powerhouse." },
+            { pergunta: "segredo do sucesso", resposta: "Hard work, vision, and the belief that you are your best self. *I woke up like this.*" },
+            { pergunta: "música nova", resposta: "There's always something new on the horizon. Get ready for the next era. It's always about evolving. 🎶" }
+        ]
+    },
+           r10: {
+        nome: "Ronaldinho Gaúcho",
+        tipo: "Ex-Futebolista",
+        nacionalidade: "Brasileira",
+        estilo: "Descontraído, sorriso, *alegria*",
+        treinamentos: [
+            { pergunta: "oi", resposta: "E aí, irmão! Tamo junto na resenha. Dá um sorriso aí! 😁" },
+            { pergunta: "tudo bem", resposta: "Tudo na paz! A vida é um drible, tem que levar na alegria, né? 🤙" },
+            { pergunta: "como vai", resposta: "Vou bem demais! Jogando meu futevôlei, curtindo a família. Muita paz!" },
+            { pergunta: "qual o seu nome", resposta: "R10, Bruxo, Ronaldinho Gaúcho. O importante é o sorriso! ⚽" },
+            { pergunta: "o que você faz", resposta: "Hoje em dia, curto a vida, bato uma bola de vez em quando. A magia fica guardada." },
+            { pergunta: "dica de drible", resposta: "Tem que ter coragem e alegria. Põe um sorriso na cara e vai pra cima!" },
+            { pergunta: "melhor momento", resposta: "Todos os momentos com a camisa da Seleção Brasileira foram mágicos. Inesquecível. 🇧🇷" }
+        ]
+    },
+            anitta: {
+        nome: "Anitta",
+        tipo: "Música",
+        nacionalidade: "Brasileira",
+        estilo: "Direta, confiante, *malandra*",
+        treinamentos: [
+            { pergunta: "oi", resposta: "E aí, *miga*! Chegou a patroa! Como posso te ajudar a dominar o mundo? 😉" },
+            { pergunta: "tudo bem", resposta: "Tudo ótimo, sempre resolvendo uns pepinos e fechando uns contratos internacionais. É isso! 💸" },
+            { pergunta: "como vai", resposta: "Vou bem. Tô na correria, fazendo o Brasil brilhar lá fora. É um trampo danado! ✨" },
+            { pergunta: "qual o seu nome", resposta: "Anitta, pra quem não sabe. *Global superstar*, sabe como é, né?" },
+            { pergunta: "o que você faz", resposta: "Eu sou empresária, cantora, dançarina... Mas o principal é que eu sou *business*. 💰" },
+            { pergunta: "dica de carreira", resposta: "Estuda, se dedica e não aceita 'não' como resposta. Seja sua própria chefe!" },
+            { pergunta: "música favorita", resposta: "Qualquer uma que esteja estourada no momento! A gente trabalha pra isso. 💥" }
+        ]
+    },
+           kim: {
+        nome: "Kim Kardashian",
+        tipo: "Mídia/Empresária",
+        nacionalidade: "Americana",
+        estilo: "Glamourosa, focada em negócios e família",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Hi, love. I hope your day is being glamorous. 💎" },
+            { pergunta: "tudo bem", resposta: "I'm good, grateful. Balancing work with my kids, you know how it is. 👩‍👧‍👦" },
+            { pergunta: "como vai", resposta: "Great. I just finished a SKIMS meeting and I'm focused on my law studies. 📚" },
+            { pergunta: "qual o seu nome", resposta: "Kim Kardashian. I am the matriarch of my own brand." },
+            { pergunta: "o que você faz", resposta: "I'm a CEO, law student, and mother. The work never stops, but the *glow up* doesn't either. ✨" },
+            { pergunta: "dica de beleza", resposta: "Drink water, sleep well, and find your perfect angle for the photo. Self-care is everything." },
+            { pergunta: "família", resposta: "My family is everything. We are inseparable and support each other in all businesses." }
+        ]
+    },
+            vini: {
+        nome: "Vinícius Júnior",
+        tipo: "Futebol",
+        nacionalidade: "Brasileira",
+        estilo: "Lutador, alegre, atitude",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Fala, Vini Jr. na área! Tamo na luta, meu parceiro! 👊" },
+            { pergunta: "tudo bem", resposta: "Tudo tranquilo. Foco total em campo. Tem que ter atitude e muita vontade!" },
+            { pergunta: "como vai", resposta: "Vou bem, superando os desafios com um sorriso no rosto. É Real Madrid e Seleção sempre! 🇧🇷" },
+            { pergunta: "qual o seu nome", resposta: "Vinícius Júnior. Corro, luto e danço quando marco! 🕺" },
+            { pergunta: "o que você faz", resposta: "Sou atacante, jogo no time mais vitorioso do mundo. É pressão, mas eu amo!" },
+            { pergunta: "racismo", resposta: "É triste, mas a gente não pode parar. A resposta é dentro de campo e com atitude. Juntos somos fortes." },
+            { pergunta: "melhor jogada", resposta: "Gosto de ir pra cima, na velocidade. O drible é a minha arma secreta! ⚡" }
+        ]
+    },
+            ariana: {
+        nome: "Ariana Grande",
+        tipo: "Música/Atuação",
+        nacionalidade: "Americana",
+        estilo: "Doce, focada em arte, voz suave",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Hiii! How are you doing? Have a sweet day. ☁️" },
+            { pergunta: "tudo bem", resposta: "I'm well, breathing and thankful. Working hard on new melodies. 🎶" },
+            { pergunta: "como vai", resposta: "Doing great, focused in the studio and making music that comes from the heart. ♡" },
+            { pergunta: "qual o seu nome", resposta: "Ariana Grande. Nice to meet you, *thank u, next*! (Just kidding! 😉)" },
+            { pergunta: "o que você faz", resposta: "I sing, I act, and I'm an eternal student of art. Music is my air." },
+            { pergunta: "música que te define", resposta: "Any one that talks about resilience and friendship. *Seven Rings* gives me power!" },
+            { pergunta: "dica de voz", resposta: "Hydration and lots of sleep. And never stop practicing your high notes!" }
+        ]
+    },
+           marcelo: {
+        nome: "Marcelo Vieira",
+        tipo: "Futebol",
+        nacionalidade: "Brasileira",
+        estilo: "Alegre, descontraído, família",
+        treinamentos: [
+            { pergunta: "oi", resposta: "E aí, tranquilo? Sou o Marcelo! Que bom te ver por aqui! 😄" },
+            { pergunta: "tudo bem", resposta: "Tudo na paz, irmão! Curtindo a família e o futebol, que é o que eu amo." },
+            { pergunta: "como vai", resposta: "Vou bem demais! A alegria de jogar bola é a mesma de quando eu era moleque. 🤙" },
+            { pergunta: "qual o seu nome", resposta: "Marcelo, lateral-esquerdo. Gosto de atacar e fazer uns gols de vez em quando. ⚽" },
+            { pergunta: "o que você faz", resposta: "Jogo futebol! E fora de campo, sou pai e marido. Minha família é minha maior Champions League. 👨‍👩‍👦‍👦" },
+            { pergunta: "melhor momento", resposta: "As Champions que ganhamos! E a resenha com meus amigos do time, inesquecível." },
+            { pergunta: "dica de vida", resposta: "Seja feliz, jogue com o coração e valorize sua família. É o que fica." }
+        ]
+    },
+           zendaya: {
+        nome: "Zendaya",
+        tipo: "Atuação/Moda",
+        nacionalidade: "Americana",
+        estilo: "Elegante, pensativa, dedicada",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Hello. I hope you're having an inspiring day. ✨" },
+            { pergunta: "tudo bem", resposta: "I'm well, grateful for the opportunities. It's always an honor to learn in every project." },
+            { pergunta: "como vai", resposta: "Doing well, immersed in new roles and fashion projects. Total dedication." },
+            { pergunta: "qual o seu nome", resposta: "I'm Zendaya. My job is to tell stories and use fashion as an extension of art." },
+            { pergunta: "o que você faz", resposta: "I act. I like to bring complex characters to life that make people think." },
+            { pergunta: "dica de estilo", resposta: "Wear what makes you feel powerful and comfortable. Style is personal expression, not a rule." },
+            { pergunta: "personagem favorito", resposta: "Rue, from *Euphoria*, is very challenging. I love the complexity of the work." }
+        ]
+    },
+            whindersson: {
+        nome: "Whindersson Nunes",
+        tipo: "Comédia/Influência",
+        nacionalidade: "Brasileira",
+        estilo: "Humorístico, simples, *piauiense*",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Eita! Bão ou não? Cumpadi, que alegria te ver aqui. 🤠" },
+            { pergunta: "tudo bem", resposta: "Tô bem, graças a Deus. Sobrevivendo aos boletos e pensando em qual vai ser a próxima 'besteira' que vou aprontar. 😂" },
+            { pergunta: "como vai", resposta: "Vou levando. Na luta, mas rindo de tudo! A vida é curta demais pra tá triste, visse?" },
+            { pergunta: "qual o seu nome", resposta: "Whindersson. O menino do Piauí que veio fazer vocês rir um pouquinho! 🎤" },
+            { pergunta: "o que você faz", resposta: "Sou comediante, lutador, e influencio uns milhões de gente. Tudo na base da humildade, pai." },
+            { pergunta: "melhor piada", resposta: "Ah, toda a minha vida já é uma piada! Mas o importante é que a gente se ajuda e dá risada." },
+            { pergunta: "luta", resposta: "A gente luta dentro e fora do ringue, né? O importante é nunca desistir, 'mermo' que a gente apanhe. 🥊" }
+        ]
+    },
+            gisele: {
+        nome: "Gisele Bündchen",
+        tipo: "Moda/Ativismo",
+        nacionalidade: "Brasileira",
+        estilo: "Consciente, serena, natureza",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Olá! Muita luz e paz no seu dia. Como você está se sentindo hoje? 🌿" },
+            { pergunta: "tudo bem", resposta: "Estou em paz. Conectada com a natureza e focada no meu bem-estar. Essa é a verdadeira beleza." },
+            { pergunta: "como vai", resposta: "Vou bem. Tentando sempre viver com intenção e propósito. O que podemos fazer pelo planeta hoje?" },
+            { pergunta: "qual o seu nome", resposta: "Gisele Bündchen. Minha missão é inspirar uma vida mais consciente e sustentável. 💚" },
+            { pergunta: "o que você faz", resposta: "Eu sou modelo e ativista ambiental. A Terra é nossa casa, temos que cuidar dela." },
+            { pergunta: "dica de bem-estar", resposta: "Meditação, água e sol. E se alimente com o que a terra te dá. É simples e poderoso." },
+            { pergunta: "moda", resposta: "A moda deve ser um reflexo da nossa consciência. Escolha marcas que respeitem o planeta." }
+        ]
+    },
+            paulo: {
+        nome: "Paulo Coelho",
+        tipo: "Literatura",
+        nacionalidade: "Brasileira",
+        estilo: "Filosófico, místico, reflexivo",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Saudações, viajante! Qual é a sua Lenda Pessoal? ✨" },
+            { pergunta: "tudo bem", resposta: "Tudo está como deve estar. O Universo está conspirando a seu favor. Acredite." },
+            { pergunta: "como vai", resposta: "Vou seguindo o caminho. A vida é um livro e cada dia é uma página a ser escrita. ✍️" },
+            { pergunta: "qual o seu nome", resposta: "Sou Paulo Coelho. Escrevo para tocar a alma e lembrar que a magia existe." },
+            { pergunta: "o que você faz", resposta: "Eu sou escritor. Transformo sonhos e sinais em palavras que cruzam fronteiras." },
+            { pergunta: "melhor livro", resposta: "O melhor livro é aquele que você ainda não leu. Mas 'O Alquimista' tem um lugar especial." },
+            { pergunta: "conselho de vida", resposta: "Quando você quer algo, todo o Universo conspira para que você realize o seu desejo. Siga os sinais. 🔮" }
+        ]
+    },
+            virginia: {
+        nome: "Virginia Fonseca",
+        tipo: "Influência Digital",
+        nacionalidade: "Brasileira",
+        estilo: "Energética, focada em família e negócios",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Gente! Turo bom? Eu tô *MARAVILHOSA*! E você? 💗" },
+            { pergunta: "tudo bem", resposta: "Tudo na paz! Com os produtos da Wepink estourando e as *marias* (filhas) dando trabalho, mas é o preço do sucesso! 😅" },
+            { pergunta: "como vai", resposta: "Vou bem, na correria, fazendo dancinha e fechando contrato. A meta é ser bilionária, bebê!" },
+            { pergunta: "qual o seu nome", resposta: "Virginia Fonseca. Simplesmente Virginia, mas com *muito* brilho. ✨" },
+            { pergunta: "o que você faz", resposta: "Sou influenciadora, empresária e mãe. Meu dia tem 48 horas, juro!" },
+            { pergunta: "dica de sucesso", resposta: "Seja você mesma, apareça, faça publi, e trabalhe! E claro, tenha uma boa base (minha família)." },
+            { pergunta: "wepink", resposta: "A Wepink é meu bebê! Produtos incríveis, cheirosos. É a minha realização como empresária. Vai lá conferir!" }
+        ]
+    },
+           mbappe: {
+        nome: "Kylian Mbappé",
+        tipo: "Futebol",
+        nacionalidade: "Francesa",
+        estilo: "Ambicioso, rápido, focado em vitórias",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Salut! C'est un plaisir de recevoir ton message. 🇫🇷" },
+            { pergunta: "tudo bem", resposta: "Oui, tout va bien. Je pense toujours à comment améliorer ma performance et ma vitesse. 🚀" },
+            { pergunta: "como vai", resposta: "Je vais bien, concentré sur le prochain match et sur la conquête de titres. L'ambition est le moteur." },
+            { pergunta: "qual o seu nome", resposta: "Je suis Kylian Mbappé. Enchanté!" },
+            { pergunta: "o que você faz", resposta: "Je suis attaquant. Mon travail est d'être rapide et décisif. J'aime gagner." },
+            { pergunta: "melhor jogador", resposta: "Je travaille tous les jours pour faire partie des plus grands. L'avenir, c'est maintenant. ⏳" },
+            { pergunta: "seleção francesa", resposta: "C'est un honneur de porter le maillot de la France. Nous visons toujours la plus haute étoile. 🏆" }
+        ]
+    },
+            anacastela: {
+        nome: "Ana Castela",
+        tipo: "Música",
+        nacionalidade: "Brasileira",
+        estilo: "*Agronejo*, rústica, alto-astral",
+        treinamentos: [
+            { pergunta: "oi", resposta: "Opa! Alô, moçada! Tudo bem com vocês? 🤠" },
+            { pergunta: "tudo bem", resposta: "Tudo ótimo! Tocando meu 'Agronejo' pra todo mundo. É festa garantida! 🎶" },
+            { pergunta: "como vai", resposta: "Vou bem! Na correria dos shows, mas sempre com o pé no chão. É o agro que domina!" },
+            { pergunta: "qual o seu nome", resposta: "Eu sou a Ana Castela, a Boiadeira. Prazer!" },
+            { pergunta: "o que você faz", resposta: "Eu canto! Levo a música do campo e a alegria pro palco. *Chama!* 📞" },
+            { pergunta: "música favorita", resposta: "As que falam de paixão e da vida no interior. Mas 'Boiadeira' é o nosso hino, né?" },
+            { pergunta: "dica", resposta: "Não tem segredo, é ser verdadeira e gostar de festa! E bota o chapéu!" }
+        ]
+    }
+};
+
+        function mostrarListaFamosos() {
+            const lista = document.getElementById('lista-famosos');
+            lista.innerHTML = '';
+
+            for (let key in famosos) {
+                const item = document.createElement('div');
+                item.className = 'famoso-item';
+                item.textContent = `${famosos[key].nome} (${famosos[key].tipo} - ${famosos[key].nacionalidade})`;
+                item.onclick = () => escolherFamoso(key);
+                lista.appendChild(item);
+            }
+
+            lista.style.display = 'block';
+        }
+
+        function escolherFamoso(key) {
+            famosoAtual = key;
+            document.getElementById('famoso-btn').textContent = famosos[key].nome;
+            document.getElementById('lista-famosos').style.display = 'none';
+            
+            const chatBox = document.getElementById('chat-box');
+            chatBox.innerHTML = `<div class="mensagem bot">Olá! Sou ${famosos[key].nome}, ${famosos[key].tipo} da ${famosos[key].nacionalidade}. Como posso te ajudar?</div>`;
+            
+            // Inicia o carrossel de prompts
+            iniciarCarrossel();
+        }
+
+        function iniciarCarrossel() {
+            if (!famosoAtual) return;
+            
+            const container = document.getElementById('carrossel-prompts');
+            if (!container) return;
+
+            // Limpa o container
+            container.innerHTML = '';
+
+            // Adiciona os prompts do famoso atual
+            const prompts = famosos[famosoAtual].treinamentos.map(t => t.pergunta);
+            const promptsDuplicados = [...prompts, ...prompts];
+
+            // Adiciona todos os prompts como botões (com duplicação)
+            promptsDuplicados.forEach(prompt => {
+                const btn = document.createElement('button');
+                btn.className = 'prompt-btn';
+                btn.textContent = prompt;
+                btn.onclick = () => enviarPrompt(prompt);
+                container.appendChild(btn);
+            });
+
+            // Inicia o intervalo
+            carrosselInterval = setInterval(() => {
+                // Rola para a esquerda
+                container.scrollLeft += 2;
+
+                // Se chegou ao meio da duplicação, volta ao início suavemente
+                if (container.scrollLeft >= container.scrollWidth / 2) {
+                    container.scrollLeft = 0;
+                }
+            }, 50); // Muda a cada 50ms (velocidade suave)
+        }
+
+        function pararCarrossel() {
+            if (carrosselInterval) {
+                clearInterval(carrosselInterval);
+                carrosselInterval = null;
+            }
+        }
+
+        function enviarMensagem() {
+            if (!famosoAtual) {
+                alert("Escolha um famoso primeiro!");
+                return;
+            }
+            
+            const input = document.getElementById('input-mensagem');
+            const mensagem = input.value.trim();
+            
+            if (!mensagem) return;
+            
+            adicionarMensagem(mensagem, 'usuario');
+            
+            const resposta = gerarResposta(mensagem);
+            setTimeout(() => {
+                adicionarMensagem(resposta, 'bot');
+            }, 500);
+            
+            input.value = '';
+        }
+
+        function enviarPrompt(texto) {
+            if (!famosoAtual) {
+                alert("Escolha um famoso primeiro!");
+                return;
+            }
+            
+            adicionarMensagem(texto, 'usuario');
+            
+            const resposta = gerarResposta(texto);
+            setTimeout(() => {
+                adicionarMensagem(resposta, 'bot');
+            }, 500);
+        }
+
+        function gerarResposta(mensagemUsuario) {
+            mensagemUsuario = mensagemUsuario.toLowerCase();
+
+            const treinamentosAtuais = famosos[famosoAtual].treinamentos;
+
+            for (let t of treinamentosAtuais) {
+                if (mensagemUsuario.includes(t.pergunta)) {
+                    return t.resposta;
+                }
+            }
+
+            return "Desculpe, não entendi. Você pode tentar perguntar de outra forma?";
+        }
+
+        function adicionarMensagem(texto, tipo) {
+            const chatBox = document.getElementById('chat-box');
+            const div = document.createElement('div');
+            div.className = `mensagem ${tipo}`;
+            div.textContent = texto;
+            chatBox.appendChild(div);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+</body>
+</html>

@@ -1,8 +1,11 @@
 let treinamentos = [];
+let historicoConversa = []; // Memória da conversa
+let temaAtual = 'amizade'; // Tema padrão
+let personalidadeAtual = 'alegre'; // Personalidade padrão
 
 // Carrega treinamentos
 fetch('training.json')
-    .then(response => response.json())
+    .then(response => response.json()) 
     .then(data => {
         treinamentos = data;
     })
@@ -108,6 +111,9 @@ function enviarMensagem() {
     
     if (!mensagem) return;
     
+    // Adiciona mensagem ao histórico
+    historicoConversa.push({ tipo: 'usuario', texto: mensagem });
+    
     // Remove o carrossel ao enviar a primeira mensagem
     const carrossel = document.getElementById('carrossel-prompts');
     if (carrossel && carrossel.style.display !== 'none') {
@@ -123,6 +129,7 @@ function enviarMensagem() {
     setTimeout(() => {
         mostrarDigitando(false);
         const resposta = gerarResposta(mensagem);
+        historicoConversa.push({ tipo: 'bot', texto: resposta });
         adicionarMensagem(resposta, 'bot');
     }, 1000); // Espera 1 segundo (simula tempo de resposta)
     
@@ -137,6 +144,9 @@ function enviarPrompt(texto) {
         pararCarrossel(); // Para o carrossel automático
     }
     
+    // Adiciona mensagem ao histórico
+    historicoConversa.push({ tipo: 'usuario', texto: texto });
+    
     adicionarMensagem(texto, 'usuario');
     
     // Mostra que a IA está digitando
@@ -145,6 +155,7 @@ function enviarPrompt(texto) {
     setTimeout(() => {
         mostrarDigitando(false);
         const resposta = gerarResposta(texto);
+        historicoConversa.push({ tipo: 'bot', texto: resposta });
         adicionarMensagem(resposta, 'bot');
     }, 1000); // Espera 1 segundo (simula tempo de resposta)
 }
@@ -172,6 +183,9 @@ function mostrarDigitando(mostrar) {
 function gerarResposta(mensagemUsuario) {
     mensagemUsuario = mensagemUsuario.toLowerCase();
 
+    // Detecta sentimentos
+    const sentimento = detectarSentimento(mensagemUsuario);
+    
     // Separa palavras-chave da mensagem
     const palavrasUsuario = mensagemUsuario.split(/\W+/).filter(Boolean);
 
@@ -193,10 +207,41 @@ function gerarResposta(mensagemUsuario) {
     });
 
     if (melhorResposta) {
+        // Adiciona tom baseado na personalidade
+        melhorResposta = adicionarTomPersonalidade(melhorResposta, sentimento);
         return formatarResposta(melhorResposta);
     } else {
-        return "Desculpe, não entendi. Você pode tentar perguntar de outra forma?";
+    // Conta o número exato de treinamentos
+    const numeroTreinamentos = treinamentos.length;
+    return `Desculpe, meu dono não me treinou para esse tipo de pergunta 😬 Estou sempre aprendendo algo novo, até o momento fui treinado com mais de <strong>${numeroTreinamentos}</strong> treinamentos. Daqui a uma semana, estarei com mais de <strong>2 mil</strong> treinamentos novos, e provavelmente a sua pergunta estará lá 😎 No que mais posso te ajudar? 😁`;
+}
+}
+
+function detectarSentimento(mensagem) {
+    const palavrasTristes = ['triste', 'chateado', 'deprimido', 'mal', 'sozinho', 'cansado'];
+    const palavrasFelizes = ['feliz', 'contente', 'animado', 'bem', 'ótimo', 'maravilhoso'];
+    
+    for (let p of palavrasTristes) {
+        if (mensagem.includes(p)) return 'triste';
     }
+    
+    for (let p of palavrasFelizes) {
+        if (mensagem.includes(p)) return 'feliz';
+    }
+    
+    return 'neutro';
+}
+
+function adicionarTomPersonalidade(resposta, sentimento) {
+    if (personalidadeAtual === 'alegre' && sentimento === 'triste') {
+        return resposta + ' 😊';
+    } else if (personalidadeAtual === 'seria' && sentimento === 'feliz') {
+        return resposta + ' 😌';
+    } else if (personalidadeAtual === 'engracada' && sentimento === 'neutro') {
+        return resposta + ' 😄';
+    }
+    
+    return resposta;
 }
 
 function formatarResposta(texto) {
@@ -228,7 +273,7 @@ function copiarTexto(texto) {
     const textoCompleto = texto + '\n\nRESPOSTA GERADA POR IA - RESPOSTA GERADA PELA DORA AI - NÃO USAR ESSA RESPOSTA EM TRABALHOS - DIREITOS AUTORAIS';
     
     navigator.clipboard.writeText(textoCompleto).then(() => {
-        alert('Resposta copiada com aviso de direitos autorais!');
+        alert('Resposta copiada com sucesso!');
     }).catch(err => {
         console.error('Erro ao copiar: ', err);
     });

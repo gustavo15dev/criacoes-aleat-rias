@@ -11,8 +11,17 @@
     <div class="container"></div>
 
     <!-- Título -->
-     <h1>Sala de Experimentos1</h1>
+     <h1>Sala de Experimentos</h1>
     <h2>Reunindo as plataformas mais <span class="titulo-gradiente">peculiares</span></h2>
+
+    <!-- Botões de Categoria -->
+    <div id="categorias-container">
+        <button class="categoria-btn" onclick="filtrarPorCategoria('todos')">Todos</button>
+        <button class="categoria-btn" onclick="filtrarPorCategoria('ferramentas')">Ferramentas</button>
+        <button class="categoria-btn" onclick="filtrarPorCategoria('jogos')">Jogos</button>
+        <button class="categoria-btn" onclick="filtrarPorCategoria('ia')">IA</button>
+        <button class="categoria-btn" onclick="filtrarPorCategoria('diversao')">Diversão</button>
+    </div>
 
     <!-- Campo de Busca -->
     <div id="busca-container">
@@ -23,7 +32,7 @@
     <div id="container-cards">
         
         <!-- Card 1: Relógio Digital Universal -->
-        <div class="card" data-projeto="relogio">
+        <div class="card" data-projeto="relogio" data-categoria="ferramentas">
             <h3>Relógio Digital Universal</h3>
             <img src="imagens/relogio.png" alt="Prévia do Relógio Digital" class="card-image">
             <div class="card-content">
@@ -38,7 +47,7 @@
         </div>
 
         <!-- Card 2: Labirinto com Setas -->
-        <div class="card" data-projeto="labirinto">
+        <div class="card" data-projeto="labirinto" data-categoria="jogos">
             <h3>Labirinto com Setas</h3>
             <img src="imagens/labirinto.png" alt="Prévia do Labirinto" class="card-image">
             <div class="card-content">
@@ -53,7 +62,7 @@
         </div>
 
         <!-- Card 3: Conversa Amigável -->
-        <div class="card" data-projeto="conversa">
+        <div class="card" data-projeto="conversa" data-categoria="ia">
             <h3>Conversa Amigável</h3>
             <img src="imagens/dora-ai.png" alt="Prévia da Conversa Amigável" class="card-image">
             <div class="card-content">
@@ -68,7 +77,7 @@
         </div>
 
         <!-- Card 4: Frases Motivacionais -->
-        <div class="card" data-projeto="frases">
+        <div class="card" data-projeto="frases" data-categoria="diversao">
             <h3>Frases Motivacionais</h3>
             <img src="imagens/frases.png" alt="Prévia das Frases" class="card-image">
             <div class="card-content">
@@ -82,22 +91,83 @@
             <a href="frases/frases.html"><button onclick="atualizarEstatistica('frases')">Abrir</button></a>
         </div>
 
+        <!-- Card 5 -->
+        <div class="card" data-projeto="frases" data-categoria="ia">
+            <h3>Conversar com Famosos</h3>
+            <img src="imagens/celebridades.jpeg" alt="Prévia das Frases" class="card-image">
+            <div class="card-content">
+                <ul>
+                    <li>Simula exatamente como os famosos falam</li>
+                    <li>Personagens de várias línguas</li>
+                    <li>Perfeito para tirar o tédio!</li>
+                </ul>
+            </div>
+            <div class="card-stats">Acessado <span id="frases-count">0</span> vezes</div>
+            <a href="celebridades/personagens.html"><button onclick="atualizarEstatistica('frases')">Abrir</button></a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" data-projeto="frases" data-categoria="ia">
+            <h3>Conversar com Famosos</h3>
+            <img src="imagens/mosquito.png" alt="Prévia das Frases" class="card-image">
+            <div class="card-content">
+                <ul>
+                    <li>Um ótimo lugar para acabar o ano e você ter a noção de quantos mosquitos você matou</li>
+                    <li>Personagens de várias línguas</li>
+                    <li>Perfeito para tirar o tédio!</li>
+                </ul>
+            </div>
+            <div class="card-stats">Acessado <span id="frases-count">0</span> vezes</div>
+            <a href="contar_mosquitos/contar-mosquitos.html"><button onclick="atualizarEstatistica('frases')">Abrir</button></a>
+        </div>
+
+<!-- Card Equipe -->
+        <div class="card" data-projeto="frases" data-categoria="diversão">
+            <h3>Equipe</h3>
+            <img src="imagens/equipe.png" alt="Prévia das Frases" class="card-image">
+            <div class="card-content">
+                <ul>
+                    <li>Conheçam todos os envolvidos para esse projeto funcionar!</li>
+                </ul>
+            </div>
+            <div class="card-stats">Acessado <span id="frases-count">0</span> vezes</div>
+            <a href="equipe/equipe.html"><button onclick="atualizarEstatistica('frases')">Abrir</button></a>
+        </div>
+
+
     </div>
 
     <script>
+        // Função para converter número em formato amigável
+        function formatarNumero(numero) {
+            if (numero >= 10000000) {
+                return (numero / 1000000).toFixed(0) + ' Milhões';
+            } else if (numero >= 1000000) {
+                return (numero / 1000000).toFixed(1).replace('.0', '') + ' Milhão';
+            } else if (numero >= 100000) {
+                return (numero / 1000).toFixed(0) + ' Mil';
+            } else if (numero >= 10000) {
+                return (numero / 1000).toFixed(0) + ' Mil';
+            } else if (numero >= 1000) {
+                return (numero / 1000).toFixed(1).replace('.0', '') + ' Mil';
+            } else {
+                return numero;
+            }
+        }
+
         // Função para atualizar estatísticas
         function atualizarEstatistica(projeto) {
             let count = localStorage.getItem(projeto) || 0;
             count = parseInt(count) + 1;
             localStorage.setItem(projeto, count);
-            document.getElementById(projeto + '-count').textContent = count;
+            document.getElementById(projeto + '-count').textContent = formatarNumero(count);
         }
 
         // Carrega estatísticas ao carregar a página
         window.addEventListener('load', () => {
             ['relogio', 'labirinto', 'conversa', 'frases'].forEach(projeto => {
                 let count = localStorage.getItem(projeto) || 0;
-                document.getElementById(projeto + '-count').textContent = count;
+                document.getElementById(projeto + '-count').textContent = formatarNumero(count);
             });
         });
 
@@ -117,6 +187,36 @@
                     card.style.display = 'none';
                 }
             });
+        });
+
+        // Função para filtrar por categoria
+        function filtrarPorCategoria(categoria) {
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                const cardCategoria = card.getAttribute('data-categoria');
+                
+                if (categoria === 'todos' || cardCategoria === categoria) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Mostra notificação de boas-vindas
+        window.addEventListener('load', () => {
+            if ('Notification' in window) {
+                if (Notification.permission === 'granted') {
+                    new Notification('Bem-vindo à Sala de Experimentos!');
+                } else if (Notification.permission !== 'denied') {
+                    Notification.requestPermission().then(permission => {
+                        if (permission === 'granted') {
+                            new Notification('Bem-vindo à Sala de Experimentos!');
+                        }
+                    });
+                }
+            }
         });
     </script>
 </body>
