@@ -175,7 +175,8 @@
             </div>
             
             <button class="btn" onclick="fazerLogin()">Login</button>
-            <button class="btn" onclick="criarConta()">Criar Conta</button>
+            <button class="btn" onclick="criarConta()">Criar Conta</button><br><br>
+            <a href="../index.html" class="btn"> 🠈Voltar</a>
         </div>
 
         <!-- Tela de Jogo -->
@@ -190,7 +191,7 @@
         let usuarioAtual = null;
 
         // Fazer login
-        async function fazerLogin() {
+        function fazerLogin() {
             const email = document.getElementById('email').value;
             const senha = document.getElementById('senha').value;
 
@@ -199,37 +200,26 @@
                 return;
             }
 
-            try {
-                const response = await fetch('/api/contar-mosquitos', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        email,
-                        senha,
-                        acao: 'login'
-                    }),
-                });
+            // Carrega os dados do localStorage
+            let dados = localStorage.getItem('contaMosquitos');
+            if (dados) {
+                dados = JSON.parse(dados);
+            } else {
+                dados = {};
+            }
 
-                const data = await response.json();
-
-                if (response.ok) {
-                    usuarioAtual = email;
-                    document.getElementById('contador').textContent = data.contagem || 0;
-                    document.getElementById('login-container').style.display = 'none';
-                    document.getElementById('jogo-container').style.display = 'block';
-                } else {
-                    alert(data.error || 'Erro ao fazer login');
-                }
-            } catch (error) {
-                console.error('Erro:', error);
-                alert('Erro ao conectar com o servidor');
+            if (dados[email] && dados[email].senha === senha) {
+                usuarioAtual = email;
+                document.getElementById('contador').textContent = dados[email].contagem || 0;
+                document.getElementById('login-container').style.display = 'none';
+                document.getElementById('jogo-container').style.display = 'block';
+            } else {
+                alert('Email ou senha incorretos!');
             }
         }
 
         // Criar conta
-        async function criarConta() {
+        function criarConta() {
             const email = document.getElementById('email').value;
             const senha = document.getElementById('senha').value;
 
@@ -238,66 +228,59 @@
                 return;
             }
 
-            try {
-                const response = await fetch('/api/contar-mosquitos', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        email,
-                        senha,
-                        acao: 'criarConta'
-                    }),
-                });
-
-                const data = await response.json();
-
-                if (response.ok) {
-                    usuarioAtual = email;
-                    document.getElementById('contador').textContent = 0;
-                    document.getElementById('login-container').style.display = 'none';
-                    document.getElementById('jogo-container').style.display = 'block';
-                } else {
-                    alert(data.error || 'Erro ao criar conta');
-                }
-            } catch (error) {
-                console.error('Erro:', error);
-                alert('Erro ao conectar com o servidor');
+            // Carrega os dados do localStorage
+            let dados = localStorage.getItem('contaMosquitos');
+            if (dados) {
+                dados = JSON.parse(dados);
+            } else {
+                dados = {};
             }
+
+            if (dados[email]) {
+                alert('Conta já existe!');
+                return;
+            }
+
+            dados[email] = {
+                senha: senha,
+                contagem: 0
+            };
+
+            localStorage.setItem('contaMosquitos', JSON.stringify(dados));
+
+            usuarioAtual = email;
+            document.getElementById('contador').textContent = 0;
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('jogo-container').style.display = 'block';
         }
 
         // Matar mosquito
-        async function matarMosquito() {
+        function matarMosquito() {
             if (!usuarioAtual) {
                 alert('Faça login primeiro!');
                 return;
             }
 
-            try {
-                const response = await fetch('/api/contar-mosquitos', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        email: usuarioAtual,
-                        senha: '', // não precisa de senha para matar mosquito
-                        acao: 'matarMosquito'
-                    }),
-                });
-
-                const data = await response.json();
-
-                if (response.ok) {
-                    document.getElementById('contador').textContent = data.contagem;
-                } else {
-                    alert(data.error || 'Erro ao matar mosquito');
-                }
-            } catch (error) {
-                console.error('Erro:', error);
-                alert('Erro ao conectar com o servidor');
+            // Carrega os dados do localStorage
+            let dados = localStorage.getItem('contaMosquitos');
+            if (dados) {
+                dados = JSON.parse(dados);
+            } else {
+                dados = {};
             }
+
+            // Atualiza a contagem do usuário
+            if (dados[usuarioAtual]) {
+                dados[usuarioAtual].contagem = (dados[usuarioAtual].contagem || 0) + 1;
+            } else {
+                dados[usuarioAtual] = { contagem: 1 };
+            }
+
+            // Salva no localStorage
+            localStorage.setItem('contaMosquitos', JSON.stringify(dados));
+
+            // Atualiza o contador na tela
+            document.getElementById('contador').textContent = dados[usuarioAtual].contagem;
         }
 
         // Fazer logout

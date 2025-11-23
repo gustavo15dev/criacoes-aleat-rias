@@ -40,6 +40,14 @@ body {
 /* ---------------------------------------------------- */
 /* 2. ESTILO DO TÍTULO E BOTÃO (index.html) */
 /* ---------------------------------------------------- */
+
+#desenvolvimento {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: relative;
+    color: red
+}
+
 h1 {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;

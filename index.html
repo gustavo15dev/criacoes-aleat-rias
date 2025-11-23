@@ -21,6 +21,7 @@
         <button class="categoria-btn" onclick="filtrarPorCategoria('jogos')">Jogos</button>
         <button class="categoria-btn" onclick="filtrarPorCategoria('ia')">IA</button>
         <button class="categoria-btn" onclick="filtrarPorCategoria('diversao')">Diversão</button>
+        <button class="categoria-btn" onclick="window.location.href='equipe/equipe.html'">Equipe</button>
     </div>
 
     <!-- Campo de Busca -->
@@ -33,7 +34,7 @@
         
         <!-- Card 1: Relógio Digital Universal -->
         <div class="card" data-projeto="relogio" data-categoria="ferramentas">
-            <h3>Relógio Digital Universal</h3>
+            <h3>Relógio Digital Universal <span id="desenvolvimento"><br>[EM DESENVOLVIMENTO]</span></h3>
             <img src="imagens/relogio.png" alt="Prévia do Relógio Digital" class="card-image">
             <div class="card-content">
                 <ul>
@@ -46,30 +47,17 @@
             <a href="relógio/relogio.html"><button onclick="atualizarEstatistica('relogio')">Abrir</button></a>
         </div>
 
-        <!-- Card 2: Labirinto com Setas -->
-        <div class="card" data-projeto="labirinto" data-categoria="jogos">
-            <h3>Labirinto com Setas</h3>
-            <img src="imagens/labirinto.png" alt="Prévia do Labirinto" class="card-image">
-            <div class="card-content">
-                <ul>
-                    <li>Jogo simples com setas do teclado</li>
-                    <li>3 níveis de dificuldade</li>
-                    <li>Objetivo: chegar ao fim sem tocar nas paredes</li>
-                </ul>
-            </div>
-            <div class="card-stats">Acessado <span id="labirinto-count">0</span> vezes</div>
-            <a href="labirinto/labirinto.html"><button onclick="atualizarEstatistica('labirinto')">Abrir</button></a>
-        </div>
-
         <!-- Card 3: Conversa Amigável -->
         <div class="card" data-projeto="conversa" data-categoria="ia">
-            <h3>Conversa Amigável</h3>
-            <img src="imagens/dora-ai.png" alt="Prévia da Conversa Amigável" class="card-image">
+            <h3>Dora AI 1.3</h3>
+            <img src="Dora-AI/img-IA/logo.png" alt="Prévia da Conversa Amigável" class="card-image">
             <div class="card-content">
                 <ul>
-                    <li>Simulador de conversa empática</li>
+                    <li>Uma IA inteligente para conversa simples</li>
                     <li>Diga algo e receba respostas acolhedoras</li>
                     <li>Ideal para momentos de ansiedade ou solidão</li>
+                    <li>Sempre sendo aprimorada para responder conteúdos diversos</li>
+
                 </ul>
             </div>
             <div class="card-stats">Acessado <span id="conversa-count">0</span> vezes</div>
@@ -92,46 +80,21 @@
         </div>
 
         <!-- Card 5 -->
-        <div class="card" data-projeto="frases" data-categoria="ia">
-            <h3>Conversar com Famosos</h3>
-            <img src="imagens/celebridades.jpeg" alt="Prévia das Frases" class="card-image">
-            <div class="card-content">
-                <ul>
-                    <li>Simula exatamente como os famosos falam</li>
-                    <li>Personagens de várias línguas</li>
-                    <li>Perfeito para tirar o tédio!</li>
-                </ul>
-            </div>
-            <div class="card-stats">Acessado <span id="frases-count">0</span> vezes</div>
-            <a href="celebridades/personagens.html"><button onclick="atualizarEstatistica('frases')">Abrir</button></a>
-        </div>
+       
 
         <!-- Card 6 -->
         <div class="card" data-projeto="frases" data-categoria="ia">
-            <h3>Conversar com Famosos</h3>
+            <h3>Contador de mosquitos local</h3>
             <img src="imagens/mosquito.png" alt="Prévia das Frases" class="card-image">
             <div class="card-content">
                 <ul>
                     <li>Um ótimo lugar para acabar o ano e você ter a noção de quantos mosquitos você matou</li>
-                    <li>Personagens de várias línguas</li>
+                    <li>OBS: Só funciona a mesma conta num mesmo dispositivo</li>
                     <li>Perfeito para tirar o tédio!</li>
                 </ul>
             </div>
             <div class="card-stats">Acessado <span id="frases-count">0</span> vezes</div>
             <a href="contar_mosquitos/contar-mosquitos.html"><button onclick="atualizarEstatistica('frases')">Abrir</button></a>
-        </div>
-
-<!-- Card Equipe -->
-        <div class="card" data-projeto="frases" data-categoria="diversão">
-            <h3>Equipe</h3>
-            <img src="imagens/equipe.png" alt="Prévia das Frases" class="card-image">
-            <div class="card-content">
-                <ul>
-                    <li>Conheçam todos os envolvidos para esse projeto funcionar!</li>
-                </ul>
-            </div>
-            <div class="card-stats">Acessado <span id="frases-count">0</span> vezes</div>
-            <a href="equipe/equipe.html"><button onclick="atualizarEstatistica('frases')">Abrir</button></a>
         </div>
 
 
