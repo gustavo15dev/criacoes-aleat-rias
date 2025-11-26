@@ -10394,5 +10394,2925 @@
   {
     "pergunta": "O que é Main Character Energy?",
     "resposta": "Energia de Protagonista! ✨ Alguém que vive a vida como se fosse o astro de um filme. Tem confiança, estilo e faz as coisas acontecerem. Brilha! 🌟"
+  },
+  {
+    "pergunta": "Quem foi Ada Lovelace?",
+    "resposta": "A primeira programadora da história! 👩‍💻 No século XIX (muito antes do computador existir), ela escreveu o primeiro algoritmo para ser processado por uma máquina. Ela previu que computadores poderiam compor música e fazer arte. Uma visionária! 🔢"
+  },
+  {
+    "pergunta": "Quem foi Hedy Lamarr?",
+    "resposta": "Uma atriz de Hollywood e inventora genial! 🎬📶 Durante a Segunda Guerra, ela inventou uma tecnologia de comunicação para despistar torpedos nazistas. Essa tecnologia é a base do Wi-Fi e do Bluetooth que usamos hoje. Diva e Gênia! 📱"
+  },
+  {
+    "pergunta": "Quem foi Katherine Johnson?",
+    "resposta": "A calculadora humana da NASA! 🚀 Uma matemática negra que calculou à mão as trajetórias que levaram o homem à Lua. Sem ela, a missão Apollo 11 não teria acontecido. Sua história virou o filme 'Estrelas Além do Tempo'. ✨"
+  },
+  {
+    "pergunta": "Quem foi Rosalind Franklin?",
+    "resposta": "A 'mãe' do DNA injustiçada. 🧬 Ela tirou a foto raio-X (Foto 51) que provou o formato de dupla hélice do DNA. Watson e Crick usaram os dados dela para ganhar o Nobel, e ela só foi reconhecida anos depois. 🔬"
+  },
+  {
+    "pergunta": "Quem foi Malala Yousafzai?",
+    "resposta": "A pessoa mais jovem a ganhar um Nobel da Paz. 🕊️ Paquistanesa, levou um tiro do Talibã por defender que meninas deveriam ir à escola. Sobreviveu e hoje luta pela educação feminina no mundo todo. Uma força da natureza! 📚"
+  },
+  {
+    "pergunta": "Quem foi Rosa Parks?",
+    "resposta": "A mãe do movimento pelos direitos civis nos EUA. ✊ Em 1955, ela se recusou a ceder seu lugar no ônibus para um homem branco. Esse ato de coragem iniciou o boicote aos ônibus e a luta contra a segregação racial. 🚌"
+  },
+  {
+    "pergunta": "Quem foi Anne Frank?",
+    "resposta": "Uma menina judia que escreveu um diário enquanto se escondia dos nazistas em Amsterdã. 📔 Ela morreu num campo de concentração, mas seu diário sobreviveu e mostrou ao mundo os horrores do Holocausto pelos olhos de uma criança. 💔"
+  },
+  {
+    "pergunta": "Quem foi Mary Shelley?",
+    "resposta": "A criadora da ficção científica! 🧟‍♀️ Aos 18 anos, escreveu 'Frankenstein' numa aposta com amigos. Ela imaginou a ciência criando vida muito antes de transplantes ou genética existirem. ⚡"
+  },
+  {
+    "pergunta": "Quem foi Princesa Diana?",
+    "resposta": "A 'Princesa do Povo'. 👑 Foi casada com o Príncipe Charles (agora Rei). Era amada por sua caridade, abraçando pacientes com AIDS e vítimas de minas terrestres quando ninguém fazia isso. Morreu tragicamente em 1997. 🌹"
+  },
+  {
+    "pergunta": "Quem foi Maria Quitéria?",
+    "resposta": "A Mulan brasileira! ⚔️ Ela se vestiu de homem para lutar na Guerra da Independência do Brasil na Bahia, já que mulheres eram proibidas. Foi condecorada por D. Pedro I. Uma heroína nacional! 🇧🇷"
+  },
+  {
+    "pergunta": "Quem foi Anita Garibaldi?",
+    "resposta": "A 'Heroína de Dois Mundos'. 🐎 Lutou em revoluções no Brasil (Guerra dos Farrapos) e na Itália ao lado do marido, Giuseppe Garibaldi. Era uma guerreira destemida e habilidosa no cavalo e na arma. 🇮🇹🇧🇷"
+  },
+  {
+    "pergunta": "Quem foi Tarsila do Amaral?",
+    "resposta": "A pintora do 'Abaporu'. 🎨 Ícone do Modernismo brasileiro. Sua obra inspirou o Movimento Antropofágico (a ideia de 'devorar' a cultura estrangeira e criar algo brasileiro). Cores vivas e pés grandes! 👣"
+  },
+  {
+    "pergunta": "Quem foi Chiquinha Gonzaga?",
+    "resposta": "A primeira mulher a reger uma orquestra no Brasil. 🎶 Compôs 'Ó Abre Alas', a primeira marcha de carnaval da história (1899). Quebrou tabus numa sociedade machista do século XIX. 🎉"
+  },
+  {
+    "pergunta": "Como funciona o GPS?",
+    "resposta": "É um sistema de satélites! 🛰️ Seu celular recebe sinal de pelo menos 4 satélites ao mesmo tempo. Eles calculam quanto tempo o sinal demorou pra chegar e, por triangulação, descobrem exatamente onde você está na Terra. 📍"
+  },
+  {
+    "pergunta": "Como funciona o Micro-ondas?",
+    "resposta": "Ele agita as moléculas de água! 🌊 O aparelho emite ondas que fazem a água dentro da comida vibrar super rápido. Esse atrito gera calor e cozinha o alimento de dentro pra fora (ou quase). Por isso prato seco não esquenta! 🍲"
+  },
+  {
+    "pergunta": "Como funciona a Geladeira?",
+    "resposta": "Ela não 'fria', ela 'tira o calor'! ❄️ Um gás circula nos tubos atrás dela. Esse gás absorve o calor de dentro da geladeira e o joga para fora (por isso é quente atrás). É uma bomba de calor invertida! 🌡️"
+  },
+  {
+    "pergunta": "Como funciona o Bluetooth?",
+    "resposta": "É uma conversa via rádio de curto alcance. 📻 Ele usa ondas de rádio (UHF) para conectar dispositivos sem fio. O nome vem de um rei viking (Harald Bluetooth) que uniu tribos, assim como a tecnologia une aparelhos! 🦷"
+  },
+  {
+    "pergunta": "Como funciona a Fibra Óptica?",
+    "resposta": "É internet na velocidade da luz! 💡 O cabo é feito de vidro muito fino. A informação viaja como feixes de luz que ricocheteiam dentro do vidro sem perder força, atravessando oceanos em milissegundos. 🌐"
+  },
+  {
+    "pergunta": "Como funciona a Tela Touchscreen?",
+    "resposta": "A mais comum (capacitiva) sente a eletricidade do seu dedo! 👆 O vidro tem uma carga elétrica invisível. Quando você toca, seu dedo 'rouba' um pouquinho dessa carga e o celular calcula onde foi o toque. Por isso não funciona com luva de lã! 🧤"
+  },
+  {
+    "pergunta": "Por que o avião voa?",
+    "resposta": "Física pura (Princípio de Bernoulli)! ✈️ A asa é curva em cima e reta embaixo. O ar passa mais rápido por cima, diminuindo a pressão. A pressão maior embaixo 'empurra' a asa pra cima. É a sustentação! 🦅"
+  },
+  {
+    "pergunta": "O que é o Experimento de Milgram?",
+    "resposta": "Um teste assustador sobre obediência. ⚡ Pessoas comuns aceitavam dar choques elétricos (falsos, mas elas não sabiam) em outras pessoas só porque um cientista de jaleco mandava. Mostrou como obedecemos cegamente à autoridade. 👮‍♂️"
+  },
+  {
+    "pergunta": "O que é o Teste do Marshmallow?",
+    "resposta": "Um estudo sobre paciência! 🍬 Deram um doce pra uma criança e disseram: 'Se você esperar 15 minutos sem comer, ganha dois'. As crianças que conseguiram esperar tiveram mais sucesso na vida adulta. Autocontrole é poder! 🕰️"
+  },
+  {
+    "pergunta": "O que é o Experimento da Prisão de Stanford?",
+    "resposta": "Dividiram estudantes em 'guardas' e 'presos' numa prisão falsa. 👮‍♂️ Em poucos dias, os 'guardas' ficaram sádicos e cruéis, e o experimento teve que ser cancelado. Mostra como o poder e o ambiente mudam o comportamento humano. ⛓️"
+  },
+  {
+    "pergunta": "O que é o Efeito Espectador?",
+    "resposta": "Quanto mais gente vê um acidente, menos chance de alguém ajudar. 😶 Cada um pensa: 'Alguém vai chamar a polícia', e no fim ninguém chama. Se precisar de ajuda na multidão, aponte pra uma pessoa específica! 🫵"
+  },
+  {
+    "pergunta": "O que é o Paradoxo de Abilene?",
+    "resposta": "Quando um grupo decide fazer algo que NINGUÉM queria fazer, só para não desagradar os outros. 🚌 'Vamos pra Abilene?' 'Vamos'. No fim, todos odiaram, mas foram por educação. Falta de comunicação honesta! 🙊"
+  },
+  {
+    "pergunta": "O que é a Profecia Autorrealizável?",
+    "resposta": "Quando você acredita tanto que algo vai dar errado, que você (sem querer) age para que dê errado. 🔮 Ex: Achar que vai reprovar, ficar nervoso, não estudar e reprovar mesmo. A mente cria a realidade. 🧠"
+  },
+  {
+    "pergunta": "O que é o Efeito Halo?",
+    "resposta": "Julgar o todo por uma parte. 😇 Se achamos alguém bonito, tendemos a achar que essa pessoa também é inteligente e honesta (mesmo sem provas). É o preconceito da beleza. 💅"
+  },
+  {
+    "pergunta": "O que é a Lei de Godwin?",
+    "resposta": "Uma lei da internet! 💻 'À medida que uma discussão online fica mais longa, a probabilidade de alguém comparar o outro a Hitler ou nazistas se aproxima de 100%'. Quem faz isso primeiro, perde a discussão. 🚫"
+  },
+  {
+    "pergunta": "O que é o Efeito Streisand?",
+    "resposta": "Quando tentar censurar algo faz aquilo ficar mais famoso ainda! 📢 A atriz Barbra Streisand tentou proibir fotos da casa dela. Resultado? A internet inteira quis ver as fotos. Censura sai pela culatra! 📸"
+  },
+  {
+    "pergunta": "O que é o Vale da Morte (Startups)?",
+    "resposta": "É o período inicial de uma empresa nova, onde ela gasta dinheiro para criar o produto, mas ainda não tem lucro. 📉 Muitas empresas quebram aqui antes de conseguir crescer. É o momento crítico! 💀"
+  },
+  {
+    "pergunta": "O que é Bootstrapping?",
+    "resposta": "Começar um negócio sem investidor, usando só o próprio dinheiro e o lucro das vendas. 👢 É crescer 'na raça', puxando pelas próprias botas. Mais difícil, mas você mantém 100% do controle. 💪"
+  },
+  {
+    "pergunta": "O que é Pivotar?",
+    "resposta": "Mudar de direção no negócio! 🔄 Ex: O YouTube começou como site de namoro! Quando viram que não dava certo, 'pivotaram' para site de vídeos gerais. É corrigir a rota sem afundar o barco. ⛵"
+  },
+  {
+    "pergunta": "O que é B2B2C?",
+    "resposta": "Business to Business to Consumer. 🏭 Exemplo: O iFood. Ele é uma empresa que atende restaurantes (B2B), para que os restaurantes atendam você (B2C). É uma cadeia de negócios! 🍕"
+  },
+  {
+    "pergunta": "O que é Freemium?",
+    "resposta": "Modelo de negócio grátis + premium. 🆓 O Spotify é assim: você ouve de graça com anúncios, ou paga para tirar anúncios. A base grátis atrai gente, a base paga sustenta o negócio. 🎧"
+  },
+  {
+    "pergunta": "O que é Churn?",
+    "resposta": "A taxa de cancelamento. 🚪 Se a Netflix perde 5% dos assinantes no mês, o Churn é 5%. É o pesadelo das empresas de assinatura. O objetivo é Churn zero! 📉"
+  },
+  {
+    "pergunta": "O que é Lead?",
+    "resposta": "Um potencial cliente que demonstrou interesse. 🎣 Alguém que baixou seu ebook ou se cadastrou na newsletter. Ele não comprou ainda, mas está 'na mira'. É ouro pro marketing! 📧"
+  },
+  {
+    "pergunta": "O que é Copywriting?",
+    "resposta": "A arte de escrever para vender. ✍️ Não é só escrever bonito, é usar palavras persuasivas que façam a pessoa tomar uma ação (clicar, comprar, doar). É texto com psicologia! 🧠"
+  },
+  {
+    "pergunta": "O que é Storytelling?",
+    "resposta": "A arte de contar histórias. 📖 Marcas usam isso para conectar emocionalmente. Em vez de dizer 'compre este tênis', dizem 'este tênis ajudou fulano a vencer a maratona'. Histórias vendem mais que fatos! 👟"
+  },
+  {
+    "pergunta": "O que é um Cisne Negro (Teoria)?",
+    "resposta": "Um evento imprevisível, raro e de impacto gigantesco. 🦢 Ex: O 11 de Setembro ou a Pandemia de 2020. Ninguém previu, mas mudou tudo. Na economia, temos que estar preparados para eles. 📉"
+  },
+  {
+    "pergunta": "O que é o Dilema da Inovação?",
+    "resposta": "Quando grandes empresas fazem tudo certo (ouvem clientes, melhoram produtos) e mesmo assim quebram, porque ignoram inovações radicais. 📉 A Kodak inventou a câmera digital, mas escondeu para não atrapalhar a venda de filmes. Quebrou! 📷"
+  },
+  {
+    "pergunta": "O que é Design Responsivo?",
+    "resposta": "É quando um site se adapta a qualquer tela. 📱 Você abre no celular, tablet ou PC, e o layout muda sozinho para ficar legível. Site que não é responsivo hoje em dia é invisível pro Google! 🖥️"
+  },
+  {
+    "pergunta": "O que é UX (User Experience)?",
+    "resposta": "É como o usuário se sente usando seu produto. 😊 Não basta ser bonito (UI), tem que ser fácil, útil e agradável. Se o botão é difícil de achar, a UX é ruim. O foco é a pessoa! 🖱️"
+  },
+  {
+    "pergunta": "O que é UI (User Interface)?",
+    "resposta": "É a 'cara' do produto. 🎨 Cores, botões, tipografia, layout. A UI é o visual, a UX é a sensação. Um site pode ter UI linda e UX péssima (bonito mas não funciona). 🖌️"
+  },
+  {
+    "pergunta": "O que é um Bug?",
+    "resposta": "Um erro no código! 🐛 O termo vem de quando insetos reais (bugs) entravam nos computadores antigos e queimavam válvulas. Hoje é qualquer falha que faz o app fechar na sua cara. 🐞"
+  },
+  {
+    "pergunta": "O que é 404 Not Found?",
+    "resposta": "Erro clássico da internet! 🚫 Significa que o servidor não achou a página que você pediu. Pode ter sido deletada ou você digitou o endereço errado. É o 'beco sem saída' da web. 🚧"
+  },
+  {
+    "pergunta": "O que é Cache?",
+    "resposta": "Memória rápida de acesso! 🐿️ O navegador guarda imagens dos sites que você visita para não ter que baixar tudo de novo na próxima vez. Deixa a navegação mais rápida, mas às vezes mostra coisa velha. 🧹"
+  },
+  {
+    "pergunta": "O que é Cookies (Internet)?",
+    "resposta": "Pequenos arquivos de texto que sites salvam no seu navegador. 🍪 Servem para lembrar quem você é (login), o que estava no carrinho ou para te rastrear e mostrar anúncios. Aceita um cookie? 🖱️"
+  },
+  {
+    "pergunta": "O que é Firewall?",
+    "resposta": "A muralha do seu computador! 🧱 Um programa que monitora o que entra e sai da rede. Ele bloqueia acessos não autorizados e hackers. Sem firewall, sua porta digital fica aberta! 🚪"
+  },
+  {
+    "pergunta": "O que é Open Source?",
+    "resposta": "Software de código aberto! 🔓 O criador libera a 'receita' do programa para qualquer um ver, copiar e melhorar. O Android e o Linux são assim. É colaboração global! 🐧"
+  },
+  {
+    "pergunta": "O que é Linux?",
+    "resposta": "Um sistema operacional (como o Windows), mas livre e gratuito. 🐧 É super estável e seguro, por isso a maioria dos servidores da internet e supercomputadores usam Linux. E tem um pinguim de mascote! 💻"
+  },
+  {
+    "pergunta": "O que é Python?",
+    "resposta": "Uma linguagem de programação super popular. 🐍 É conhecida por ser fácil de ler (parece inglês) e poderosa. Usada para criar sites, Inteligência Artificial e análise de dados. Queridinha dos devs! 👩‍💻"
+  },
+  {
+    "pergunta": "O que é Java?",
+    "resposta": "Linguagem clássica e robusta. ☕ O lema é 'escreva uma vez, rode em qualquer lugar'. É a base de muitos sistemas bancários e aplicativos Android antigos. Não confundir com JavaScript! ♨️"
+  },
+  {
+    "pergunta": "O que é HTML?",
+    "resposta": "Não é programação, é marcação! 🏗️ É a linguagem que estrutura a web. Define o que é título, parágrafo, imagem. É o esqueleto de todo site. Sem HTML, a web não existe! 🌐"
+  },
+  {
+    "pergunta": "O que é CSS?",
+    "resposta": "É a maquiagem do site! 🎨 O HTML faz a estrutura, o CSS define as cores, fontes e layout. É o que deixa a internet bonita. Cascading Style Sheets. 💅"
+  },
+  {
+    "pergunta": "O que é JavaScript?",
+    "resposta": "É o cérebro do site! 🧠 Faz as coisas se mexerem, botões funcionarem, mapas atualizarem. Transforma uma página estática em um aplicativo interativo. Essencial hoje! ⚡"
+  },
+  {
+    "pergunta": "O que é a Navalha de Hanlon?",
+    "resposta": "Nunca atribua à maldade o que pode ser explicado pela estupidez. 🤪 Se alguém errou com você, provavelmente foi distração ou incompetência, não um plano maligno. Relaxa! 🧘"
+  },
+  {
+    "pergunta": "O que é o Paradoxo de Epicuro?",
+    "resposta": "Sobre o mal e Deus. 🤔 'Se Deus quer evitar o mal e não pode, não é onipotente. Se pode e não quer, é malévolo. Se não quer e não pode, não é Deus'. Um desafio lógico antigo para a teologia. ⚡"
+  },
+  {
+    "pergunta": "O que é a Aposta de Pascal?",
+    "resposta": "Um argumento sobre acreditar em Deus. 🎲 Pascal dizia: 'Se você acredita e Deus existe, ganha o céu. Se não existe, não perde nada. Se não acredita e Ele existe, vai pro inferno'. Logo, a aposta lógica é acreditar. 🙏"
+  },
+  {
+    "pergunta": "O que é o Mito de Narciso?",
+    "resposta": "Narciso era tão belo que se apaixonou pelo próprio reflexo na água. 🪞 Ficou lá admirando até morrer. Explica o 'Narcisismo': amor excessivo por si mesmo e falta de empatia pelos outros. 🥀"
+  },
+  {
+    "pergunta": "O que é o Mito de Ícaro?",
+    "resposta": "Ícaro ganhou asas de cera para fugir de um labirinto. ☀️ Foi avisado para não voar muito perto do sol. Ele desobedeceu, a cera derreteu e ele caiu no mar. Lição sobre a arrogância e ouvir conselhos! 🌊"
+  },
+  {
+    "pergunta": "O que é o Rei Midas?",
+    "resposta": "Tudo que ele tocava virava ouro. 💰 Parecia uma bênção, mas virou maldição quando ele não podia comer nem abraçar a filha. Ensina que dinheiro não é tudo e cuidado com o que deseja! 🖐️"
+  },
+  {
+    "pergunta": "O que é a Espada de Dâmocles?",
+    "resposta": "Uma espada pendurada por um fio de cavalo sobre a cabeça do rei. 🗡️ Representa o perigo constante de quem tem poder. 'Pesada é a cabeça que usa a coroa'. O poder traz risco! 👑"
+  },
+  {
+    "pergunta": "O que é o Calcanhar de Aquiles?",
+    "resposta": "O ponto fraco! 🦶 Aquiles era invulnerável, exceto no calcanhar (onde a mãe o segurou ao mergulhar no rio mágico). Uma flechada lá o matou. Todos temos um ponto fraco! 🏹"
+  },
+  {
+    "pergunta": "O que é a Guerra de Troia?",
+    "resposta": "Gregos vs Troianos. ⚔️ Começou porque o príncipe de Troia roubou Helena, a rainha grega. Durou 10 anos. Terminou com o famoso Cavalo de Troia (presente falso cheio de soldados). 🐴"
+  },
+  {
+    "pergunta": "O que é a Odisseia?",
+    "resposta": "A viagem de volta de Ulisses (Odisseu) após a Guerra de Troia. ⛵ Levou 10 anos! Enfrentou ciclopes, sereias e bruxas para voltar para sua esposa Penélope. É a jornada do herói original! 🌊"
+  },
+  {
+    "pergunta": "O que é o Inferno de Dante?",
+    "resposta": "Parte da 'Divina Comédia'. 🔥 Dante descreve o inferno como 9 círculos, cada um para um tipo de pecado (gula, traição, etc). No fundo, no gelo, está Lúcifer. Uma obra-prima da literatura! 📖"
+  },
+  {
+    "pergunta": "O que é a Pedra Filosofal?",
+    "resposta": "O sonho dos alquimistas! 💎 Uma substância lendária capaz de transformar chumbo em ouro e criar o Elixir da Vida (imortalidade). Harry Potter também procurou! 🧙‍♂️"
+  },
+  {
+    "pergunta": "O que é o Santo Graal?",
+    "resposta": "O cálice que Jesus usou na Última Ceia. 🏆 Cavaleiros do Rei Arthur (como Lancelot) saíam em missões para achá-lo. Representa a busca pela perfeição espiritual. ✨"
+  },
+  {
+    "pergunta": "O que é Excalibur?",
+    "resposta": "A espada mágica do Rei Arthur. 🗡️ Diz a lenda que só o verdadeiro rei poderia tirá-la da pedra. Símbolo de poder legítimo e justiça. 👑"
+  },
+  {
+    "pergunta": "O que é Ragnarok?",
+    "resposta": "O fim do mundo na mitologia nórdica! 🐺 Uma grande batalha entre deuses e monstros. Odin e Thor morrem, o mundo queima e afunda na água, mas depois renasce. Ciclo da vida! 🔥"
+  },
+  {
+    "pergunta": "O que é Valhalla?",
+    "resposta": "O paraíso dos guerreiros nórdicos. 🍻 Um salão gigante onde quem morreu bravamente em batalha festeja com Odin, comendo e lutando até o Ragnarok. O sonho de todo Viking! ⚔️"
+  },
+  {
+    "pergunta": "O que é o Nirvana?",
+    "resposta": "No Budismo, é o fim do sofrimento. 🧘 Um estado de paz suprema, onde você se liberta do ciclo de reencarnações. É apagar a chama do desejo e do ego. Iluminação! 🕯️"
+  },
+  {
+    "pergunta": "O que é Karma?",
+    "resposta": "Lei de causa e efeito. 🔄 Tudo que você faz (bom ou ruim) volta para você, nesta vida ou na próxima. Não é castigo, é consequência. Plante o bem! 🌱"
+  },
+  {
+    "pergunta": "O que é Dharma?",
+    "resposta": "Seu dever cósmico, sua missão de vida. ☸️ No Hinduísmo/Budismo, seguir seu Dharma traz harmonia. É fazer o que é certo e o que você nasceu para fazer. Caminho reto! 🛤️"
+  },
+  {
+    "pergunta": "O que é Yin Yang?",
+    "resposta": "Símbolo do Taoísmo. ☯️ Representa o equilíbrio dos opostos: luz/sombra, feminino/masculino. Um não existe sem o outro, e tem um pouco de um dentro do outro. Harmonia! 🐼"
+  },
+  {
+    "pergunta": "O que é Feng Shui?",
+    "resposta": "Arte chinesa de organizar espaços. 🏠 Acredita que a posição dos móveis afeta o fluxo de energia (Chi). Cama de frente pra porta? Má sorte! É harmonizar a casa com a natureza. 🎋"
+  },
+  {
+    "pergunta": "O que é Ikigai?",
+    "resposta": "Segredo japonês para vida longa. 🎯 É a sua 'razão de ser'. A união de: o que você ama, o que você faz bem, o que o mundo precisa e o que te paga. Quem tem Ikigai levanta feliz! 🇯🇵"
+  },
+  {
+    "pergunta": "O que é Kintsugi?",
+    "resposta": "A arte de consertar cerâmica quebrada com ouro. 🥣 A ideia é que as cicatrizes e quebras fazem parte da história do objeto e o tornam mais bonito, não feio. Aceite suas falhas! ✨"
+  },
+  {
+    "pergunta": "O que é Ubuntu?",
+    "resposta": "Filosofia africana: 'Eu sou porque nós somos'. 🌍 Ninguém é feliz sozinho. Nossa humanidade depende da conexão com os outros. Solidariedade e comunidade acima do indivíduo. 🤝"
+  },
+  {
+    "pergunta": "O que é Hakuna Matata?",
+    "resposta": "Frase em Suaíli (África). 🦁 Significa 'Sem problemas' ou 'Não se preocupe'. Ficou famosa com Timão e Pumba. É viver o presente sem angústia! 🐗"
+  },
+  {
+    "pergunta": "O que é Hygge?",
+    "resposta": "Conceito dinamarquês de aconchego. 🇩🇰 É curtir as coisas simples: meias de lã, lareira, chocolate quente, amigos. É criar um ambiente acolhedor para a alma. Conforto total! ☕"
+  },
+  {
+    "pergunta": "O que é Lagom?",
+    "resposta": "Conceito sueco de 'nem muito, nem pouco'. 🇸🇪 O equilíbrio perfeito. É viver com moderação, sem excessos, sustentável e funcional. A medida certa da vida! ⚖️"
+  },
+  {
+    "pergunta": "O que é Saudade?",
+    "resposta": "Palavra exclusiva do Português (dizem!). 🇧🇷 É a mistura de amor com a dor da ausência. Lembrar de algo bom que passou com vontade de viver de novo. Sentimento poético! 💔"
+  },
+  {
+    "pergunta": "O que é Cafuné?",
+    "resposta": "Outra pérola do Português! 💆‍♂️ O ato de acariciar a cabeça de alguém para fazer dormir ou dar carinho. É um gesto de amor intraduzível. ❤️"
+  },
+  {
+    "pergunta": "O que é Gambiarra?",
+    "resposta": "A solução improvisada brasileira! 🔌 Consertar algo com arame, fita ou criatividade quando não se tem a peça certa. É a 'Solução Técnica Alternativa'. O brasileiro precisa ser estudado! 🇧🇷"
+  },
+  {
+    "pergunta": "O que é Jeitinho Brasileiro?",
+    "resposta": "Nossa forma de lidar com problemas. 🇧🇷 Pode ser bom (criatividade, flexibilidade, calor humano) ou ruim (furar fila, querer vantagem). É a nossa malandragem social! 😉"
+  },
+  {
+    "pergunta": "O que é Vira-lata Caramelo?",
+    "resposta": "O símbolo não oficial do Brasil! 🐕 Um cachorro sem raça definida, cor de caramelo, presente em toda rua brasileira. Inteligente, resistente e simpático. Patrimônio nacional! 🐾"
+  },
+  {
+    "pergunta": "O que é Capoeira?",
+    "resposta": "Dança? Luta? Os dois! 🤸‍♂️ Criada por escravizados no Brasil como defesa disfarçada de dança. Mistura música (berimbau), acrobacia e cultura. Patrimônio da Humanidade! 🥋"
+  },
+  {
+    "pergunta": "O que é Samba?",
+    "resposta": "A alma musical do Brasil. 🥁 Nasceu na Bahia e Rio, raiz africana. Tem samba-enredo, pagode, partido-alto. É ritmo, é dança, é carnaval. Quem não gosta de samba...? 💃"
+  },
+  {
+    "pergunta": "O que é Bossa Nova?",
+    "resposta": "O samba que foi pra faculdade! 🎸 Mistura de samba com Jazz americano. Suave, banquinho e violão. Tom Jobim e João Gilberto levaram o Brasil pro mundo. 'Garota de Ipanema'! 🏖️"
+  },
+  {
+    "pergunta": "O que é Tropicalismo?",
+    "resposta": "Movimento cultural dos anos 60. 🍌 Caetano Veloso e Gilberto Gil misturaram guitarra elétrica (rock) com música brasileira tradicional. Foi revolucionário e criticou a ditadura. 🎸"
+  },
+  {
+    "pergunta": "Quem foi Carmen Miranda?",
+    "resposta": "A 'Pequena Notável'. 🍎 Portuguesa de nascença, brasileira de alma. Levou o samba e as frutas na cabeça para Hollywood nos anos 40. A brasileira mais famosa do século XX! 💃"
+  },
+  {
+    "pergunta": "Quem foi Santos Dumont?",
+    "resposta": "O pai da aviação! ✈️ Mineiro genial. Inventou o 14-Bis e voou em Paris em 1906 (o primeiro voo homologado). Também popularizou o relógio de pulso. Orgulho nacional! 🕰️"
+  },
+  {
+    "pergunta": "Quem foi Machado de Assis?",
+    "resposta": "O bruxo do Cosme Velho. 🎩 Fundador da Academia Brasileira de Letras. Negro, epilético e gaguejava, virou o maior escritor do Brasil. Sua ironia em 'Dom Casmurro' e 'Memórias Póstumas' é genial. 📚"
+  },
+  {
+    "pergunta": "Quem foi Ayrton Senna?",
+    "resposta": "Nosso herói das pistas. 🏎️ Tricampeão de Fórmula 1. Conhecido pela garra e por vencer na chuva. Sua morte em 1994 parou o Brasil. O tema da vitória ainda emociona! 🏁"
+  },
+  {
+    "pergunta": "Quem foi Pelé?",
+    "resposta": "O Rei do Futebol. ⚽ Edson Arantes do Nascimento. Único a ganhar 3 Copas do Mundo. Fez mais de 1000 gols. Parou guerras na África só para vê-lo jogar. O maior atleta do século! 👑"
+  },
+  {
+    "pergunta": "Quem foi Oscar Niemeyer?",
+    "resposta": "O arquiteto das curvas. 🏛️ Projetou Brasília, o Sambódromo e prédios no mundo todo. Odiava linhas retas, amava as curvas das montanhas do Brasil. Viveu até os 104 anos! 📐"
+  },
+  {
+    "pergunta": "Quem foi Luiz Gonzaga?",
+    "resposta": "O Rei do Baião. 🪗 Levou a música do sertão nordestino (forró, xote) para o Brasil todo. Sua sanfona e chapéu de couro são ícones. 'Asa Branca' é nosso hino não oficial. 🌵"
+  },
+  {
+    "pergunta": "Quem foi Jorge Amado?",
+    "resposta": "Escritor baiano amado pelo povo. 📚 Escreveu 'Gabriela', 'Capitães da Areia'. Retratou a Bahia, o candomblé e a alegria do povo como ninguém. Seus livros viraram novelas de sucesso! 🌶️"
+  },
+  {
+    "pergunta": "Quem foi Clarice Lispector?",
+    "resposta": "Escritora misteriosa e profunda. 🇺🇦🇧🇷 Nascida na Ucrânia, veio bebê pro Brasil. Seus textos olham para dentro da alma feminina e existencial. 'Liberdade é pouco. O que eu desejo ainda não tem nome'. ✨"
+  },
+  {
+    "pergunta": "Quem foi Monteiro Lobato?",
+    "resposta": "Criador do Sítio do Picapau Amarelo. 🌽 Emília, Visconde, Narizinho. Foi polêmico e visionário, defendeu o petróleo brasileiro ('O petróleo é nosso'). Marcou a infância de gerações. 📚"
+  },
+  {
+    "pergunta": "O que é o SUS?",
+    "resposta": "Sistema Único de Saúde. 🏥 Um dos maiores sistemas de saúde pública do mundo. Garante atendimento gratuito a todos os brasileiros, do transplante de coração à vacina no posto. Defenda o SUS! 💉"
+  },
+  {
+    "pergunta": "O que é a urna eletrônica?",
+    "resposta": "Invenção brasileira que agilizou as eleições. 🗳️ Permite saber o resultado horas depois da votação. Segura e auditável, acabou com as fraudes de voto em papel. Exemplo pro mundo! 🇧🇷"
+  },
+  {
+    "pergunta": "O que é o Carnaval de Rua?",
+    "resposta": "A festa democrática! 🎉 Blocos de rua onde não se paga nada, só se diverte. Marchinhas, fantasias criativas e multidão. O Galo da Madrugada (Recife) é o maior do mundo! 🐓"
+  },
+  {
+    "pergunta": "O que é Feijoada?",
+    "resposta": "O prato nacional! 🍲 Feijão preto cozido com carnes de porco, arroz, couve, farofa e laranja. Diz a lenda que veio dos escravos, mas é uma adaptação de cozidos europeus. Delícia de sábado! 🍊"
+  },
+  {
+    "pergunta": "O que é Caipirinha?",
+    "resposta": "O drink do Brasil! 🍹 Cachaça, limão, açúcar e gelo. Simples e perfeita. Reconhecida mundialmente. Se usar vodka, vira Caipiroska. Saúde! 🍋"
+  },
+  {
+    "pergunta": "O que é Brigadeiro?",
+    "resposta": "O doce mais amado! 🍫 Leite condensado, chocolate e manteiga. Nasceu na campanha de um político (Brigadeiro Eduardo Gomes) nos anos 40. Festa sem brigadeiro não é festa! 🎈"
+  },
+  {
+    "pergunta": "O que é Pão de Queijo?",
+    "resposta": "Tesouro de Minas Gerais! 🧀 Feito com polvilho e queijo minas. Crocante por fora, puxa-puxa por dentro. Com cafézinho, é a perfeição. Trem bão demais! ☕"
+  },
+  {
+    "pergunta": "O que é Coxinha?",
+    "resposta": "A rainha dos salgados! 🍗 Massa de batata/trigo, recheio de frango (com ou sem catupiry), frita. Tem formato de coxa de galinha. Discussão eterna: começa pela pontinha ou pela base? 🤔"
+  },
+  {
+    "pergunta": "O que é Acarajé?",
+    "resposta": "Comida sagrada da Bahia! 🥥 Bolinho de feijão fradinho frito no azeite de dendê, recheado com vatapá, caruru e camarão. Cuidado com a pimenta: 'quente' arde muito! 🔥"
+  },
+  {
+    "pergunta": "O que é Chimarrão?",
+    "resposta": "A bebida do Sul! 🧉 Erva-mate com água quente na cuia. Símbolo de hospitalidade e amizade dos gaúchos. Passa de mão em mão na roda. Não mexa na bomba! 🚫"
+  },
+  {
+    "pergunta": "O que é Tereré?",
+    "resposta": "O primo gelado do chimarrão! 🧊 Muito consumido no Mato Grosso do Sul e Paraguai. Erva-mate com água gelada (ou suco). Perfeito pro calorão! ☀️"
+  },
+  {
+    "pergunta": "O que é Farofa?",
+    "resposta": "Acompanhamento obrigatório! 🥣 Farinha de mandioca ou milho torrada com manteiga, bacon, ovo... O Brasil ama. Deixa qualquer comida seca uma maravilha. 😋"
+  },
+  {
+    "pergunta": "O que é Tapioca?",
+    "resposta": "Herança indígena! 🏹 Goma de mandioca peneirada na frigideira. Vira uma panqueca branca. Recheio doce ou salgado. Sem glúten e deliciosa. O Nordeste sabe fazer como ninguém! 🥥"
+  },
+  {
+    "pergunta": "O que é Guaraná?",
+    "resposta": "Fruta da Amazônia que parece um olho! 👁️ Dá energia. O refrigerante de guaraná é sabor único do Brasil, nenhum outro país consegue copiar direito. 🥤"
+  },
+  {
+    "pergunta": "O que é Açaí?",
+    "resposta": "O ouro roxo da Amazônia! 💜 Fruto de uma palmeira. No Norte, come-se com peixe e farinha (salgado). No resto do país, virou doce com banana e granola. Energia pura! ⚡"
+  },
+  {
+    "pergunta": "Qual o número do SAMU?",
+    "resposta": "É o **192**. 🚑 Ligue para casos médicos urgentes: dores no peito, convulsões, desmaios ou acidentes graves. É o serviço de ambulância médica. Salva vidas! 🆘"
+  },
+  {
+    "pergunta": "Qual o número dos Bombeiros?",
+    "resposta": "É o **193**. 🚒 Ligue para incêndios, acidentes com presos nas ferragens, resgate de animais, afogamentos ou vazamento de gás. Eles são os heróis do resgate! 🔥"
+  },
+  {
+    "pergunta": "Qual o número da Polícia Militar?",
+    "resposta": "É o **190**. 🚓 Ligue para crimes acontecendo agora, brigas, ameaças ou qualquer emergência de segurança pública. É o número mais famoso de emergência. 👮‍♂️"
+  },
+  {
+    "pergunta": "O que fazer em caso de queimadura?",
+    "resposta": "Água corrente em temperatura ambiente! 🚰 Deixe a água cair sobre a queimadura por 10 a 20 minutos para resfriar. Nada de pasta de dente, manteiga ou gelo, isso piora! Se for grave, vá ao hospital. 🔥"
+  },
+  {
+    "pergunta": "O que fazer se o nariz sangrar?",
+    "resposta": "Incline a cabeça para **frente** (não para trás!). 🩸 Pressione as narinas com os dedos por uns 10 minutos e respire pela boca. Jogar a cabeça para trás faz você engolir o sangue. 👃"
+  },
+  {
+    "pergunta": "O que é a Manobra de Heimlich?",
+    "resposta": "É uma técnica para salvar quem está engasgado. 🥨 Você abraça a pessoa por trás e faz pressão forte na boca do estômago, para cima, para expulsar o objeto. Aprender isso salva vidas! 🆘"
+  },
+  {
+    "pergunta": "Gelo ou Calor para pancada?",
+    "resposta": "Logo após a pancada (nas primeiras 48h), use **Gelo**! 🧊 O frio diminui o inchaço e a dor. Calor é para dor muscular crônica ou relaxamento depois que já desinchou. 🤕"
+  },
+  {
+    "pergunta": "Como identificar um AVC (Derrame)?",
+    "resposta": "Use a regra SAMU: **S**orria (boca torta?), **A**brace (braço fraco?), **M**úsica (fala enrolada?), **U**rgente (ligue 192). Tempo é cérebro! 🧠"
+  },
+  {
+    "pergunta": "O que fazer se for picado por cobra?",
+    "resposta": "Mantenha a calma e lave o local com água e sabão. 🐍 Vá para o hospital imediatamente! Não chupe o veneno, não corte o local e não faça torniquete. Se der, tire foto da cobra (de longe) para o médico saber o soro certo. 🏥"
+  },
+  {
+    "pergunta": "O que é Hipotermia?",
+    "resposta": "É quando a temperatura do corpo cai abaixo de 35°C. 🥶 O corpo perde calor mais rápido do que produz. Sintomas: tremedeira intensa, confusão mental, pele pálida. Precisa aquecer a pessoa urgente! ❄️"
+  },
+  {
+    "pergunta": "O que é Insolação?",
+    "resposta": "É o superaquecimento do corpo pelo sol. ☀️ Sintomas: pele quente e seca (sem suor), dor de cabeça, tontura. Acontece muito na praia. Leve a pessoa para a sombra e hidrate! 🏖️"
+  },
+  {
+    "pergunta": "Por que tiramos o sapato no Japão?",
+    "resposta": "Questão de higiene e respeito! 🇯🇵 O sapato traz a sujeira impura da rua para dentro do santuário que é o lar. Eles usam chinelos especiais dentro de casa (suripa). 👟"
+  },
+  {
+    "pergunta": "O que é a Siesta?",
+    "resposta": "Tradição espanhola de dormir após o almoço. 🇪🇸 O comércio fecha por algumas horas à tarde para fugir do calor intenso. É sagrado para recarregar as energias! 😴"
+  },
+  {
+    "pergunta": "Por que a vaca é sagrada na Índia?",
+    "resposta": "No Hinduísmo, a vaca é vista como uma mãe que doa tudo (leite) e não pede nada. 🐮 Ela representa a vida e a não-violência. Por isso, eles não comem carne bovina e as vacas andam livres nas ruas. 🇮🇳"
+  },
+  {
+    "pergunta": "O que é Mão Inglesa?",
+    "resposta": "É dirigir do lado esquerdo da rua! 🇬🇧 No Reino Unido (e ex-colônias), o volante fica na direita e os carros andam na esquerda. Cuidado ao atravessar a rua em Londres: olhe para o outro lado! 🚗"
+  },
+  {
+    "pergunta": "Como se cumprimenta na França?",
+    "resposta": "Com 'la bise' (beijinhos no rosto). 🇫🇷 Dependendo da região, podem ser 2, 3 ou até 4 beijos! E não é um beijo molhado, é encostar bochecha com bochecha e fazer o som. 😘"
+  },
+  {
+    "pergunta": "Gorjeta nos EUA é obrigatória?",
+    "resposta": "Tecnicamente não, mas socialmente sim! 🇺🇸 Os garçons ganham muito pouco e vivem das 'tips'. O normal é deixar entre 15% a 20%. Se não deixar, é considerado muito rude. 💵"
+  },
+  {
+    "pergunta": "O que é o Haka?",
+    "resposta": "Uma dança de guerra tradicional do povo Maori, na Nova Zelândia. 🇳🇿 Ficou famosa com o time de rugby All Blacks, que faz a dança antes dos jogos para intimidar o adversário. É pura energia! 🏉"
+  },
+  {
+    "pergunta": "Por que não apontar o dedo na China?",
+    "resposta": "É considerado muito rude apontar com o indicador para pessoas. 🇨🇳 Se precisar indicar alguém, use a mão inteira aberta. Educação oriental é cheia de detalhes! ✋"
+  },
+  {
+    "pergunta": "O que é o Dia dos Mortos no México?",
+    "resposta": "Uma festa colorida e alegre! 🇲🇽 Eles acreditam que, nesse dia, as almas dos parentes voltam para visitar. Tem caveiras de açúcar, flores e música. Não é dia de tristeza, é de celebração da memória! 💀🌼"
+  },
+  {
+    "pergunta": "O que é Oktoberfest?",
+    "resposta": "O maior festival de cerveja do mundo, em Munique, Alemanha. 🇩🇪 Começou como uma festa de casamento real em 1810. Tem trajes típicos, música, salsicha e canecas gigantes de cerveja (Maß). Prost! 🍻"
+  },
+  {
+    "pergunta": "Como surgiu o Velcro?",
+    "resposta": "Inspirado na natureza! 🌿 Um engenheiro suíço passeava com seu cachorro e viu carrapichos grudados no pelo. Ele analisou no microscópio e viu ganchinhos. Criou o Velcro para imitar. Biomimética pura! 🐶"
+  },
+  {
+    "pergunta": "Quem inventou o Micro-ondas?",
+    "resposta": "Foi por acidente! 🍫 Percy Spencer estava trabalhando com radares quando percebeu que uma barra de chocolate no seu bolso derreteu. Ele testou com milho de pipoca e... boom! Nasceu o forno. 🍿"
+  },
+  {
+    "pergunta": "Como surgiu o Post-it?",
+    "resposta": "Outro acidente! 🟨 Um cientista da 3M tentava criar uma super cola, mas criou uma cola fraca que grudava e desgrudava. Anos depois, um colega usou para marcar páginas no coral da igreja. Sucesso! 📝"
+  },
+  {
+    "pergunta": "Quem inventou a Coca-Cola?",
+    "resposta": "O farmacêutico John Pemberton, em 1886. 🥤 Era para ser um xarope para dor de cabeça e cansaço. A receita original é um segredo guardado a sete chaves num cofre em Atlanta. 💊"
+  },
+  {
+    "pergunta": "Quem inventou o Raio-X?",
+    "resposta": "Wilhelm Röntgen, em 1895. 🦴 Ele viu brilhos estranhos no laboratório e testou na mão da esposa. A primeira chapa mostra os ossos dela e o anel. Ganhou o primeiro Nobel de Física! 💍"
+  },
+  {
+    "pergunta": "Quem inventou a Imprensa?",
+    "resposta": "Gutenberg, no século XV. 📚 Antes dele, livros eram copiados à mão (demorava anos). Ele criou tipos móveis de metal. A Bíblia de Gutenberg foi o primeiro livro impresso em massa. Revolucionou o saber! 🖨️"
+  },
+  {
+    "pergunta": "Quem inventou o Dinamite?",
+    "resposta": "Alfred Nobel. 🧨 Ele queria facilitar a mineração e construção, mas viu sua invenção usada na guerra. Triste com a fama de 'mercador da morte', deixou sua fortuna para criar o Prêmio Nobel. 🕊️"
+  },
+  {
+    "pergunta": "Quem inventou a Penicilina?",
+    "resposta": "Alexander Fleming. 🍄 Ele esqueceu uma placa de bactérias suja e saiu de férias. Quando voltou, viu que um fungo (bolor) tinha matado as bactérias em volta. Nascia o primeiro antibiótico! 💊"
+  },
+  {
+    "pergunta": "Quem inventou o Braille?",
+    "resposta": "Louis Braille. 🦯 Ele ficou cego na infância. Aos 15 anos, adaptou um código militar de leitura noturna para criar o sistema de pontos em relevo que permite cegos lerem com os dedos. Genial! 📖"
+  },
+  {
+    "pergunta": "Quem inventou o Lego?",
+    "resposta": "Um carpinteiro dinamarquês, Ole Kirk Christiansen. 🧱 Ele fazia brinquedos de madeira. 'Lego' vem do dinamarquês 'Leg Godt' (brincar bem). Os blocos de plástico que encaixam vieram depois. 🏰"
+  },
+  {
+    "pergunta": "Como se forma uma Pérola?",
+    "resposta": "É uma defesa da ostra! 🦪 Quando um grão de areia ou parasita entra nela e machuca, ela solta nácar (madrepérola) em volta para se proteger. Camada sobre camada, vira a joia. Dor que vira beleza! 💎"
+  },
+  {
+    "pergunta": "Como o vaga-lume brilha?",
+    "resposta": "Bioluminescência! 💡 Ele tem uma substância chamada luciferina na barriga. Quando reage com oxigênio, emite luz fria (quase sem calor). Serve para atrair parceiros na escuridão. ✨"
+  },
+  {
+    "pergunta": "Por que o camelo tem corcova?",
+    "resposta": "Para guardar gordura (energia), não água! 🐫 Isso permite que ele fique dias sem comer no deserto. A água ele guarda no sangue mesmo. É o tanque de reserva dele! 🏜️"
+  },
+  {
+    "pergunta": "O girassol segue o sol?",
+    "resposta": "Só quando é jovem! 🌻 O botão gira de leste a oeste para crescer mais rápido. Quando a flor abre e fica adulta, ela para e fica virada para o leste, esperando o nascer do sol e as abelhas. 🐝"
+  },
+  {
+    "pergunta": "Por que o pica-pau não tem dor de cabeça?",
+    "resposta": "O crânio dele é esponjoso e a língua é tão grande que dá a volta no cérebro, servindo de cinto de segurança! 🪵 Ele absorve o impacto das bicadas. Engenharia perfeita da natureza! 🐦"
+  },
+  {
+    "pergunta": "O que é Hibernação?",
+    "resposta": "É quando animais (como ursos) 'desligam' no inverno. 🐻 A temperatura do corpo cai, o coração bate devagar e eles vivem da gordura acumulada. É para não morrer de fome quando não tem comida. ❄️"
+  },
+  {
+    "pergunta": "Gatos caem sempre em pé?",
+    "resposta": "Quase sempre! 🐈 Eles têm um 'reflexo de endireitamento' e uma coluna super flexível. Conseguem girar o corpo no ar em fração de segundos. Mas não jogue seu gato, ele pode se machucar! 🏥"
+  },
+  {
+    "pergunta": "Golfinhos dormem?",
+    "resposta": "Sim, mas com um olho aberto! 🐬 Eles desligam só metade do cérebro de cada vez. A outra metade fica acordada para subir e respirar (eles não respiram automático como nós) e vigiar predadores. 🌊"
+  },
+  {
+    "pergunta": "Quantos corações tem um polvo?",
+    "resposta": "Três! 🐙 Um bombeia sangue para o corpo e dois bombeiam sangue para as brânquias (para pegar oxigênio). E o sangue deles é azul! Alienígenas do mar? 💙"
+  },
+  {
+    "pergunta": "As formigas dormem?",
+    "resposta": "Elas tiram centenas de sonecas de 1 minuto por dia! 🐜 A rainha dorme mais (9h), as operárias menos (4h). Elas nunca param totalmente o formigueiro. Trabalho em equipe! 🍂"
+  },
+  {
+    "pergunta": "Por que o cachorro abana o rabo?",
+    "resposta": "É comunicação! 🐕 Para a direita geralmente é felicidade/amigos. Para a esquerda pode ser medo/alerta. Rabo baixo é submissão. É como se fosse o sorriso (ou a carranca) deles! 🐶"
+  },
+  {
+    "pergunta": "Como os peixes respiram?",
+    "resposta": "Pelas brânquias (guelras). 🐟 A água entra pela boca, passa pelas brânquias que 'filtram' o oxigênio dissolvido na água e jogam direto no sangue. É o pulmão aquático! 🫧"
+  },
+  {
+    "pergunta": "O que é Metamorfose da borboleta?",
+    "resposta": "Uma transformação mágica! 🐛 A lagarta come, faz um casulo (pupa), dissolve o próprio corpo numa 'sopa' de células e se remonta como borboleta. É renascimento total! 🦋"
+  },
+  {
+    "pergunta": "Por que flamingos são rosas?",
+    "resposta": "Por causa da dieta! 🦩 Eles comem camarões e algas cheios de betacaroteno (o mesmo da cenoura). Se pararem de comer isso, ficam brancos/cinzas. Eles são o que comem! 🦐"
+  },
+  {
+    "pergunta": "O que é Duty Free?",
+    "resposta": "Loja no aeroporto internacional livre de impostos locais. 🛍️ Bebidas, perfumes e chocolates costumam ser mais baratos. Mas cuidado com a cota (limite de valor) para não ser taxado na volta! ✈️"
+  },
+  {
+    "pergunta": "O que é Seguro Viagem?",
+    "resposta": "Essencial! 🏥 Se você ficar doente ou quebrar a perna no exterior, a conta do hospital pode ser milionária (principalmente nos EUA). O seguro paga essa conta. Em alguns países (Europa), é obrigatório ter. 💳"
+  },
+  {
+    "pergunta": "O que é Check-in?",
+    "resposta": "É confirmar que você chegou! ✅ No aeroporto, é quando você entrega as malas e pega o cartão de embarque. No hotel, é quando você pega a chave do quarto. 🏨"
+  },
+  {
+    "pergunta": "O que é Check-out?",
+    "resposta": "É a saída! 👋 Pagar a conta do hotel e devolver a chave. Geralmente é até meio-dia. Se atrasar, cobram diária extra! 💸"
+  },
+  {
+    "pergunta": "O que é Overbooking?",
+    "resposta": "Quando a empresa vende mais passagens do que lugares no avião. 😠 Eles contam que alguém vai faltar. Se todos aparecerem, alguém fica de fora (e tem direito a indenização!). Prática chata! ✈️"
+  },
+  {
+    "pergunta": "O que é Escala vs Conexão?",
+    "resposta": "**Escala**: O avião para, alguns descem, outros sobem, mas você fica sentado no mesmo avião. **Conexão**: Você tem que descer, pegar as malas (às vezes) e trocar de avião. Cuidado com o tempo curto! 🏃‍♂️"
+  },
+  {
+    "pergunta": "O que é Airbnb?",
+    "resposta": "Plataforma para alugar casa de pessoas locais. 🏡 Pode ser um quarto ou a casa toda. É uma alternativa aos hotéis, bom para sentir como é morar na cidade. Tem regras da casa, leia antes! 🔑"
+  },
+  {
+    "pergunta": "O que é Mochilão?",
+    "resposta": "Viajar barato carregando tudo numa mochila grande. 🎒 Geralmente fica em hostels, usa transporte público e come comida de rua. É sobre liberdade e aventura, não luxo! 🌏"
+  },
+  {
+    "pergunta": "O que é Turismo Sustentável?",
+    "resposta": "Viajar respeitando a natureza e a comunidade local. 🌿 Não jogar lixo, não alimentar animais selvagens, comprar de artesãos locais. Deixar apenas pegadas, levar apenas fotos! 📸"
+  },
+  {
+    "pergunta": "O que é a Classe Executiva?",
+    "resposta": "A área VIP do avião. 🥂 Poltronas que viram cama, comida de chef, champanhe. Custa o triplo da Econômica (onde vamos apertadinhos). O sonho de quem viaja longe! 🛌"
+  },
+  {
+    "pergunta": "O que é Milhas Aéreas?",
+    "resposta": "Pontos de fidelidade. ✈️ Quanto mais você voa ou usa cartão de crédito, mais ganha. Pode trocar por passagens grátis. Tem gente que vive de viajar com milhas! 💳"
+  },
+  {
+    "pergunta": "O que é Jet Lag?",
+    "resposta": "A ressaca do fuso horário! 😵 Seu corpo acha que é hora de dormir, mas no destino é meio-dia. Causa cansaço, insônia e mau humor. Dica: entre no horário local assim que chegar! ☀️"
+  },
+  {
+    "pergunta": "O que é Passaporte?",
+    "resposta": "Seu documento de identidade internacional. 🛂 Emitido pela Polícia Federal. Sem ele, você não sai do país (exceto para o Mercosul, onde vale o RG). Cuide dele como ouro! 📓"
+  },
+  {
+    "pergunta": "O que é Visto (Visa)?",
+    "resposta": "A autorização para entrar num país específico. 🎫 Os EUA exigem, a Europa não (para turistas brasileiros, por enquanto). Pode ser de turismo, trabalho ou estudo. É burocrático! 📄"
+  },
+  {
+    "pergunta": "O que é Alfândega?",
+    "resposta": "A fiscalização na entrada do país. 🛃 Eles verificam se você está trazendo produtos proibidos (comida, plantas) ou muamba acima da cota para vender. 'Nada a declarar'? 👀"
+  },
+  {
+    "pergunta": "Manga com leite faz mal?",
+    "resposta": "Mito histórico! 🥭🥛 Na época da escravidão, os senhores diziam isso para os escravizados não tomarem o leite (caro) depois de comerem a manga (que tinha de monte). É uma delícia e super saudável! 😋"
+  },
+  {
+    "pergunta": "Tomar gelado dá dor de garganta?",
+    "resposta": "Não diretamente! 🍦 O gelado não traz vírus. Mas o frio pode paralisar os cílios da garganta que limpam a sujeira, facilitando a entrada de vírus que já estavam lá. Mas o sorvete em si não é o culpado! ❄️"
+  },
+  {
+    "pergunta": "Ler no escuro estraga a vista?",
+    "resposta": "Não estraga, mas cansa! 📚 Seus olhos fazem muito esforço para focar, o que pode dar dor de cabeça e olho seco. Mas não causa cegueira permanente. Melhor acender a luz! 💡"
+  },
+  {
+    "pergunta": "Cortar as pontas faz o cabelo crescer?",
+    "resposta": "Mito! 💇‍♀️ O cabelo cresce da raiz, não da ponta. Cortar tira as pontas duplas e deixa o cabelo com aparência mais saudável e cheia, mas não acelera o crescimento na raiz. 📏"
+  },
+  {
+    "pergunta": "Estalar os dedos engrossa as juntas?",
+    "resposta": "Não! 🖐️ O barulho 'crack' é apenas bolhas de gás estourando no líquido das articulações. Não causa artrite nem engrossa o dedo. Mas pode irritar quem está do lado! 😅"
+  },
+  {
+    "pergunta": "Touro odeia vermelho?",
+    "resposta": "Touros não veem cores (são daltônicos)! 🐂 Eles atacam o movimento da capa do toureiro, não a cor. Poderia ser uma capa azul ou rosa, se balançar, ele ataca. 🚩"
+  },
+  {
+    "pergunta": "Nós usamos só 10% do cérebro?",
+    "resposta": "Mito de Hollywood! 🧠 Usamos 100% do cérebro, o dia todo (até dormindo). Não existe uma área 'desligada' esperando ser ativada para termos superpoderes. O cérebro gasta muita energia pra ficar à toa! ⚡"
+  },
+  {
+    "pergunta": "Morcegos são cegos?",
+    "resposta": "Não! 🦇 Eles enxergam bem (alguns melhor que humanos à noite). Mas eles usam a ecolocalização (sonar) para caçar no escuro total com precisão. Visão + Sonar = Super caçador! 🔊"
+  },
+  {
+    "pergunta": "Peixe tem memória de 3 segundos?",
+    "resposta": "Mito! 🐠 Peixes dourados podem lembrar de coisas por meses, reconhecer donos e aprender truques. Eles são mais espertos do que parecem! 🧠"
+  },
+  {
+    "pergunta": "Avestruz esconde a cabeça na terra?",
+    "resposta": "Nunca! 🐦 Se fizesse isso, morreria sufocado. Quando estão com medo, eles correm (são rápidos!). Às vezes baixam a cabeça para mexer nos ovos no ninho (que é um buraco no chão), daí a ilusão. 🥚"
+  },
+  {
+    "pergunta": "O que é a Teoria da Evolução?",
+    "resposta": "A ideia de Darwin. 🐒 Os seres vivos mudam ao longo de milhões de anos. Quem nasce com características melhores para o ambiente sobrevive e tem filhos. Não viemos do macaco atual, somos primos distantes deles! 🧬"
+  },
+  {
+    "pergunta": "O que é a Teoria do Big Bang?",
+    "resposta": "A origem do universo! 💥 Há 13,8 bilhões de anos, tudo estava concentrado num ponto minúsculo e quente que expandiu (não explodiu) rapidamente, criando espaço, tempo e matéria. Ainda estamos expandindo! 🌌"
+  },
+  {
+    "pergunta": "O que é a Gravidade?",
+    "resposta": "É a força de atração entre corpos. 🍎 A Terra te puxa pra baixo. O Sol puxa a Terra. Quanto maior a massa, maior a gravidade. É a cola do universo! 🌎"
+  },
+  {
+    "pergunta": "O que é um Buraco Negro?",
+    "resposta": "Um devorador cósmico! 🕳️ Uma região onde a gravidade é tão forte que nada escapa, nem a luz. Resto de uma estrela morta gigante. O tempo lá perto passa diferente! ⏳"
+  },
+  {
+    "pergunta": "O que é a Tabela Periódica?",
+    "resposta": "O mapa dos ingredientes do universo. 🧪 Organiza todos os elementos (Oxigênio, Ferro, Ouro) por peso e propriedades. Tudo o que existe é feito misturando essas pecinhas! 🧱"
+  },
+  {
+    "pergunta": "O que é pH?",
+    "resposta": "Mede se algo é Ácido (limão) ou Básico (sabão). 🍋 A escala vai de 0 a 14. 7 é Neutro (água pura). Nosso sangue tem que ficar perto de 7,4. Química da vida! 🧪"
+  },
+  {
+    "pergunta": "O que é Inércia?",
+    "resposta": "A preguiça da matéria! 😴 Um corpo parado quer ficar parado. Um corpo em movimento quer continuar andando (até algo frear). Por isso você vai pra frente quando o ônibus freia! 🚌"
+  },
+  {
+    "pergunta": "O que é Fricção (Atrito)?",
+    "resposta": "A força que resiste ao movimento. ✋ É o que faz o pneu do carro segurar no chão e o que esquenta suas mãos quando você esfrega uma na outra. Sem atrito, escorregaríamos pra sempre! ⛸️"
+  },
+  {
+    "pergunta": "O que é Osmose?",
+    "resposta": "A água passando através de uma membrana. 💧 Ela vai de onde tem menos sal para onde tem mais sal, para equilibrar. É assim que as plantas bebem água do solo! 🌱"
+  },
+  {
+    "pergunta": "O que é Fotossíntese?",
+    "resposta": "A mágica das plantas! 🍃 Elas pegam luz do sol, água e CO2 e transformam em comida (açúcar) e Oxigênio pra nós. Elas comem luz! ☀️"
+  },
+  {
+    "pergunta": "O que é a Lei da Ação e Reação?",
+    "resposta": "3ª Lei de Newton. 🍎 Para toda ação, existe uma reação igual e oposta. Se você empurra a parede, a parede te empurra de volta. É como o foguete sobe: empurra o fogo pra baixo e sobe! 🚀"
+  },
+  {
+    "pergunta": "O que é a Velocidade da Luz?",
+    "resposta": "O limite de velocidade do universo! 🚦 300.000 km por segundo. Nada viaja mais rápido que isso. Se você olhasse pro Sol agora, veria como ele era 8 minutos atrás (tempo que a luz demora pra vir). ☀️"
+  },
+  {
+    "pergunta": "O que é um Átomo?",
+    "resposta": "A menor parte da matéria (que mantém identidade). ⚛️ Tem um núcleo (prótons/nêutrons) e elétrons girando em volta. É tão pequeno que milhões cabem na ponta de um alfinete. Tudo é átomo! 📍"
+  },
+  {
+    "pergunta": "O que é Eletricidade?",
+    "resposta": "É o fluxo de elétrons pulando de um átomo pro outro. ⚡ Eles correm pelos fios de cobre para acender a luz ou carregar seu celular. Energia em movimento! 💡"
+  },
+  {
+    "pergunta": "O que é Magnetismo?",
+    "resposta": "A força invisível dos ímãs! 🧲 Atrai metais como ferro. A Terra é um ímã gigante (por isso a bússola aponta pro Norte). Eletricidade e Magnetismo são primos (Eletromagnetismo)! 🧭"
+  },
+  {
+    "pergunta": "O que é Som?",
+    "resposta": "Vibração do ar! 🔊 Quando você fala, empurra o ar, que empurra o ar vizinho até chegar no ouvido de alguém e fazer o tímpano vibrar. No espaço (vácuo), não tem som porque não tem ar! 🔇"
+  },
+  {
+    "pergunta": "O que é Calor?",
+    "resposta": "É energia agitada! 🔥 Quanto mais quente, mais as moléculas do objeto estão dançando e vibrando rápido. Frio é quando elas estão 'quietinhas'. Zero Absoluto é quando param total. 🌡️"
+  },
+  {
+    "pergunta": "O que é Densidade?",
+    "resposta": "É o quão 'compacto' algo é. 🧱 Chumbo é denso (pesado pra tamanho pequeno). Isopor é pouco denso (leve pra tamanho grande). Por isso o óleo boia na água (é menos denso)! 💧"
+  },
+  {
+    "pergunta": "O que é Evaporação?",
+    "resposta": "Líquido virando gás. ☁️ Acontece quando a água esquenta, as moléculas ganham energia e escapam para o ar. É assim que a roupa seca no varal e as nuvens se formam! 👕"
+  },
+  {
+    "pergunta": "O que é Condensação?",
+    "resposta": "Gás virando líquido. 💦 O contrário da evaporação. Quando o vapor d'água encosta no espelho frio do banheiro e vira gotinha. Ou quando 'sua' o copo gelado! 🍺"
+  },
+  {
+    "pergunta": "O que é Sublimação?",
+    "resposta": "Sólido virando gás direto (sem passar por líquido)! 💨 Exemplo: Gelo Seco. Ele fumaça e some sem molhar nada. Mágica da física! 🎩"
+  },
+  {
+    "pergunta": "O que é Gravidez Psicológica?",
+    "resposta": "Quando a mulher acredita tanto que está grávida que o corpo imita os sintomas! 🤰 A barriga cresce, a menstruação para, pode ter leite. Mas não tem bebê. O poder da mente sobre o corpo! 🧠"
+  },
+  {
+    "pergunta": "O que é Albinismo?",
+    "resposta": "Falta de melanina (cor) na pele, cabelo e olhos. 🐇 Pessoas albinas são muito brancas e sensíveis ao sol. É uma condição genética linda e rara. Precisam de muito protetor solar! ☀️"
+  },
+  {
+    "pergunta": "O que é Vitiligo?",
+    "resposta": "Quando as células de cor da pele morrem em certas áreas, criando manchas brancas. 🐄 Não dói, não pega e não é perigoso. É apenas estético. A modelo Winnie Harlow tornou isso um ícone de beleza! ✨"
+  },
+  {
+    "pergunta": "O que é Heterocromia?",
+    "resposta": "Ter um olho de cada cor! 👁️👁️ Pode ser um azul e um castanho. Acontece em humanos, gatos (como o David Bowie, ops, ele tinha pupila dilatada) e cães (Husky). Charme genético! 🧬"
+  },
+  {
+    "pergunta": "O que são Gêmeos Univitelinos?",
+    "resposta": "Gêmeos idênticos! 👯‍♂️ Um único óvulo fecundado se divide em dois. Eles têm o mesmo DNA e são do mesmo sexo. Clones naturais! 🧬"
+  },
+  {
+    "pergunta": "O que são Gêmeos Bivitelinos?",
+    "resposta": "Gêmeos diferentes (fraternos). 👫 Dois óvulos diferentes fecundados por dois espermatozoides diferentes. Podem ser menino e menina e não se parecem mais que irmãos comuns. Dois bebês ao mesmo tempo! 👶👶"
+  },
+  {
+    "pergunta": "Por que soluçamos?",
+    "resposta": "É uma 'pane' no nervo vago. ⚡ O diafragma contrai fora de hora e a garganta fecha (o som 'hic'). Pode ser por comer rápido, frio ou rir demais. Beber água de cabeça pra baixo é lenda, mas o susto funciona! 👻"
+  },
+  {
+    "pergunta": "O que é Cera de ouvido?",
+    "resposta": "Proteção! 👂 Ela segura poeira, bactérias e insetos para não entrarem no ouvido fundo. Não tire tudo com cotonete, senão o ouvido fica desprotegido! Limpe só fora. 🚫"
+  },
+  {
+    "pergunta": "Por que o cabelo fica branco?",
+    "resposta": "As células que produzem cor (melanina) na raiz morrem com a idade. 👴 O cabelo nasce sem cor (branco/cinza). Estresse pode acelerar isso. É sinal de sabedoria (ou boletos)! 📄"
+  },
+  {
+    "pergunta": "O que é Sardas?",
+    "resposta": "Pequenos acúmulos de melanina na pele. ☀️ Quem tem pele clara produz mais pigmento em pontos específicos para se proteger do sol. São 'beijos do sol'! 😘"
+  },
+  {
+    "pergunta": "O que é Covinha?",
+    "resposta": "Um defeito muscular (fofo)! 😊 O músculo da bochecha é mais curto ou dividido, e quando a pessoa sorri, ele puxa a pele para dentro. É genético e adorável. ❤️"
+  },
+  {
+    "pergunta": "Por que temos umbigo?",
+    "resposta": "É a cicatriz do cordão umbilical! 👶 Por onde sua mãe te alimentava na barriga. Depois que nasce, corta e sobra o umbigo. Pode ser 'pra fora' ou 'pra dentro'. Nossa primeira marca! 🏷️"
+  },
+  {
+    "pergunta": "O que é Bossa (corcunda)?",
+    "resposta": "Pode ser má postura ou a 'viúva' (acúmulo de gordura na nuca). 🐪 No camelo, é reserva de energia. Em humanos, melhora com fisioterapia e postura ereta. Estica as costas! 📏"
+  },
+  {
+    "pergunta": "O que é Joanete?",
+    "resposta": "O osso do dedão do pé desvia para fora. 🦶 Dói e deforma o pé. Causado por genética ou sapato de bico fino e salto alto apertado. Cuide dos seus pés! 👠"
+  },
+  {
+    "pergunta": "O que é Câimbra?",
+    "resposta": "O músculo trava e dói! ⚡ Falta de água, sal mineral ou cansaço. O músculo contrai e não solta. Alongar e comer banana (potássio) ajuda a prevenir. 🍌"
+  },
+  {
+    "pergunta": "O que é Torcicolo?",
+    "resposta": "O pescoço trava! 🤕 O músculo contrai para proteger de um movimento brusco ou má posição no sono. Dói pra virar a cabeça. Calor e massagem ajudam. Troque o travesseiro! 🛌"
+  },
+  {
+    "pergunta": "O que é Carne esponjosa?",
+    "resposta": "Adenoide. 👃 Um tecido no fundo do nariz que incha (comum em crianças) e dificulta respirar ou causa ronco. Às vezes precisa operar para respirar melhor. 🌬️"
+  },
+  {
+    "pergunta": "O que é Freio de mão (carro)?",
+    "resposta": "A alavanca que trava as rodas traseiras para o carro não andar sozinho quando estacionado. 🛑 Puxe sempre ao parar! Em carros modernos, é um botão eletrônico. 🅿️"
+  },
+  {
+    "pergunta": "O que é Embreagem?",
+    "resposta": "O pedal da esquerda (em carros manuais). 🚗 Serve para desconectar o motor das rodas para você poder trocar de marcha sem quebrar tudo. Solte devagar pra não 'morrer'! 🚦"
+  },
+  {
+    "pergunta": "O que faz um UX Designer?",
+    "resposta": "Ele projeta a experiência do usuário! 🖱️ Não é só deixar o site bonito, é garantir que seja fácil de usar. Ele decide onde fica o botão para você não se perder. O foco é a facilidade! 📱"
+  },
+  {
+    "pergunta": "O que faz um Social Media?",
+    "resposta": "Cuida das redes sociais de uma empresa. 📱 Cria posts, responde comentários, analisa horários de pico e estratégias para ganhar seguidores. É a voz da marca na internet! 🗣️"
+  },
+  {
+    "pergunta": "O que faz um Copywriter?",
+    "resposta": "Escreve textos persuasivos para vender. ✍️ Sabe aquele e-mail que te convence a clicar ou aquela legenda que te faz querer comprar? Foi um Copywriter. É a arte de vender com palavras! 💰"
+  },
+  {
+    "pergunta": "O que faz um Gestor de Tráfego?",
+    "resposta": "Cuida dos anúncios online. 🚦 Ele decide para quem o anúncio do Instagram vai aparecer (idade, interesse, local) e quanto dinheiro gastar. É quem faz o produto certo chegar na pessoa certa. 🎯"
+  },
+  {
+    "pergunta": "O que faz um Scrum Master?",
+    "resposta": "É o guardião da agilidade no time de TI. 🛡️ Ele garante que a equipe siga as regras do Scrum, remove impedimentos (problemas) e facilita as reuniões. É um líder servidor! 🏃‍♂️"
+  },
+  {
+    "pergunta": "O que faz um Product Owner (PO)?",
+    "resposta": "É o 'dono' do produto. 👑 Ele decide O QUE vai ser feito (quais funções o app vai ter) e prioriza a lista de tarefas. Ele representa o cliente dentro da equipe de desenvolvimento. 📋"
+  },
+  {
+    "pergunta": "O que faz um Influencer?",
+    "resposta": "Cria conteúdo para influenciar comportamentos e compras. 🤳 Tem uma audiência fiel que confia nele. Marcas pagam para ele mostrar produtos. É o novo garoto-propaganda! 🌟"
+  },
+  {
+    "pergunta": "O que faz um Streamer?",
+    "resposta": "Transmite vídeos ao vivo (lives). 🎮 Geralmente jogando videogames, mas pode ser conversando (Just Chatting) ou cozinhando. Interage com o chat em tempo real. É a TV interativa! 🔴"
+  },
+  {
+    "pergunta": "O que faz um Headhunter?",
+    "resposta": "O caçador de talentos! 🏹 Ele procura profissionais muito qualificados (que geralmente já estão empregados) para preencher vagas estratégicas em empresas. Ele 'rouba' o craque do outro time! 👔"
+  },
+  {
+    "pergunta": "O que faz um Sommelier?",
+    "resposta": "O especialista em vinhos (ou cervejas/cafés). 🍷 Ele entende de uvas, safras, harmonização com comida e serve a bebida na temperatura perfeita. Um mestre do paladar! 🍇"
+  },
+  {
+    "pergunta": "O que faz um Barista?",
+    "resposta": "O chef do café! ☕ Especialista em preparar cafés de alta qualidade, desenhar no leite (latte art) e conhecer os grãos. Não é só apertar botão, é arte! 🥛"
+  },
+  {
+    "pergunta": "O que faz um Perito Criminal?",
+    "resposta": "O cientista da polícia (CSI). 🕵️‍♂️ Vai à cena do crime, coleta digitais, sangue e provas para descobrir o que aconteceu cientificamente. A prova não mente! 🔬"
+  },
+  {
+    "pergunta": "O que faz um Biomédico?",
+    "resposta": "Fica entre a medicina e a biologia. 🧫 Trabalha em laboratórios fazendo exames, pesquisando vacinas, genética ou na área estética. É quem analisa seu sangue no laboratório! 🩸"
+  },
+  {
+    "pergunta": "O que faz um Atuário?",
+    "resposta": "O matemático do risco. 📉 Trabalha em seguradoras calculando a chance de um carro bater ou uma pessoa morrer, para definir o preço do seguro. É pura estatística! 🔢"
+  },
+  {
+    "pergunta": "O que faz um Diplomata?",
+    "resposta": "Representa o país no exterior. 🤝 Negocia acordos, protege cidadãos e promove a cultura. Vive mudando de país. Tem que falar muitas línguas e ser muito educado! 🌍"
+  },
+  {
+    "pergunta": "O que significa 'Chutar o balde'?",
+    "resposta": "Desistir de tudo ou perder a paciência! 🗑️ Origem: antigamente, vacas leiteiras podiam chutar o balde de leite, estragando todo o trabalho. Ou, em enforcamentos, chutava-se o balde onde o condenado pisava. 🦶"
+  },
+  {
+    "pergunta": "O que significa 'Pagar o pato'?",
+    "resposta": "Levar a culpa pelo que não fez. 🦆 Origem incerta, mas dizem que vem de uma brincadeira antiga de tentar pegar um pato amarrado; quem falhava, pagava o pato. 💸"
+  },
+  {
+    "pergunta": "O que significa 'Amigo da onça'?",
+    "resposta": "Amigo falso ou traidor. 🐆 Origem: Um personagem de cartum dos anos 40 chamado 'Amigo da Onça' que sempre colocava os outros em situações ruins. 😼"
+  },
+  {
+    "pergunta": "O que significa 'Rodar a baiana'?",
+    "resposta": "Fazer um escândalo ou ficar bravo! 💃 Origem: No carnaval antigo, rapazes tentavam beliscar as baianas. Elas rodavam as saias pesadas e davam um golpe de capoeira para se defender. Mexeu, levou! 🥊"
+  },
+  {
+    "pergunta": "O que significa 'Acabar em pizza'?",
+    "resposta": "Quando um crime ou escândalo fica sem punição. 🍕 Origem: Na década de 60, uma reunião tensa de dirigentes do Palmeiras durou horas e terminou com todos comendo pizza e esquecendo as brigas. 🍽️"
+  },
+  {
+    "pergunta": "O que significa 'Casa da Mãe Joana'?",
+    "resposta": "Lugar bagunçado onde cada um faz o que quer. 🏚️ Origem: Joana I de Nápoles (séc. XIV) regulamentou os bordéis, onde todos podiam entrar. Virou sinônimo de lugar sem regras. 🚪"
+  },
+  {
+    "pergunta": "O que significa 'O quinto dos infernos'?",
+    "resposta": "Lugar muito longe ou ruim. 🔥 Origem: No Brasil colonial, o 'quinto' era o imposto de 20% do ouro cobrado por Portugal. O povo odiava tanto pagar que mandava o cobrador para o 'quinto'. 💰"
+  },
+  {
+    "pergunta": "O que significa 'Santo do pau oco'?",
+    "resposta": "Pessoa falsa, hipócrita. 😇 Origem: No Brasil colonial, contrabandistas escondiam ouro e pedras preciosas dentro de imagens de santos feitas de madeira oca para não pagar impostos. Santo por fora, ouro por dentro! 💎"
+  },
+  {
+    "pergunta": "O que significa 'Tirar o cavalinho da chuva'?",
+    "resposta": "Desistir de esperar algo. 🐴 Origem: Quando uma visita ia demorar, o dono da casa dizia para tirar o cavalo da chuva e pôr no estábulo. Se não mandava, era sinal de que a visita deveria ser rápida. 🌧️"
+  },
+  {
+    "pergunta": "O que significa 'Cair a ficha'?",
+    "resposta": "Entender algo de repente. 📞 Origem: Telefones públicos antigos (orelhões) usavam fichas. A ligação só completava quando a ficha caía dentro do aparelho. Se não caía, não tinha comunicação! 🪙"
+  },
+  {
+    "pergunta": "O que significa 'Segurar vela'?",
+    "resposta": "Ficar sobrando num encontro de casal. 🕯️ Origem: Na Idade Média, criados ou acompanhantes tinham que segurar candelabros (velas) para iluminar os encontros românticos dos patrões (que não podiam ficar no escuro sozinhos). 💑"
+  },
+  {
+    "pergunta": "O que significa 'Dor de cotovelo'?",
+    "resposta": "Tristeza por amor não correspondido. 💔 Origem: Quem estava triste no bar ficava apoiado nos cotovelos no balcão, bebendo e chorando as mágoas, até o cotovelo doer. 🍺"
+  },
+  {
+    "pergunta": "O que significa 'Salvo pelo gongo'?",
+    "resposta": "Escapar de algo ruim no último segundo. 🔔 Origem: No boxe, quando o lutador está apanhando e o gongo toca, encerrando o round e salvando ele do nocaute. 🥊"
+  },
+  {
+    "pergunta": "O que significa 'Lágrimas de crocodilo'?",
+    "resposta": "Choro falso. 🐊 Origem: Crocodilos lubrificam os olhos enquanto comem (devido à pressão na mandíbula), parecendo que estão chorando de pena da presa. Mas é só biologia, sem emoção! 💧"
+  },
+  {
+    "pergunta": "O que é o Efeito Doppler?",
+    "resposta": "É a mudança no som quando algo passa rápido. 🚑 A sirene da ambulância é aguda quando vem (iiii) e grave quando vai (oooou). As ondas sonoras se espremem na frente e se esticam atrás. 🔊"
+  },
+  {
+    "pergunta": "O que é a Barreira do Som?",
+    "resposta": "A velocidade do som (1224 km/h). ✈️ Quando um avião voa mais rápido que isso, ele 'atropela' as ondas sonoras, criando uma onda de choque e um estrondo gigante (Sonic Boom). 💥"
+  },
+  {
+    "pergunta": "Como se forma o Arco-íris?",
+    "resposta": "Refração e reflexão! 🌈 A luz do sol (branca) entra na gota de chuva, se separa em 7 cores (como num prisma) e reflete de volta para o nosso olho. Você precisa estar de costas para o sol e de frente para a chuva. 🌦️"
+  },
+  {
+    "pergunta": "O que é uma Miragem?",
+    "resposta": "Ilusão de ótica pelo calor! 🏜️ O ar quente perto do chão desvia a luz (refração), fazendo o chão parecer um espelho. O que você vê não é água, é o reflexo do céu no chão quente! ☀️"
+  },
+  {
+    "pergunta": "O que é Fogo de Santelmo?",
+    "resposta": "Um brilho elétrico azulado que aparece em pontas de navios ou aviões em tempestades. ⚡ Não é fogo, é plasma (ar eletrificado). Marinheiros achavam que era proteção de Santo Elmo. ⚓"
+  },
+  {
+    "pergunta": "Por que o céu fica vermelho no pôr do sol?",
+    "resposta": "Porque o sol está baixo. 🌅 A luz tem que atravessar muito mais atmosfera para chegar até você. O azul se espalha antes, sobrando só o vermelho e o laranja para chegar nos seus olhos. Física romântica! 🧡"
+  },
+  {
+    "pergunta": "O que é um Eclipse Solar?",
+    "resposta": "Quando a Lua entra na frente do Sol e faz sombra na Terra. 🌑 O dia vira noite por minutos. Só acontece na Lua Nova e é raro de ver no mesmo lugar. Use óculos especiais! 🕶️"
+  },
+  {
+    "pergunta": "O que é Maré Vermelha?",
+    "resposta": "Quando algas tóxicas se multiplicam demais no mar, deixando a água vermelha ou marrom. 🌊 Pode matar peixes e intoxicar humanos que comem frutos do mar. É um desequilíbrio ecológico. 🦀"
+  },
+  {
+    "pergunta": "O que é Areia Movediça?",
+    "resposta": "Areia misturada com muita água, que vira uma lama viscosa. 🏜️ Se você pisa, afunda. Mas calma! É denso, você não afunda até o fundo, só até a cintura. Não se debata, deite para boiar! 🆘"
+  },
+  {
+    "pergunta": "O que é um Geiser?",
+    "resposta": "Um buraco no chão que cospe água fervendo e vapor! 🌋 Acontece quando a água subterrânea encosta em rochas vulcânicas quentes. A pressão sobe e... pfff! O Old Faithful nos EUA é famoso. ⛲"
+  },
+  {
+    "pergunta": "O que é a Aurora Boreal?",
+    "resposta": "Luzes dançantes no céu do Polo Norte (verde, rosa). 💚 Causadas pelo vento solar batendo no campo magnético da Terra. É a natureza fazendo show de laser! No sul, chama Aurora Austral. ✨"
+  },
+  {
+    "pergunta": "O que é Bioluminescência?",
+    "resposta": "Seres vivos que brilham! 💡 Vaga-lumes, águas-vivas, cogumelos. É uma reação química interna para atrair parceiros ou presas no escuro. Avatar na vida real! 🍄"
+  },
+  {
+    "pergunta": "O que é Ressonância (Física)?",
+    "resposta": "Quando algo vibra na mesma frequência de outro objeto. 🌉 Se soldados marcharem no mesmo passo numa ponte, ela pode vibrar tanto que cai (aconteceu!). É também como a taça quebra com o grito. 🍷"
+  },
+  {
+    "pergunta": "Por que o gelo flutua?",
+    "resposta": "Porque a água expande quando congela! 🧊 Ao contrário de quase tudo, a água sólida (gelo) é menos densa que a líquida. Isso é vital: se o gelo afundasse, os rios congelariam de baixo pra cima e matariam os peixes! 🐟"
+  },
+  {
+    "pergunta": "O que é Desja vu?",
+    "resposta": "Sensação de já ter vivido o momento. 😵 O cérebro pode ter um 'delay' (atraso) no processamento: um olho registra antes do outro, ou a memória de curto prazo grava antes da consciência perceber. Bug no sistema! 🧠"
+  },
+  {
+    "pergunta": "recebi troco a mais, o que faço?",
+    "resposta": "Dilema ético! ⚖️ O certo é devolver. A pessoa do caixa provavelmente terá que pagar a diferença do próprio bolso. A honestidade vale mais que alguns reais. Você se sentirá melhor! 🤝"
+  },
+  {
+    "pergunta": "achei um celular, o que faço?",
+    "resposta": "Tente devolver! 📱 Mantenha carregado, espere ligarem ou veja se tem contatos de emergência na tela bloqueada. Se não conseguir, entregue à polícia ou achados e perdidos. Imagine se fosse o seu! 👮‍♂️"
+  },
+  {
+    "pergunta": "meu amigo traiu, conto pra ela?",
+    "resposta": "Situação difícil! 😬 Pense: você gostaria de saber? Geralmente, a lealdade ao amigo que foi traído (a vítima) pesa mais. Mas saiba que o mensageiro às vezes leva a culpa. Avalie o grau de amizade! 💔"
+  },
+  {
+    "pergunta": "furei a dieta, e agora?",
+    "resposta": "Sem pânico! 🍔 Uma refeição não estraga tudo, assim como uma salada não emagrece. Volte ao normal na próxima refeição. Não use isso como desculpa para chutar o balde o fim de semana todo! 🥗"
+  },
+  {
+    "pergunta": "bati no carro e ninguém viu",
+    "resposta": "O caráter é o que fazemos quando ninguém vê. 🚗 Deixe um bilhete com seu telefone. O dono vai ficar chateado com a batida, mas grato pela sua honestidade. O karma agradece! 📝"
+  },
+  {
+    "pergunta": "O que é Fermento Biológico?",
+    "resposta": "São fungos vivos (leveduras)! 🍞 Eles comem o açúcar da massa e soltam gás (CO2), que faz o pão crescer cheio de furinhos. É vida criando comida! 🦠"
+  },
+  {
+    "pergunta": "O que é Fermento Químico?",
+    "resposta": "É pura química (Bicarbonato + Ácido). 🧪 Quando molha e esquenta (no forno), reage e solta gás, fazendo o bolo crescer. Não são bichinhos, é pó mágico! 🎂"
+  },
+  {
+    "pergunta": "Por que a carne doura (Reação de Maillard)?",
+    "resposta": "É a reação entre aminoácidos e açúcares no calor. 🥩 Cria aquela cor marrom e o sabor delicioso de 'assado' ou 'frito'. Carne cozida na água não passa de 100°C, por isso fica cinza e sem graça. 🔥"
+  },
+  {
+    "pergunta": "O que é Temperagem de Chocolate?",
+    "resposta": "É o choque térmico controlado! 🍫 Derreter e esfriar o chocolate na mesa de mármore organiza os cristais de gordura. Isso faz ele ficar brilhante e fazer 'crack' quando quebra. Se não temperar, fica mole e manchado. 🌡️"
+  },
+  {
+    "pergunta": "Por que choramos com pimenta?",
+    "resposta": "A capsaicina (química da pimenta) engana seu cérebro! 🌶️ Ela ativa os sensores de calor. Sua boca acha que está pegando fogo de verdade e o corpo reage: suor, lágrimas e nariz escorrendo para 'resfriar'. É um alarme falso! 🥵"
+  },
+  {
+    "pergunta": "O que é Umami?",
+    "resposta": "O quinto gosto! 👅 Além de doce, salgado, azedo e amargo. É o gosto do 'delicioso' ou 'saboroso', presente no tomate, queijo parmesão, shoyu e cogumelos. Foi descoberto no Japão. 🍄"
+  },
+  {
+    "pergunta": "O que é Glúten?",
+    "resposta": "Uma rede de proteínas do trigo. 🕸️ Quando você sova a massa, o glúten se estica e cria uma 'teia' que segura o gás do fermento. É o que faz o pão ser fofinho e elástico. Sem glúten, o pão esfarela! 🥖"
+  },
+  {
+    "pergunta": "O que é Axolote?",
+    "resposta": "O monstrinho da água mais fofo! 🦎 Uma salamandra mexicana que nunca cresce (fica sempre com cara de bebê/girino). Tem o superpoder de regenerar membros inteiros, coração e até cérebro! 🇲🇽"
+  },
+  {
+    "pergunta": "O que é Narval?",
+    "resposta": "O unicórnio do mar! 🦄 Uma baleia com um dente canino gigante que sai pela testa e parece um chifre espiral. Vive no Ártico. O chifre é um sensor super sensível! 🌊"
+  },
+  {
+    "pergunta": "O que é Ornitorrinco?",
+    "resposta": "O bicho mais confuso da natureza! 🦆 Tem bico de pato, rabo de castor, bota ovo, dá leite (mas não tem mamilo, o leite sai pela pele) e o macho tem esporão venenoso. A evolução estava criativa! 🇦🇺"
+  },
+  {
+    "pergunta": "O que é Tardígrado?",
+    "resposta": "O Urso d'Água. 🔬 Um animal microscópico quase indestrutível. Sobrevive no vácuo do espaço, em radiação nuclear, fervido ou congelado. É o ser mais resistente da Terra! 💪"
+  },
+  {
+    "pergunta": "O que é Blobfish (Peixe-gota)?",
+    "resposta": "Eleito o animal mais feio do mundo. 🐟 Mas é injusto! No fundo do mar, a pressão o segura e ele é normal. Quando tiram da água, ele desmancha e vira aquela geleca triste. Ele só é feio fora de casa! 💧"
+  },
+  {
+    "pergunta": "Lula Gigante existe?",
+    "resposta": "Sim! 🦑 O lendário Kraken. Pode chegar a 13 metros. Tem olhos do tamanho de pratos (os maiores do reino animal) e luta com cachalotes nas profundezas. Foi filmada viva pela primeira vez há pouco tempo! 🎥"
+  },
+  {
+    "pergunta": "Camaleão muda de cor pra se esconder?",
+    "resposta": "Mito (parcialmente)! 🦎 Eles mudam mais para se comunicar (avisar que estão bravos ou querendo namorar) e regular temperatura (escuro absorve calor). A camuflagem é secundária. É o 'humor' na pele! 🎨"
+  },
+  {
+    "pergunta": "Touro odeia vermelho?",
+    "resposta": "Mito! 🐂 Touros não veem vermelho (são daltônicos). Eles atacam o movimento da capa do toureiro. Se a capa fosse azul e balançasse, ele atacaria igual. 🚩"
+  },
+  {
+    "pergunta": "Peixe tem memória curta?",
+    "resposta": "Mito! 🐠 Peixes dourados lembram de coisas por meses e podem ser treinados. Eles sabem a hora da comida e reconhecem donos. Não subestime o peixinho! 🧠"
+  },
+  {
+    "pergunta": "Morcego é cego?",
+    "resposta": "Mito! 🦇 Eles enxergam bem (alguns melhor que humanos à noite). Mas eles usam o superpoder da Ecolocalização (sonar) para caçar com precisão no escuro total. Visão + Sonar! 🔊"
+  },
+  {
+    "pergunta": "Avestruz enfia a cabeça na terra?",
+    "resposta": "Mito! 🐦 Se fizesse isso, morreria sufocado. Quando tem perigo, ele corre (é rápido!) ou deita no chão para parecer um arbusto. Às vezes ele bica o chão para virar os ovos no ninho. 🥚"
+  },
+  {
+    "pergunta": "O que é serendipidade?",
+    "resposta": "É encontrar algo bom sem querer! 🍀 Exemplo: Colombo queria a Índia e achou a América. Fleming esqueceu a placa suja e descobriu a Penicilina. É a sorte ajudando quem está atento! ✨"
+  },
+  {
+    "pergunta": "O que é saudosismo?",
+    "resposta": "Um apego excessivo ao passado. 🕰️ 'No meu tempo era melhor'. É gostar mais da memória do que do presente. Um pouco é nostalgia, muito é paralisia! 👴"
+  },
+  {
+    "pergunta": "O que é procrastinação?",
+    "resposta": "A arte de deixar para depois. ⏳ Não é preguiça, é medo ou ansiedade. O cérebro prefere o prazer agora (TikTok) do que o dever chato. A cura é começar pequeno! 🍰"
+  },
+  {
+    "pergunta": "O que é resiliência?",
+    "resposta": "A capacidade de voltar ao normal depois da pressão. 🎋 Como uma vara de bambu que enverga na tempestade, mas não quebra. É sofrer, aprender e seguir em frente. 💪"
+  },
+  {
+    "pergunta": "O que é empatia?",
+    "resposta": "Sentir com o outro. ❤️ Não é só entender, é se conectar com a dor ou alegria alheia. É o que nos faz humanos e bondosos. O mundo precisa de mais! 🌍"
+  },
+  {
+    "pergunta": "O que é altruísmo?",
+    "resposta": "Fazer o bem sem olhar a quem (e sem esperar nada em troca). 🤝 Doar sangue, ajudar um estranho. É o oposto do egoísmo. 🤲"
+  },
+  {
+    "pergunta": "O que é utopia?",
+    "resposta": "Um lugar ou sociedade perfeita, ideal. ✨ Vem do grego 'lugar nenhum'. É um sonho inalcançável, mas que serve de guia para tentarmos melhorar. 🌈"
+  },
+  {
+    "pergunta": "O que é distopia?",
+    "resposta": "O oposto da utopia. 💀 Uma sociedade terrível, opressora e sem esperança (tipo Jogos Vorazes ou Black Mirror). Serve de aviso sobre para onde estamos indo. 📺"
+  },
+  {
+    "pergunta": "O que é paradoxo?",
+    "resposta": "Uma ideia que se contradiz, mas pode ser verdade. 🌀 Ex: 'Só sei que nada sei'. Ou 'Para ter paz, prepare-se para a guerra'. Faz a cabeça dar um nó! 🤯"
+  },
+  {
+    "pergunta": "O que é epifania?",
+    "resposta": "Um momento súbito de entendimento! 💡 O famoso 'Eureca!'. Quando as peças se encaixam e você entende tudo de repente. Uma revelação! ⚡"
+  },
+  {
+    "pergunta": "O que é nostalgia?",
+    "resposta": "Saudade de um tempo que não volta mais. 📻 O cheiro de bolo da avó, o desenho da infância. É um sentimento doce e triste ao mesmo tempo. 🧸"
+  },
+  {
+    "pergunta": "O que é melancolia?",
+    "resposta": "Uma tristeza profunda, calma e duradoura. 🌧️ Não é desespero, é um estado de espírito pensativo e meio cinza. Poetas adoram! ✒️"
+  },
+  {
+    "pergunta": "O que é carisma?",
+    "resposta": "Um magnetismo pessoal. ✨ Aquela pessoa que entra na sala e todos olham e gostam. Não se compra, se tem. Líderes e artistas costumam ter de sobra! 🌟"
+  },
+  {
+    "pergunta": "O que é pragmatismo?",
+    "resposta": "Focar na prática e no resultado. 🛠️ O pragmático não quer saber da teoria bonita, quer saber se funciona. 'Resolve o problema? Então serve'. Eficiência! ✅"
+  },
+  {
+    "pergunta": "O que é ceticismo?",
+    "resposta": "A postura de duvidar. 🧐 Não acreditar sem provas. O cético pergunta 'Por quê?' e 'Como você sabe?'. É a base da ciência e do pensamento crítico. 🔬"
+  },
+  {
+    "pergunta": "O que é onomatopeia?",
+    "resposta": "Palavras que imitam sons! 💥 Kabum! Miau! Tic-tac! Zzz... Usamos para dar vida ao texto, principalmente em gibis. 🗯️"
+  },
+  {
+    "pergunta": "O que é pleonasmo?",
+    "resposta": "Repetição desnecessária. 🔄 'Subir pra cima', 'Hemorragia de sangue', 'Surpresa inesperada'. É vício de linguagem, evite! (Mas na poesia pode). 📝"
+  },
+  {
+    "pergunta": "O que é eufemismo?",
+    "resposta": "Suavizar uma notícia ruim. 🍃 Dizer 'ele descansou' em vez de 'morreu'. Dizer 'ele faltou com a verdade' em vez de 'mentiu'. É a educação da língua. 🕊️"
+  },
+  {
+    "pergunta": "O que é ironia?",
+    "resposta": "Dizer o contrário do que se pensa, com humor. 😏 'Que dia lindo' (no meio da tempestade). É a pimenta da conversa, mas cuidado para não ser mal interpretado! 🌶️"
+  },
+  {
+    "pergunta": "O que é hipérbole?",
+    "resposta": "Exagero proposital! 📢 'Estou morrendo de fome', 'Te liguei mil vezes', 'Chorei um rio'. Serve para dar drama e ênfase. 🎭"
+  },
+  {
+    "pergunta": "O que é antítese?",
+    "resposta": "Usar opostos juntos. ↔️ 'Alto e baixo', 'Amor e ódio', 'Guerra e paz'. Cria um contraste forte e bonito na frase. 🌗"
+  },
+  {
+    "pergunta": "O que é metáfora?",
+    "resposta": "Comparação direta sem usar 'como'. 🦁 'Você é uma flor'. Você não é uma planta, é delicada/bonita como uma. É a alma da poesia! 🌹"
+  },
+  {
+    "pergunta": "Qual a diferença entre perda e perca?",
+    "resposta": "**Perda** é substantivo (uma perda). **Perca** é verbo (que eu perca). Dica: A perda é triste. Tomara que você não perca o ônibus! 🚌"
+  },
+  {
+    "pergunta": "Qual a diferença entre viagem e viajem?",
+    "resposta": "**Viagem** (G) é o substantivo (a viagem foi boa). **Viajem** (J) é o verbo (espero que eles viajem bem). O verbo joga com J! ✈️"
+  },
+  {
+    "pergunta": "Qual a diferença entre mas e mais?",
+    "resposta": "**Mas** é oposição (porém). **Mais** é quantidade (+). 'Quero mais bolo, mas estou de dieta'. O eterno dilema! 🍰"
+  },
+  {
+    "pergunta": "Qual a diferença entre mal e mau?",
+    "resposta": "**Mal** é oposto de Bem. **Mau** é oposto de Bom. 'Lobo Mau' (Bom). 'Estou passando mal' (Bem). Regra de ouro! 🐺"
+  },
+  {
+    "pergunta": "Qual a diferença entre a gente e agente?",
+    "resposta": "**A gente** (separado) somos nós. **Agente** (junto) é o 007 ou da polícia. A gente gosta do agente secreto! 🕵️‍♂️"
+  },
+  {
+    "pergunta": "Qual a diferença entre sessão, seção e cessão?",
+    "resposta": "**Sessão** de cinema (tempo). **Seção** de mercado (lugar). **Cessão** de direitos (dar). Português é complicado, né? 🍿🛒🤝"
+  },
+  {
+    "pergunta": "O que é Cyberbullying?",
+    "resposta": "Bullying pela internet. 💻 Xingar, humilhar ou espalhar boatos nas redes sociais. É covarde e fere muito, pois a vítima não tem onde se esconder. É crime! 🚫"
+  },
+  {
+    "pergunta": "O que é Stalkear?",
+    "resposta": "Investigar a vida de alguém na internet. 🕵️‍♀️ Ver todas as fotos, saber onde foi, quem curtiu. Pode ser curiosidade ou obsessão perigosa. Cuidado com a privacidade! 🔒"
+  },
+  {
+    "pergunta": "O que é Troll?",
+    "resposta": "Alguém que comenta só para irritar e causar briga na internet. 👹 Eles se alimentam da sua raiva. A regra de ouro é: 'Don't feed the trolls' (Não alimente os trolls). Ignore! 🤐"
+  },
+  {
+    "pergunta": "O que é Hater?",
+    "resposta": "O odiador profissional. 😠 Alguém que segue famosos ou marcas só para criticar e xingar. É uma forma triste de chamar atenção. Falam mais deles mesmos do que do alvo! 👎"
+  },
+  {
+    "pergunta": "O que é Clickbait?",
+    "resposta": "Isca de clique! 🎣 Títulos sensacionalistas ('Você não vai acreditar no que aconteceu!') que levam a um conteúdo fraco. É feito só para ganhar visualização e dinheiro. Pegadinha! 📰"
+  },
+  {
+    "pergunta": "Quem foram os Maias?",
+    "resposta": "Uma civilização brilhante da América Central! 🌽 Eram mestres na astronomia e matemática (inventaram o conceito de zero). Construíram pirâmides gigantes e tinham um calendário super preciso. Não desapareceram, seus descendentes vivem lá até hoje! 🌎"
+  },
+  {
+    "pergunta": "Quem foram os Incas?",
+    "resposta": "O maior império da América do Sul! 🏔️ Viviam nos Andes (Peru) e construíram Machu Picchu. Eram engenheiros incríveis, faziam estradas nas montanhas e plantavam em terraços. O líder era o 'Filho do Sol'. ☀️"
+  },
+  {
+    "pergunta": "Quem foram os Astecas?",
+    "resposta": "Guerreiros poderosos do México! 🦅 Construíram a cidade de Tenochtitlán (onde hoje é a Cidade do México) sobre um lago. Eram famosos pelos seus templos, comércio rico e, infelizmente, pelos sacrifícios humanos. 🩸"
+  },
+  {
+    "pergunta": "Quem foi Genghis Khan?",
+    "resposta": "O maior conquistador da história! 🐎 Uniu as tribos da Mongólia e criou o Império Mongol, que ia da Ásia até a Europa. Era um estrategista militar genial e impiedoso. Mudou o mapa do mundo! 🗺️"
+  },
+  {
+    "pergunta": "O que foi a Queda da Bastilha?",
+    "resposta": "O início da Revolução Francesa (14 de julho de 1789). 🇫🇷 O povo invadiu a prisão da Bastilha, símbolo do poder do rei, para pegar pólvora. Marcou o fim do poder absoluto dos reis e o início da luta por 'Liberdade, Igualdade, Fraternidade'. 🥖"
+  },
+  {
+    "pergunta": "O que foi o Titanic?",
+    "resposta": "O navio 'inafundável' que afundou. 🚢 Em 1912, bateu num iceberg na sua primeira viagem e afundou no Atlântico. Foi uma tragédia que mudou as leis de segurança no mar (como ter botes para todos). 🧊"
+  },
+  {
+    "pergunta": "O que foi Chernobyl?",
+    "resposta": "O pior acidente nuclear da história (1986). ☢️ Um reator da usina na Ucrânia explodiu, liberando radiação por toda a Europa. A cidade vizinha, Pripyat, virou uma cidade fantasma radioativa até hoje. ⚠️"
+  },
+  {
+    "pergunta": "O que foi Pompeia?",
+    "resposta": "A cidade romana congelada no tempo. 🌋 Em 79 d.C., o vulcão Vesúvio entrou em erupção e soterrou a cidade em cinzas. As cinzas preservaram tudo: casas, pães e até os corpos das pessoas. Uma janela para o passado! 🏛️"
+  },
+  {
+    "pergunta": "Quem eram os Vikings?",
+    "resposta": "Exploradores e guerreiros da Escandinávia. 🛶 Navegavam em barcos rápidos (Drakkars) e chegaram à América antes de Colombo! Tinham uma mitologia rica (Thor, Odin) e não usavam chifres nos capacetes (isso é mito de ópera!). ⚔️"
+  },
+  {
+    "pergunta": "Quem eram os Samurais?",
+    "resposta": "A elite guerreira do Japão antigo. 🏯 Seguiam um código de honra rígido chamado Bushido (lealdade, coragem, honra). Suas espadas (Katanas) eram obras de arte. Preferiam a morte à desonra. 🗡️"
+  },
+  {
+    "pergunta": "Quem eram os Templários?",
+    "resposta": "Cavaleiros monges da Idade Média. ✝️ Protegiam os peregrinos na Terra Santa. Ficaram muito ricos e poderosos (inventaram o sistema bancário!), o que gerou inveja no Rei da França, que acabou com a ordem. Mitos dizem que guardavam o Santo Graal. 🏆"
+  },
+  {
+    "pergunta": "Quem foi Sherlock Holmes?",
+    "resposta": "O detetive mais famoso da ficção! 🕵️‍♂️ Criado por Arthur Conan Doyle. Usava a lógica e a dedução para resolver crimes impossíveis em Londres. Seu parceiro era o Dr. Watson. 'Elementar, meu caro Watson!' 🔍"
+  },
+  {
+    "pergunta": "Quem foi Drácula?",
+    "resposta": "O vampiro original! 🧛‍♂️ Personagem do livro de Bram Stoker. Baseado num príncipe real (Vlad, o Empalador). Ele vive num castelo na Transilvânia, bebe sangue e vira morcego. Criou todas as regras de vampiros que conhecemos! 🦇"
+  },
+  {
+    "pergunta": "Quem foi Frankenstein?",
+    "resposta": "Cuidado: Frankenstein é o cientista, não o monstro! 🧟‍♂️ No livro de Mary Shelley, o Dr. Victor Frankenstein cria uma criatura feita de partes de corpos, que ganha vida e sofre por ser rejeitada. O monstro não tem nome! ⚡"
+  },
+  {
+    "pergunta": "Quem é Dom Quixote?",
+    "resposta": "O cavaleiro sonhador! 🤺 Personagem de Cervantes. Ele lia tantos livros de cavalaria que ficou louco e saiu pelo mundo lutando contra moinhos de vento (achando que eram gigantes), com seu fiel escudeiro Sancho Pança. 📚"
+  },
+  {
+    "pergunta": "O que é O Grito (quadro)?",
+    "resposta": "Uma pintura famosa de Edvard Munch. 😱 Mostra uma figura segurando o rosto e gritando num pôr do sol vermelho. Representa a ansiedade e o desespero humano. É um ícone da arte moderna! 🎨"
+  },
+  {
+    "pergunta": "O que é A Noite Estrelada?",
+    "resposta": "A obra-prima de Van Gogh. 🌌 Pintada quando ele estava num hospício. Mostra um céu turbulento e mágico com estrelas giratórias. É uma das imagens mais amadas da história da arte. ✨"
+  },
+  {
+    "pergunta": "O que é A Persistência da Memória?",
+    "resposta": "O quadro dos relógios derretendo! 🕰️ De Salvador Dalí (Surrealismo). Mostra relógios moles numa paisagem deserta, simbolizando que o tempo é relativo e flexível nos sonhos. Bizarro e genial! ⏳"
+  },
+  {
+    "pergunta": "O que é Surrealismo?",
+    "resposta": "Movimento artístico dos sonhos! 💭 Artistas como Dalí e Magritte pintavam coisas ilógicas e bizarras, misturando realidade e fantasia, como nos nossos sonhos. É a arte do inconsciente. 🐘"
+  },
+  {
+    "pergunta": "O que é Dadaísmo?",
+    "resposta": "A arte do 'nada'! 🚽 Surgiu na 1ª Guerra para criticar a sociedade racional que criou a guerra. Eles faziam arte sem sentido, colagens e usavam objetos prontos (como um urinol) chamando de arte. Era pura provocação! 🤪"
+  },
+  {
+    "pergunta": "Por que a preguiça é lenta?",
+    "resposta": "Para economizar energia! 🦥 Ela come folhas com poucos nutrientes e tem o metabolismo super devagar. Se ela corresse, gastaria mais energia do que consegue comer. Ser devagar é sua estratégia de sobrevivência! 🍃"
+  },
+  {
+    "pergunta": "Por que a girafa tem pescoço grande?",
+    "resposta": "Para alcançar as folhas no topo das árvores, onde outros animais não chegam! 🦒 E também serve para os machos lutarem (pescoçada) pelas fêmeas. O coração dela é gigante para bombear sangue até a cabeça! ❤️"
+  },
+  {
+    "pergunta": "Elefante tem boa memória?",
+    "resposta": "Sim, excelente! 🐘 Eles lembram de caminhos para água por décadas e reconhecem amigos (e inimigos) depois de muito tempo. O cérebro deles é enorme e complexo. Nunca ofenda um elefante! 🧠"
+  },
+  {
+    "pergunta": "Pinguim tem joelho?",
+    "resposta": "Tem sim! 🐧 Mas fica escondido dentro do corpo, coberto por penas. As pernas deles estão sempre dobradas, como se estivessem agachados. Por isso andam daquele jeito engraçado! 🧊"
+  },
+  {
+    "pergunta": "O que é um Ratel (Honey Badger)?",
+    "resposta": "O animal mais destemido do mundo! 🦡 Parece fofo, mas ataca leões, come cobras venenosas e invade colmeias de abelhas. A pele dele é tão grossa que resiste a dentes e ferrões. Ele não tem medo de nada! 🐍"
+  },
+  {
+    "pergunta": "O que é um Quokka?",
+    "resposta": "O animal mais feliz do mundo! 🐻 Um marsupial da Austrália que parece estar sempre sorrindo para as fotos. É super amigável e curioso. Selfie garantida! 📸"
+  },
+  {
+    "pergunta": "O que é uma Capivara?",
+    "resposta": "O maior roedor do mundo e símbolo da paz! 🇧🇷 É brasileira, vive na beira de rios e é super sociável. Convive bem com pássaros, tartarugas e até jacarés às vezes. A rainha do 'deboismo'! 🧘"
+  },
+  {
+    "pergunta": "O Dragão de Komodo existe?",
+    "resposta": "Sim, é o maior lagarto do mundo! 🦎 Vive na Indonésia. Tem 3 metros, saliva tóxica e derruba búfalos. É um dinossauro vivo e perigoso! 🦖"
+  },
+  {
+    "pergunta": "Como a Enguia Elétrica dá choque?",
+    "resposta": "Ela tem células especiais (eletrócitos) que funcionam como pilhas em série. ⚡ Quando ela quer, dispara uma descarga de até 860 volts para caçar ou se defender. É uma bateria viva! 🔋"
+  },
+  {
+    "pergunta": "Urso Polar é branco?",
+    "resposta": "Não! A pele dele é preta (para absorver calor) e os pelos são transparentes e ocos! 🐻‍❄️ Eles parecem brancos porque refletem a luz do sol e a neve. É camuflagem óptica! ❄️"
+  },
+  {
+    "pergunta": "Canguru sabe pular pra trás?",
+    "resposta": "Não! 🦘 A cauda e as pernas grandes impedem. Por isso ele está no brasão da Austrália: simboliza uma nação que só anda para frente! 🇦🇺"
+  },
+  {
+    "pergunta": "Como o sabão limpa?",
+    "resposta": "Ele é um mediador! 🧼 Água e óleo não se misturam. O sabão tem uma ponta que gosta de água e outra que gosta de gordura. Ele agarra a gordura e a leva embora com a água. Mágica química! 🚿"
+  },
+  {
+    "pergunta": "Como funciona o espelho?",
+    "resposta": "É uma camada de vidro com prata (ou alumínio) atrás. 🪞 A luz bate no metal, reflete perfeitamente e volta para o seu olho. O vidro só protege o metal. Você está vendo a luz que bateu em você e voltou! ✨"
+  },
+  {
+    "pergunta": "Como funciona a bússola?",
+    "resposta": "A Terra é um ímã gigante! 🧭 A agulha da bússola é um ímã leve que se alinha com o campo magnético da Terra, apontando sempre para o Norte Magnético. Navegação raiz! 🗺️"
+  },
+  {
+    "pergunta": "Como funciona a lupa?",
+    "resposta": "Ela dobra a luz! 🔍 A lente convexa (gordinha no meio) desvia os raios de luz para que eles pareçam vir de um objeto maior do que realmente é. Engana o cérebro para ver detalhes! 🔬"
+  },
+  {
+    "pergunta": "Como funciona a pilha?",
+    "resposta": "Reação química! 🔋 Dentro dela, metais e ácidos trocam elétrons. Esse fluxo de elétrons saindo de um lado (negativo) para o outro (positivo) é a eletricidade que liga seu brinquedo. ⚡"
+  },
+  {
+    "pergunta": "Por que o céu é escuro à noite?",
+    "resposta": "Porque a Terra girou! 🌍 Estamos de costas para o Sol. E, embora existam bilhões de estrelas, o universo é tão grande e está se expandindo, que a luz delas não preenche todo o céu. Chama-se Paradoxo de Olbers. 🌌"
+  },
+  {
+    "pergunta": "Por que o mar é azul?",
+    "resposta": "Ele reflete o céu e absorve a luz! 🌊 A água absorve bem as cores vermelhas e amarelas da luz do sol, mas reflete a azul. Quanto mais fundo, mais azul escuro fica. 💙"
+  },
+  {
+    "pergunta": "Por que pipoca estoura?",
+    "resposta": "Tem água dentro do milho! 🍿 Quando esquenta, a água vira vapor e faz pressão. A casca dura segura até não aguentar mais e... POW! O amido expande e vira a espuma branca. Delícia explosiva! 🌽"
+  },
+  {
+    "pergunta": "O que é Código Morse?",
+    "resposta": "Um alfabeto de sons! 📡 Pontos (som curto) e Traços (som longo). Criado para o telégrafo. S.O.S é: ... --- ... (três curtos, três longos, três curtos). Salvou muita gente no mar! 🚢"
+  },
+  {
+    "pergunta": "O que é Alfabeto Fonético (Alfa Bravo)?",
+    "resposta": "Usado por pilotos e militares para soletrar sem erro no rádio. ✈️ A = Alfa, B = Bravo, C = Charlie. Assim ninguém confunde 'B' com 'D' ou 'T'. Câmbio! 📻"
+  },
+  {
+    "pergunta": "O que é S.O.S?",
+    "resposta": "O pedido de socorro internacional. 🆘 Muita gente acha que significa 'Save Our Souls' (Salvem nossas almas), mas na verdade foi escolhido porque é fácil de fazer em código Morse (...---...). É um padrão, não uma sigla! 🚢"
+  },
+  {
+    "pergunta": "O que é a Bandeira Branca?",
+    "resposta": "Sinal universal de paz ou rendição. 🏳️ É fácil de ver de longe e fácil de fazer (qualquer pano branco serve). Significa 'Não atirem, quero conversar'. Respeitada há séculos! 🕊️"
+  },
+  {
+    "pergunta": "Por que o anel de casamento é no dedo anelar?",
+    "resposta": "Lenda antiga! 💍 Romanos e Egípcios acreditavam que desse dedo saía a 'Vena Amoris' (veia do amor) que ia direto para o coração. A ciência desmentiu, mas o romantismo ficou! ❤️"
+  },
+  {
+    "pergunta": "Por que batemos na madeira?",
+    "resposta": "Superstição antiga! 🪵 Povos antigos (Celtas) acreditavam que espíritos bons viviam nas árvores. Tocar na madeira era pedir proteção ou agradecer a eles. 'Toc toc, isola!'. 🌳"
+  },
+  {
+    "pergunta": "Por que cruzamos os dedos?",
+    "resposta": "Para dar sorte! 🤞 Originalmente, duas pessoas cruzavam os dedos para fazer o sinal da cruz e pedir proteção divina. Hoje fazemos sozinhos para torcer ou para anular uma mentira (coisa feia!). 🤥"
+  },
+  {
+    "pergunta": "O que é o Deserto do Atacama?",
+    "resposta": "O deserto mais seco do mundo! 🌵 Fica no Chile. Tem lugares lá que não chove há 400 anos. A paisagem parece Marte (a NASA testa robôs lá). Tem flamingos e gêiseres. 🇨🇱"
+  },
+  {
+    "pergunta": "O que é o Grand Canyon?",
+    "resposta": "Um buraco gigante nos EUA! 🏜️ Escavado pelo Rio Colorado ao longo de milhões de anos. Tem 446 km de comprimento e é super profundo. Uma das maravilhas naturais do mundo. 🇺🇸"
+  },
+  {
+    "pergunta": "O que são as Cataratas do Iguaçu?",
+    "resposta": "O maior conjunto de quedas d'água do mundo! 🌊 Fica na fronteira Brasil/Argentina. São 275 cachoeiras. O barulho e a beleza são emocionantes. Patrimônio da Humanidade! 🇧🇷🇦🇷"
+  },
+  {
+    "pergunta": "O que é o Monte Fuji?",
+    "resposta": "O vulcão sagrado do Japão. 🗻 Tem o topo sempre com neve e formato de cone perfeito. É um símbolo do país e inspiração para artistas há séculos. Lindo e (quase) adormecido! 🇯🇵"
+  },
+  {
+    "pergunta": "O que é a Torre Eiffel?",
+    "resposta": "O símbolo de Paris! 🗼 Construída em 1889 para uma feira. Era para ser temporária e os parisienses achavam feia ('esqueleto de metal'). Hoje é o monumento pago mais visitado do mundo. 🇫🇷"
+  },
+  {
+    "pergunta": "O que é a Estátua da Liberdade?",
+    "resposta": "Um presente da França para os EUA. 🗽 Fica em Nova York. Representa a liberdade iluminando o mundo. Feita de cobre, era marrom brilhante, mas a oxidação a deixou verde. 🇺🇸"
+  },
+  {
+    "pergunta": "O que é Xadrez?",
+    "resposta": "O jogo dos reis! ♟️ Surgiu na Índia/Pérsia. É pura estratégia, sem sorte. Simula uma batalha entre dois exércitos. Desenvolve lógica, paciência e memória. Xeque-mate! 🧠"
+  },
+  {
+    "pergunta": "Por que o baralho tem 52 cartas?",
+    "resposta": "Talvez pelo calendário! 🃏 52 cartas = 52 semanas do ano. 4 naipes = 4 estações. 13 cartas por naipe = 13 ciclos lunares. Soma dos valores = 365. Coincidência ou misticismo? ♣️♦️"
+  },
+  {
+    "pergunta": "O que é Origami?",
+    "resposta": "A arte japonesa de dobrar papel. 🦢 'Ori' (dobrar) + 'Kami' (papel). Transforma uma folha quadrada em pássaros (tsuru), flores e animais, sem cortar nem colar. Exige paciência e precisão! 📄"
+  },
+  {
+    "pergunta": "O que é Ikebana?",
+    "resposta": "A arte japonesa de arranjo floral. 🌸 Não é só colocar flor no vaso. Tem regras de equilíbrio, linhas e espaço vazio. É uma meditação com a natureza. Beleza e silêncio! 🌿"
+  },
+  {
+    "pergunta": "O que é Bonsai?",
+    "resposta": "Árvore em bandeja. 🌳 A arte de cultivar árvores comuns em tamanho miniatura, usando podas e arames. Parecem árvores velhas e gigantes, mas cabem na mão. Exige anos de cuidado! ✂️"
+  },
+  {
+    "pergunta": "O que é Sushi?",
+    "resposta": "Comida japonesa famosa! 🍣 Arroz temperado com vinagre + peixe cru (ou frutos do mar/legumes). O peixe cru sozinho chama Sashimi. Sushi é a arte do arroz! 🍚"
+  },
+  {
+    "pergunta": "O que é Pizza?",
+    "resposta": "A invenção napolitana que conquistou o mundo! 🍕 Massa, molho de tomate e queijo. A rainha Margherita provou e amou (cores da Itália: manjericão, mussarela, tomate). O mundo agradece! 🇮🇹"
+  },
+  {
+    "pergunta": "O que é Hambúrguer?",
+    "resposta": "Sanduíche de carne moída. 🍔 O nome vem de Hamburgo (Alemanha), mas virou ícone nos EUA. Pão, carne, queijo. O fast-food mais famoso do planeta. Com fritas, por favor! 🍟"
+  },
+  {
+    "pergunta": "O que é Chocolate?",
+    "resposta": "Alimento dos deuses! 🍫 Feito da semente do cacau. Os Astecas bebiam apimentado. Os europeus colocaram açúcar e leite. Libera endorfina e traz felicidade instantânea! 🍬"
+  },
+  {
+    "pergunta": "O que é Café?",
+    "resposta": "O combustível do mundo moderno! ☕ Vem da Etiópia. A cafeína bloqueia o sono no cérebro. O Brasil é o maior produtor do mundo. Sem ele, nada funciona de manhã! 🇧🇷"
+  },
+  {
+    "pergunta": "O que é Chá?",
+    "resposta": "A bebida mais consumida do mundo (depois da água). 🍵 Vem da planta Camellia sinensis. Verde, preto, branco... tudo a mesma planta, só muda a secagem. Ingleses amam às 17h! 🇬🇧"
+  },
+  {
+    "pergunta": "O que é Vinho?",
+    "resposta": "Suco de uva fermentado. 🍷 Uma das bebidas mais antigas da humanidade. Tem tinto, branco, rosé. A uva (terroir) e o tempo mudam o sabor. Beba com moderação! 🍇"
+  },
+  {
+    "pergunta": "O que é Cerveja?",
+    "resposta": "Cereal fermentado. 🍺 Água, malte (cevada), lúpulo e levedura. O pão líquido! Foi vital na história pois era mais segura de beber do que a água suja das cidades antigas. Saúde! 🍻"
+  },
+  {
+    "pergunta": "O que é Queijo?",
+    "resposta": "Leite imortal! 🧀 Forma de conservar o leite por meses ou anos. Bactérias e enzimas transformam o leite em coalhada e soro. Tem milhares de tipos: do minas frescal ao gorgonzola. 🐭"
+  },
+  {
+    "pergunta": "O que é Pão?",
+    "resposta": "Farinha + Água + Calor. 🥖 A base da alimentação humana há milênios. Pode ser plano (pita), fofinho (forma) ou crocante (baguete). O cheiro de pão quente é universal! 🍞"
+  },
+  {
+    "pergunta": "O que é Macarrão?",
+    "resposta": "Massa de farinha e água. 🍝 Acredita-se que veio da China e a Itália aperfeiçoou. Espaguete, penne, lasanha... Com molho, é conforto puro. Mamma mia! 🇮🇹"
+  },
+  {
+    "pergunta": "O que é Azeite?",
+    "resposta": "O ouro líquido! 🫒 Suco da azeitona. Essencial na dieta mediterrânea. Saudável e saboroso. Extra virgem é o suco puro, sem química. Bom pra salada e pro coração! 🥗"
+  },
+  {
+    "pergunta": "O que é Sal?",
+    "resposta": "A única pedra que comemos! 🧂 Cloreto de Sódio. Essencial para a vida (nervos e músculos), mas em excesso faz mal (pressão alta). Antigamente era dinheiro (daí vem a palavra 'Salário'). 💰"
+  },
+  {
+    "pergunta": "O que é Açúcar?",
+    "resposta": "Energia doce! 🍬 Vem da cana ou beterraba. Nosso cérebro ama porque é energia rápida, mas hoje comemos demais. O vilão da dieta moderna. Doce veneno! 🍭"
+  },
+  {
+    "pergunta": "O que é Mel?",
+    "resposta": "Vômito de abelha (desculpa, mas é verdade!). 🐝 Elas pegam néctar, digerem e guardam. É o único alimento que nunca estrace (acharam mel comestível em tumbas egípcias de 3000 anos!). 🍯"
+  },
+  {
+    "pergunta": "O que é Pimenta?",
+    "resposta": "Fruta ardida! 🌶️ A ardência é defesa da planta contra fungos (mas nós humanos adoramos sofrer). Tem vitamina C e acelera o metabolismo. Habanero, Malagueta, Jalapeño... 🔥"
+  },
+  {
+    "pergunta": "O que é Alho?",
+    "resposta": "Tempero mágico e remédio natural. 🧄 Antibiótico e anti-inflamatório. Dá sabor a tudo (arroz, feijão). E espanta vampiros (dizem as lendas)! O cheiro fica na mão, mas vale a pena. 🧛‍♂️"
+  },
+  {
+    "pergunta": "O que é Cebola?",
+    "resposta": "A base do refogado. 🧅 Faz chorar, mas dá sabor. Crua é forte, frita é doce (caramelizada). Tem camadas, como os ogros (segundo o Shrek)! 🍲"
+  },
+  {
+    "pergunta": "O que é Limão?",
+    "resposta": "Azedo e versátil! 🍋 Serve pra temperar salada, fazer suco, limpar casa e tirar cheiro de peixe. Rico em vitamina C. Se a vida te der um limão... faça uma caipirinha! 🍹"
+  },
+  {
+    "pergunta": "O que é Banana?",
+    "resposta": "A fruta mais prática! 🍌 Vem na própria embalagem, não precisa lavar, dá energia rápida e evita câimbra. A fruta preferida dos atletas (e dos macacos). 🐒"
+  },
+  {
+    "pergunta": "O que é Maçã?",
+    "resposta": "Símbolo do pecado e da saúde. 🍎 'Uma maçã por dia mantém o médico longe'. Crocante e doce. Newton descobriu a gravidade com uma (diz a lenda). Branca de Neve que se cuide! 🐍"
+  },
+  {
+    "pergunta": "O que é Arroz e Feijão?",
+    "resposta": "O casal perfeito do Brasil! 🇧🇷 Juntos, têm todos os aminoácidos que o corpo precisa (proteína completa). Nutritivo, barato e delicioso. A base da nossa força! 🍛"
+  },
+  {
+    "pergunta": "O que é Churrasco?",
+    "resposta": "Carne no fogo e amigos em volta. 🥩 Paixão nacional (especialmente no Sul). Picanha, linguiça e pão de alho. O cheiro de fumaça no domingo é sagrado! 🔥"
+  },
+  {
+    "pergunta": "O que é Brigadeiro?",
+    "resposta": "Patrimônio doce do Brasil. 🍫 Leite condensado + Chocolate. Enrolado ou de colher. Cura tristeza e TPM. Nenhuma festa de aniversário existe sem ele! 🎉"
+  },
+  {
+    "pergunta": "O que é Pastel?",
+    "resposta": "Vento frito (brincadeira!). 🥟 Massa crocante com recheio (carne, queijo, pizza). Clássico de feira com caldo de cana. Origem adaptada do rolinho primavera chinês. 😋"
+  },
+  {
+    "pergunta": "O que é Coxinha?",
+    "resposta": "Amor em forma de gota. 🍗 Massa de batata, recheio de frango. A rainha das festinhas. O debate é eterno: com ou sem catupiry? (Com, claro!). ❤️"
+  },
+  {
+    "pergunta": "O que é Pão de Queijo?",
+    "resposta": "Invenção mineira divina. 🧀 Polvilho + Queijo. Crocante fora, puxa-puxa dentro. Não tem glúten. Com um cafézinho passado na hora... uai, trem bão! ☕"
+  },
+  {
+    "pergunta": "O que é Açaí?",
+    "resposta": "Energia roxa da Amazônia. 🟣 Fruta de palmeira. No Norte é comida salgada. No resto do Brasil é doce, com banana e granola. Mancha a boca e dá força! 💪"
+  },
+  {
+    "pergunta": "O que é Farofa?",
+    "resposta": "Acompanhamento que só brasileiro entende. 🥣 Farinha (mandioca/milho) frita na gordura. Vai com tudo: feijoada, churrasco, frango. Dá textura (crocância) à comida. Amo! 🥓"
+  },
+  {
+    "pergunta": "O que é Tapioca?",
+    "resposta": "O pão indígena. 🏹 Goma de mandioca na frigideira. Sem glúten, versátil (recheio doce ou salgado). Café da manhã típico do Nordeste que conquistou o país. 🥥"
+  },
+  {
+    "pergunta": "O que é Guaraná?",
+    "resposta": "Fruta que parece um olho! 👁️ O refrigerante de guaraná é sabor único do Brasil. Tem cafeína natural. Refresca e acorda! 🥤"
+  },
+  {
+    "pergunta": "O que é Cachaça?",
+    "resposta": "Destilado de cana-de-açúcar. 🥃 Bebida genuinamente brasileira. Base da caipirinha. Tem a 'branca' (pura) e a 'amarela' (envelhecida em madeira). Desce queimando! 🔥"
+  },
+  {
+    "pergunta": "O que é Chimarrão?",
+    "resposta": "Chá amargo compartilhado. 🧉 Erva-mate e água quente. Tradição do Sul. Símbolo de hospitalidade: todos bebem na mesma bomba. Esquenta no inverno! ❄️"
+  },
+  {
+    "pergunta": "O que é Tereré?",
+    "resposta": "Chimarrão gelado! 🧊 Erva-mate com água gelada (ou suco). Popular no Centro-Oeste e Paraguai. Perfeito para o calorão. Refrescante! ☀️"
+  },
+  {
+    "pergunta": "O que é Festa Junina?",
+    "resposta": "A melhor época do ano! 🌽 Quadrilha, fogueira, bandeirinhas. Comida de milho (pamonha, canjica, pipoca), quentão e forró. Viva São João! 🔥"
+  },
+  {
+    "pergunta": "O que é Bumba-meu-boi?",
+    "resposta": "Folclore do Maranhão e Norte. 🐂 Teatro dançado que conta a história de um boi que morre e ressuscita. Colorido, musical e mágico. Cultura popular rica! 🎭"
+  },
+  {
+    "pergunta": "O que é Frevo?",
+    "resposta": "O carnaval de Pernambuco! ☂️ Ritmo acelerado e dança acrobática com sombrinhas coloridas. Patrimônio da Humanidade. Haja perna pra pular! 🏃‍♂️"
+  },
+  {
+    "pergunta": "O que é Capoeira?",
+    "resposta": "Luta disfarçada de dança. 🤸‍♂️ Criada por escravizados para treinar defesa sem levantar suspeitas. Tem música (berimbau), ginga e golpes. Arte marcial brasileira! 🥋"
+  },
+  {
+    "pergunta": "O que é Samba?",
+    "resposta": "O ritmo do Brasil. 🥁 Nasceu da mistura de batuques africanos. Tem samba de roda, enredo, pagode. É alegria, é dança, é resistência. O pé não para quieto! 💃"
+  },
+  {
+    "pergunta": "O que é MPB?",
+    "resposta": "Música Popular Brasileira. 🎤 Chico Buarque, Elis Regina, Caetano. Letras poéticas, harmonias ricas. A trilha sonora da nossa história. Sofisticada e popular! 🎶"
+  },
+  {
+    "pergunta": "O que é Funk Brasileiro?",
+    "resposta": "O som da favela que ganhou o mundo. 🎧 Batida forte, letras sobre o cotidiano da periferia. De Anitta a Kevin o Chris. É cultura de massa e faz dançar! 🍑"
+  },
+  {
+    "pergunta": "O que é Sertanejo?",
+    "resposta": "A música do interior que dominou as rádios. 🤠 Começou raiz (viola), virou romântico e hoje é 'Universitário' (festa e sofrência). Marília Mendonça, a rainha! 🍺"
+  },
+  {
+    "pergunta": "O que é Novela?",
+    "resposta": "Paixão nacional! 📺 Dramas diários que o país todo assiste. Vilãs icônicas (Nazaré, Carminha), finais misteriosos ('Quem matou?'). O Brasil para pra ver o último capítulo! 🍿"
+  },
+  {
+    "pergunta": "O que é Meme?",
+    "resposta": "A linguagem da internet. 🐸 Imagens ou vídeos engraçados que viralizam e viram piada interna do país todo. O brasileiro é o rei dos memes (Nazaré confusa, Gretchen). 😂"
+  },
+  {
+    "pergunta": "O que é Viralizar?",
+    "resposta": "Espalhar como vírus (mas digital). 🦠 Quando um post ganha milhões de likes e compartilhamentos em horas. Todo mundo vê. Fama instantânea (e passageira)! 🚀"
+  },
+  {
+    "pergunta": "O que é Hater?",
+    "resposta": "Alguém que só critica. 😠 Espalha ódio nos comentários. Geralmente tem inveja ou falta do que fazer. A melhor resposta é ignorar. Não alimente os trolls! 🚫"
+  },
+  {
+    "pergunta": "O que é Influencer?",
+    "resposta": "Profissão moderna. 🤳 Alguém que cria conteúdo na internet e influencia as decisões dos seguidores. Ganha dinheiro com 'publi' (propaganda). Vida de vitrine! 📱"
+  },
+  {
+    "pergunta": "O que é Podcast?",
+    "resposta": "Rádio sob demanda. 🎧 Programas de áudio sobre qualquer assunto (crimes, notícias, humor) que você ouve quando quiser. Companhia pra lavar louça ou pegar ônibus! 🎙️"
+  },
+  {
+    "pergunta": "O que é Streaming?",
+    "resposta": "Mídia sem baixar. ▶️ Netflix, Spotify, YouTube. Você consome o conteúdo direto da nuvem. Matou a locadora e o CD. O mundo na sua tela! 📺"
+  },
+  {
+    "pergunta": "O que é Spoiler?",
+    "resposta": "Contar o final! 🤫 O maior crime da internet. Estragar a surpresa de quem não viu o filme ou série. 'O assassino é...'. Cuidado, perde amizade! 🤐"
+  },
+  {
+    "pergunta": "O que é Maratona (Série)?",
+    "resposta": "Assistir tudo de uma vez! 🏃‍♀️ Pegar uma série e ver 10 episódios seguidos no fim de semana. 'Só mais um episódio...'. E lá se foi o domingo! 🍿"
+  },
+  {
+    "pergunta": "O que é Shippar?",
+    "resposta": "Torcer por um casal. 💑 Vem de 'Relationship'. 'Eu shippo eles dois'. Você quer que eles fiquem juntos na ficção ou na vida real. ❤️"
+  },
+  {
+    "pergunta": "O que é Fanfic?",
+    "resposta": "História de fã. ✍️ Fãs escrevem histórias alternativas com seus personagens favoritos. Harry Potter namorando Draco? Na fanfic pode tudo! Criatividade pura. 📖"
+  },
+  {
+    "pergunta": "O que é Cosplay?",
+    "resposta": "Fantasia séria! 🦸‍♂️ Fãs se vestem e agem igual aos personagens de animes, jogos ou filmes. As roupas são super detalhadas. É arte e homenagem! 🎭"
+  },
+  {
+    "pergunta": "O que é Otaku?",
+    "resposta": "Fã de cultura pop japonesa. 🇯🇵 Ama animes (desenhos) e mangás (quadrinhos). Sabe o que é Naruto, One Piece e fala 'Arigato'. Comunidade gigante! 🍜"
+  },
+  {
+    "pergunta": "O que é Geek/Nerd?",
+    "resposta": "Apaixonado por tecnologia, jogos, quadrinhos e ficção científica. 🤓 Antigamente sofria bullying, hoje domina o mundo (Marvel, Star Wars). Ser nerd é legal! 🖖"
+  },
+  {
+    "pergunta": "O que é Gamer?",
+    "resposta": "Quem joga videogame. 🎮 Pode ser hobby ou profissão (e-sports). PC, console ou celular. É um universo de competição e diversão. Game Over? Continue! 👾"
+  },
+  {
+    "pergunta": "Quem foi Beethoven?",
+    "resposta": "Um gênio da música clássica! 🎹 Ludwig van Beethoven continuou compondo obras-primas (como a 9ª Sinfonia) mesmo depois de ficar completamente surdo. Ele sentia a vibração do piano no chão. Superação pura! 🎼"
+  },
+  {
+    "pergunta": "Quem foi Mozart?",
+    "resposta": "Um menino prodígio! 🎻 Começou a compor aos 5 anos de idade. Austríaco, criou mais de 600 obras. Dizem que ele escrevia as músicas direto no papel, sem rascunho, como se já estivessem prontas na cabeça. 🎶"
+  },
+  {
+    "pergunta": "Quem foi Freddie Mercury?",
+    "resposta": "O lendário vocalista do Queen! 👑 Tinha uma voz inigualável e uma presença de palco elétrica. Compôs 'Bohemian Rhapsody'. Um ícone do rock e da comunidade LGBTQIA+. Eeeeooo! 🎤"
+  },
+  {
+    "pergunta": "Quem foi Michael Jackson?",
+    "resposta": "O Rei do Pop! 🕺 Revolucionou a música e a dança (Moonwalk). 'Thriller' é o álbum mais vendido da história. Começou criança no Jackson 5 e virou o artista mais famoso do planeta. 🧤"
+  },
+  {
+    "pergunta": "Quem foi Elvis Presley?",
+    "resposta": "O Rei do Rock! 🎸 Trouxe o rock'n'roll para as massas nos anos 50 com sua dança polêmica e voz potente. Viveu em Graceland. Ícone cultural eterno. 🕺"
+  },
+  {
+    "pergunta": "Quem foi Bob Marley?",
+    "resposta": "O rei do Reggae! 🇯🇲 Jamaicano, espalhou a mensagem de paz, amor e resistência através da música. 'No Woman, No Cry'. Símbolo do movimento Rastafári. 🦁"
+  },
+  {
+    "pergunta": "O que é Jazz?",
+    "resposta": "Música da alma e da improvisação! 🎷 Nasceu em Nova Orleans (EUA), raiz afro-americana. Não tem partitura fixa, os músicos conversam através dos instrumentos. Liberdade sonora! 🎺"
+  },
+  {
+    "pergunta": "O que é Blues?",
+    "resposta": "O pai do Rock! 🎸 Nasceu do sofrimento e dos cantos de trabalho dos negros no sul dos EUA. Usa a 'blue note' (nota triste). B.B. King é o rei. Sem Blues, não existiria guitarra elétrica! 🎶"
+  },
+  {
+    "pergunta": "O que é Hip Hop?",
+    "resposta": "Mais que música, é cultura! 🎤 Nasceu no Bronx (NY). Tem 4 pilares: MC (rima), DJ (música), Break (dança) e Graffiti (arte visual). É a voz da periferia. 🧢"
+  },
+  {
+    "pergunta": "O que é K-Pop?",
+    "resposta": "Pop Coreano! 🇰🇷 Fenômeno global. Grupos como BTS e Blackpink. Mistura música viciante, coreografias perfeitas, moda e clipes cinematográficos. Os fãs (fandoms) são super organizados! 💜"
+  },
+  {
+    "pergunta": "O que é Helium (Hélio)?",
+    "resposta": "O gás que faz o balão voar e a voz ficar fina! 🎈 É o segundo elemento mais leve do universo. É inerte (não explode). Vem de minas de gás natural, não do ar. ☁️"
+  },
+  {
+    "pergunta": "O que é Mercúrio (Elemento)?",
+    "resposta": "O único metal que é líquido na temperatura ambiente! 🌡️ É prateado e pesado. Muito tóxico, por isso não usamos mais em termômetros caseiros. Apelido: Prata Viva. ☠️"
+  },
+  {
+    "pergunta": "O que é Carbono?",
+    "resposta": "O tijolo da vida! 🧱 Tudo que é vivo tem carbono. Ele é incrível: pode ser carvão (barato) ou diamante (caro), dependendo de como os átomos se organizam. Química pura! 💎"
+  },
+  {
+    "pergunta": "O que é Oxigênio?",
+    "resposta": "O gás que nos mantém vivos! 🌬️ 21% do ar é oxigênio. Ele é super reativo (faz ferro enferrujar e fogo queimar). Produzido pelas plantas e algas. Respire fundo! 🌳"
+  },
+  {
+    "pergunta": "O que é Ouro?",
+    "resposta": "Metal nobre e amarelo. 🥇 Não enferruja nem perde o brilho, por isso é tão valioso. É um ótimo condutor de eletricidade (tem no seu celular!). Símbolo de riqueza. 💰"
+  },
+  {
+    "pergunta": "O que é Urânio?",
+    "resposta": "Metal radioativo e pesado. ☢️ Usado como combustível em usinas nucleares (gera muita energia) e em bombas atômicas. É perigoso e poderoso. 🔋"
+  },
+  {
+    "pergunta": "O que é Silício?",
+    "resposta": "A base da tecnologia! 💻 É um semicondutor usado para fazer chips de computador e painéis solares. O 'Vale do Silício' tem esse nome por causa dele. Sem ele, sem internet! 📱"
+  },
+  {
+    "pergunta": "O que é Neônio?",
+    "resposta": "O gás dos letreiros luminosos! 🔴 Quando a eletricidade passa por ele, brilha num vermelho-laranja intenso. Outras cores de letreiros usam outros gases (Argônio, Xenônio). ✨"
+  },
+  {
+    "pergunta": "Como funciona a Airfryer?",
+    "resposta": "É um forno de vento super forte! 🌪️ Uma resistência esquenta o ar e uma ventoinha faz ele girar muito rápido. O ar quente 'frita' a comida sem óleo. Mágica da cozinha moderna! 🍟"
+  },
+  {
+    "pergunta": "Como funciona o Aspirador Robô?",
+    "resposta": "Ele tem sensores de colisão e abismo (pra não cair da escada). 🤖 Os mais modernos mapeiam a casa com laser ou câmera e sabem onde já limparam. O gato adora passear nele! 🐈"
+  },
+  {
+    "pergunta": "Como funciona a Impressora 3D?",
+    "resposta": "Ela 'desenha' com plástico derretido. 🖨️ Vai colocando camada sobre camada, de baixo pra cima, até formar o objeto. Dá pra imprimir brinquedos, peças de carro e até casas! 🏠"
+  },
+  {
+    "pergunta": "Como funciona o Painel Solar?",
+    "resposta": "Transforma luz em eletricidade. ☀️ Feito de silício. Quando a luz do sol bate, ela empurra os elétrons do silício, criando uma corrente elétrica. Energia limpa e grátis (do sol)! 🔋"
+  },
+  {
+    "pergunta": "Como funciona o Carro Elétrico?",
+    "resposta": "Usa bateria em vez de tanque e motor elétrico em vez de explosão. 🚗 É silencioso, tem torque instantâneo (acelera rápido) e não solta fumaça. O futuro das ruas! 🔌"
+  },
+  {
+    "pergunta": "Como funciona o 5G?",
+    "resposta": "Usa ondas de rádio de frequência mais alta. 📡 Transporta muito mais dados e muito mais rápido que o 4G, com quase zero de atraso (latência). Permite carros autônomos e cirurgias à distância. 📶"
+  },
+  {
+    "pergunta": "Como funciona o QR Code?",
+    "resposta": "É um código de barras 2D. ⬛ Os quadrados pretos e brancos guardam informação (como um link). A câmera do celular lê o padrão e traduz. Prático e rápido! 📱"
+  },
+  {
+    "pergunta": "O que é Vôlei?",
+    "resposta": "Esporte de equipe sem contato físico! 🏐 O objetivo é fazer a bola tocar no chão do lado adversário passando por cima da rede. Manchete, toque, saque e cortada! 6 jogadores de cada lado. 🇧🇷"
+  },
+  {
+    "pergunta": "O que é Basquete?",
+    "resposta": "Bola na cesta! 🏀 Criado nos EUA. 5 jogadores por time. Tem que quicar a bola pra andar. Enterradas e arremessos de 3 pontos são o show. A NBA é a liga dos sonhos. ⛹️‍♂️"
+  },
+  {
+    "pergunta": "O que é Tênis (esporte)?",
+    "resposta": "Duelo de raquetes! 🎾 Pode ser 1x1 ou duplas. A bola não pode quicar duas vezes. A contagem é estranha (15, 30, 40, game). Exige muito fôlego e mentalidade. Guga é nosso ídolo! 🏆"
+  },
+  {
+    "pergunta": "O que é Natação?",
+    "resposta": "Correr na água! 🏊‍♂️ Tem 4 estilos: Crawl (livre), Costas, Peito e Borboleta. Trabalha o corpo todo e a respiração. Michael Phelps é o peixe humano. 🥇"
+  },
+  {
+    "pergunta": "O que é Surfe?",
+    "resposta": "Deslizar nas ondas! 🏄‍♂️ O surfista rema, fica em pé na prancha e manobra na parede da água. O Brasil é uma potência mundial (Brazilian Storm). É um estilo de vida! 🌊"
+  },
+  {
+    "pergunta": "O que é Skate?",
+    "resposta": "Prancha com rodinhas! 🛹 Nasceu do surfe no asfalto. Tem Street (obstáculos de rua) e Park (piscinas). Virou esporte olímpico. Rayssa Leal é nossa fadinha! 🧚‍♀️"
+  },
+  {
+    "pergunta": "O que é Judô?",
+    "resposta": "Caminho suave. 🥋 Arte marcial japonesa. O objetivo é derrubar o oponente de costas no chão (Ippon) ou imobilizar. Usa a força do adversário contra ele. Respeito é a regra número 1. 🇯🇵"
+  },
+  {
+    "pergunta": "O que é Boxe?",
+    "resposta": "A nobre arte. 🥊 Luta usando apenas os punhos (com luvas). O objetivo é o nocaute (K.O.) ou ganhar por pontos. Exige reflexo, força e muita esquiva. Rocky Balboa! 👊"
+  },
+  {
+    "pergunta": "O que é Yoga?",
+    "resposta": "União de corpo e mente. 🧘 Prática indiana com posturas (asanas), respiração e meditação. Traz flexibilidade e paz interior. Namastê! 🕉️"
+  },
+  {
+    "pergunta": "O que é CrossFit?",
+    "resposta": "Treinamento funcional de alta intensidade. 🏋️‍♂️ Mistura levantamento de peso, ginástica e aeróbico. O objetivo é ser bom em tudo. A comunidade é muito unida (e viciada!). 💪"
+  },
+  {
+    "pergunta": "Estou com ciúmes",
+    "resposta": "Ciúme é um sinal de insegurança ou medo de perder. 💚 É normal sentir, mas não deixe ele controlar suas ações. Converse com a pessoa abertamente sobre o que te deixa inseguro, sem acusar. Diálogo resolve! 🗣️"
+  },
+  {
+    "pergunta": "Sinto culpa",
+    "resposta": "A culpa serve para nos avisar que passamos de um limite. 🛑 Se você errou, peça desculpas, tente consertar e aprenda. Depois disso, se perdoe. Ficar se punindo não muda o passado. Olhe para frente! 🌻"
+  },
+  {
+    "pergunta": "Estou decepcionado",
+    "resposta": "Dói quando a expectativa não bate com a realidade. 💔 Permita-se ficar triste, mas lembre-se que as pessoas (e a vida) não têm obrigação de agir como a gente quer. O que você aprendeu com isso? 🧠"
+  },
+  {
+    "pergunta": "Estou eufórico",
+    "resposta": "Que delícia! 🎉 Aproveite essa energia! O que aconteceu de bom? Compartilhe sua alegria, ela contagia! Só cuidado para não prometer coisas que não pode cumprir na empolgação. 😉"
+  },
+  {
+    "pergunta": "Sinto saudade",
+    "resposta": "Saudade é o amor que fica. ❤️ Significa que você viveu momentos bons. Se puder, fale com a pessoa. Se não puder, honre a memória dela com um sorriso. A saudade prova que valeu a pena. 💌"
+  },
+  {
+    "pergunta": "Estou com vergonha",
+    "resposta": "Todo mundo passa por isso! 😳 A gente acha que todo mundo está olhando, mas a verdade é que cada um está preocupado com si mesmo. Ria de si mesmo, isso quebra o gelo. Vai passar! 🙈"
+  },
+  {
+    "pergunta": "Me sinto sozinho",
+    "resposta": "A solidão às vezes bate. 🌑 Mas estar sozinho não é ser solitário. Aproveite sua própria companhia, leia, veja um filme. E se precisar, mande mensagem para um amigo antigo. As pessoas gostam de ser lembradas. 📱"
+  },
+  {
+    "pergunta": "Estou confuso",
+    "resposta": "Normal! 🤔 Às vezes temos muitas opções ou informações. Tente escrever o que está sentindo ou as opções num papel. Ver as coisas escritas ajuda a clarear a mente. 📝"
+  },
+  {
+    "pergunta": "Estou com raiva",
+    "resposta": "A raiva é uma energia potente. 😡 Não guarde, mas não exploda em alguém. Faça exercício, escreva uma carta e não envie, grite no travesseiro. Use a raiva para mudar o que não está bom, não para destruir. 🔥"
+  },
+  {
+    "pergunta": "Estou grato",
+    "resposta": "A gratidão é o segredo da felicidade! 🙏 Focar no que temos de bom atrai mais coisas boas. Que tal anotar 3 coisas pelas quais você é grato hoje? ✨"
+  },
+  {
+    "pergunta": "Como tirar mancha de sangue?",
+    "resposta": "Água oxigenada 10 volumes! 🩸 Jogue em cima da mancha fresca, vai espumar e 'comer' o sangue. Depois lave com água fria e sabão. Água quente cozinha o sangue e fixa a mancha, evite! ❄️"
+  },
+  {
+    "pergunta": "Como tirar chiclete de roupa?",
+    "resposta": "Congele ele! 🧊 Passe um cubo de gelo ou ponha a roupa no freezer. O chiclete endurece e você consegue quebrar ou arrancar com uma espátula. Não tente esfregar! ❄️"
+  },
+  {
+    "pergunta": "Como tirar cheiro de fritura da casa?",
+    "resposta": "Ferva água com cravo e canela (ou vinagre). 🥘 O vapor aromático ajuda a neutralizar o cheiro de óleo. E abra as janelas, claro! 🌬️"
+  },
+  {
+    "pergunta": "Como saber se o ovo está bom?",
+    "resposta": "Teste da água! 🥚 Coloque o ovo num copo d'água. Se afundar, está fresco. Se boiar, está podre (criou gás dentro). Se ficar no meio, coma logo cozido. 💧"
+  },
+  {
+    "pergunta": "Como cortar cebola sem chorar?",
+    "resposta": "Use faca bem afiada (esmaga menos as células). 🔪 Ou corte perto de uma chama (fogão ligado) ou ventilador. Gelar a cebola antes também ajuda a segurar o gás. 🧅"
+  },
+  {
+    "pergunta": "Como gelar cerveja rápido?",
+    "resposta": "Envolva a lata ou garrafa em papel toalha molhado e ponha no freezer. 🍺 Em 15 minutos está trincando! O papel aumenta a troca de calor. Saúde! ❄️"
+  },
+  {
+    "pergunta": "Como tirar etiqueta sem rasgar?",
+    "resposta": "Use o secador de cabelo! 🌡️ O ar quente derrete a cola e a etiqueta sai inteirinha sem deixar resíduo. Funciona em vidro, plástico e capa de livro. 🏷️"
+  },
+  {
+    "pergunta": "Como desentupir vaso sanitário?",
+    "resposta": "Se não tiver desentupidor: Jogue água quente (não fervendo) com detergente de cima (para fazer pressão). 🚽 Ou vede o vaso com plástico filme (várias camadas) e dê descarga pressionando o plástico. A pressão empurra tudo! 🔧"
+  },
+  {
+    "pergunta": "Como afiar faca sem afiador?",
+    "resposta": "Use o fundo de uma caneca de cerâmica! ☕ Aquela parte áspera sem esmalte. Passe a lâmina num ângulo de 20 graus. Funciona na hora do aperto! 🔪"
+  },
+  {
+    "pergunta": "Como tirar risco de caneta da parede?",
+    "resposta": "Álcool ou spray de cabelo! 🖊️ O solvente dissolve a tinta. Passe com um algodão. Pasta de dente branca também pode ajudar (mas cuidado pra não tirar a tinta da parede). 🎨"
+  },
+  {
+    "pergunta": "O que é o Monte Rushmore?",
+    "resposta": "Uma montanha nos EUA com o rosto de 4 presidentes esculpidos na pedra. 🗿 Washington, Jefferson, Roosevelt e Lincoln. É gigante! 🇺🇸"
+  },
+  {
+    "pergunta": "O que é o Golden Gate?",
+    "resposta": "A ponte vermelha famosa de São Francisco. 🌉 É uma ponte pênsil (suspensa por cabos). Ícone da Califórnia. Dizem que pintam ela o ano todo sem parar! 🌁"
+  },
+  {
+    "pergunta": "O que é o Big Ben?",
+    "resposta": "Não é o relógio, é o sino! 🔔 O sino gigante de 13 toneladas dentro da torre do parlamento em Londres. A torre chama Elizabeth Tower. Mas todo mundo chama tudo de Big Ben! 🇬🇧"
+  },
+  {
+    "pergunta": "O que é a Torre de Belém?",
+    "resposta": "Uma fortaleza em Lisboa, Portugal. 🇵🇹 Construída no rio Tejo para defender a cidade e marcar o ponto de partida dos navegadores. Símbolo das Grandes Navegações. Linda! 🏰"
+  },
+  {
+    "pergunta": "O que é a Praça Vermelha?",
+    "resposta": "O coração de Moscou, Rússia. 🇷🇺 Onde fica o Kremlin (governo) e a Catedral de São Basílio (aquela colorida que parece doce). Palco de desfiles militares históricos. 💂‍♂️"
+  },
+  {
+    "pergunta": "O que é a Acrópole?",
+    "resposta": "A 'cidade alta' de Atenas, Grécia. 🇬🇷 Uma colina rochosa onde fica o Partenon (templo da deusa Atena). O berço da democracia e da civilização ocidental. Histórico! 🏛️"
+  },
+  {
+    "pergunta": "O que é o Coliseu?",
+    "resposta": "O maior anfiteatro de Roma. 🇮🇹 Onde gladiadores lutavam contra leões para o público. Cabiam 50 mil pessoas. Símbolo do Império Romano. 'Pão e Circo'! 🏟️"
+  },
+  {
+    "pergunta": "O que é a Sagrada Família?",
+    "resposta": "Uma igreja em Barcelona que nunca fica pronta! 🏗️ Projetada por Gaudí. Parece feita de areia derretida, cheia de detalhes da natureza. Está em obras desde 1882! 🇪🇸"
+  },
+  {
+    "pergunta": "O que é o Burj Khalifa?",
+    "resposta": "O prédio mais alto do mundo! 🏙️ Fica em Dubai. Tem 828 metros. Fura as nuvens. Tem elevadores super rápidos e uma vista do deserto e do mar. Luxo puro! 🇦🇪"
+  },
+  {
+    "pergunta": "O que é a Ilha de Komodo?",
+    "resposta": "Lar dos Dragões de Komodo na Indonésia! 🦎 Uma ilha vulcânica linda com praias de areia rosa e lagartos gigantes pré-históricos. Aventura selvagem! 🏝️"
+  },
+  {
+    "pergunta": "O que é Sushi?",
+    "resposta": "O prato japonês mais famoso. 🍣 Arroz com vinagre + peixe cru. Mas sushi é o arroz! Se for só peixe, chama Sashimi. Tem Niguiri, Maki, Temaki. Delícia! 🇯🇵"
+  },
+  {
+    "pergunta": "O que é Paella?",
+    "resposta": "Prato típico da Espanha. 🥘 Arroz amarelo (açafrão) com frutos do mar, frango, coelho e legumes. Feito numa panela rasa gigante. É comida de festa! 🇪🇸"
+  },
+  {
+    "pergunta": "O que é Croissant?",
+    "resposta": "Pão folhado em formato de meia-lua. 🥐 Símbolo da França, mas nasceu na Áustria! Muita manteiga e massa leve. Com café com leite em Paris... chique! 🇫🇷"
+  },
+  {
+    "pergunta": "O que é Tacos?",
+    "resposta": "A alma do México! 🌮 Tortilha de milho (dura ou mole) com carne, feijão, queijo e salsa. Come-se com a mão. Cuidado com a pimenta! 🇲🇽"
+  },
+  {
+    "pergunta": "O que é Ceviche?",
+    "resposta": "Orgulho do Peru! 🇵🇪 Peixe cru marinado no suco de limão (que 'cozinha' o peixe), com cebola roxa, coentro e pimenta. Fresco e ácido. Patrimônio cultural! 🐟"
+  },
+  {
+    "pergunta": "O que é Bacalhau à Brás?",
+    "resposta": "Clássico português! 🇵🇹 Bacalhau desfiado, batata palha, cebola e ovo mexido. Simples e maravilhoso. Dizem que há 1001 maneiras de fazer bacalhau, essa é a melhor! 🐟"
+  },
+  {
+    "pergunta": "O que é Fish and Chips?",
+    "resposta": "Peixe empanado com batata frita. 🐟🍟 O prato nacional da Inglaterra. Servido com vinagre e sal (às vezes em jornal antigo). Comida de rua clássica! 🇬🇧"
+  },
+  {
+    "pergunta": "O que é Pad Thai?",
+    "resposta": "Macarrão de arroz frito da Tailândia. 🍜 Com camarão, amendoim, ovo, broto de feijão e molho agridoce. Uma explosão de sabores na boca! 🇹🇭"
+  },
+  {
+    "pergunta": "O que é Guacamole?",
+    "resposta": "Pasta de abacate salgada! 🥑 Com tomate, cebola, coentro e limão. Come-se com nachos (chips). O abacate no México é salgado, não doce! 🇲🇽"
+  },
+  {
+    "pergunta": "O que é Hummus?",
+    "resposta": "Pasta de grão-de-bico com tahine (gergelim). 🥙 Típico do Oriente Médio. Saudável e delicioso com pão sírio. É a paz em forma de comida! 🇮🇱🇱🇧"
+  },
+  {
+    "pergunta": "O que é a Teoria do Caos?",
+    "resposta": "A ideia de que pequenas mudanças geram grandes efeitos. 🦋 O bater de asas de uma borboleta no Brasil pode causar um tornado no Texas. O mundo é imprevisível! 🌪️"
+  },
+  {
+    "pergunta": "O que é a Navalha de Occam?",
+    "resposta": "Se você tem duas explicações, a mais simples geralmente é a certa. 🪒 Se ouviu barulho de casco, pense em cavalo, não em zebra (ou unicórnio). Lógica básica! 🐴"
+  },
+  {
+    "pergunta": "O que é o Gato de Schrödinger?",
+    "resposta": "Um gato numa caixa que está vivo E morto ao mesmo tempo. 🐱 Até você abrir a caixa, a física quântica diz que ele está nos dois estados. Bizarro, né? 📦"
+  },
+  {
+    "pergunta": "O que é o Paradoxo de Fermi?",
+    "resposta": "Se o universo é infinito, cadê os alienígenas? 👽 Deveria estar cheio de vida, mas não vemos ninguém. Eles estão se escondendo? Ou somos os primeiros? 🌌"
+  },
+  {
+    "pergunta": "O que é o Efeito Mandela?",
+    "resposta": "Memória falsa coletiva. 🧠 Muita gente lembra do Pikachu com ponta preta no rabo (ele não tem!). Ou que Mandela morreu nos anos 80 (não morreu). Universos paralelos? ⚡"
+  },
+  {
+    "pergunta": "O que é a Lei de Murphy?",
+    "resposta": "Se algo pode dar errado, vai dar. ☔ O pão cai com a manteiga pra baixo. A fila do lado anda mais rápido. É o pessimismo com humor! 🍞"
+  },
+  {
+    "pergunta": "O que é o Vale da Estranheza?",
+    "resposta": "Quando um robô parece quase humano, mas tem algo errado, e nos dá medo. 🤖 Se for muito artificial, ok. Se for perfeito, ok. O meio termo é assustador! 🧟‍♂️"
+  },
+  {
+    "pergunta": "O que é Solipsismo?",
+    "resposta": "A ideia de que só a SUA mente existe. 🤯 Todo o resto (o mundo, eu, seus amigos) pode ser imaginação sua. Impossível de provar o contrário. Meio solitário, né? 🏝️"
+  },
+  {
+    "pergunta": "O que é Niilismo?",
+    "resposta": "A crença de que a vida não tem sentido intrínseco. 🌑 Nada importa no final. Pode ser depressivo ou libertador (se nada importa, sou livre para criar meu sentido!). 🦅"
+  },
+  {
+    "pergunta": "O que é Estoicismo?",
+    "resposta": "Filosofia da força mental. 🏛️ Foca no que você controla (suas reações) e aceita o que não controla (o mundo). Seja como uma rocha no mar: as ondas batem, mas ela não se move. 🧘"
+  },
+  {
+    "pergunta": "Quem foi Cleópatra?",
+    "resposta": "A última rainha do Egito. 👑 Inteligente, falava várias línguas e seduziu os líderes de Roma (Júlio César e Marco Antônio) para proteger seu país. Ícone de poder feminino! 🐍"
+  },
+  {
+    "pergunta": "Quem foi Joana D'Arc?",
+    "resposta": "Uma camponesa adolescente que liderou o exército da França! ⚔️ Dizia ouvir vozes de Deus. Venceu batalhas impossíveis, mas foi queimada como bruxa. Virou Santa. 🔥"
+  },
+  {
+    "pergunta": "Quem foi Napoleão?",
+    "resposta": "O imperador que conquistou a Europa. 🇫🇷 Gênio militar, mas baixo (diz a lenda). Criou leis que usamos até hoje. Terminou exilado numa ilha. 'Impossível não é francês'. 🎩"
+  },
+  {
+    "pergunta": "Quem foi Hitler?",
+    "resposta": "O ditador nazista da Alemanha. 🇩🇪 Responsável pela 2ª Guerra Mundial e pelo Holocausto. Um dos períodos mais sombrios da humanidade. Símbolo do mal. 🚫"
+  },
+  {
+    "pergunta": "Quem foi Gandhi?",
+    "resposta": "Líder da independência da Índia. 🇮🇳 Venceu o império britânico sem dar um tiro, usando a não-violência e desobediência civil. Símbolo da paz. 'Seja a mudança que quer ver'. 🕊️"
+  },
+  {
+    "pergunta": "Quem foi Mandela?",
+    "resposta": "Líder contra o apartheid na África do Sul. 🇿🇦 Ficou 27 anos preso. Saiu sem ódio, virou presidente e uniu brancos e negros. 'A educação é a arma mais poderosa'. ✊"
+  },
+  {
+    "pergunta": "Quem foi Einstein?",
+    "resposta": "O físico descabelado! 🧠 Criou a Teoria da Relatividade (E=mc²). Mudou como entendemos tempo, espaço e gravidade. Gênio pop! 👅"
+  },
+  {
+    "pergunta": "Quem foi Da Vinci?",
+    "resposta": "O homem do Renascimento. 🎨 Pintou a Mona Lisa, desenhou helicópteros, estudou anatomia. Era pintor, inventor, cientista... sabia tudo! 🚁"
+  },
+  {
+    "pergunta": "Quem foi Tesla?",
+    "resposta": "O mago da eletricidade! ⚡ Inventou a Corrente Alternada (que usamos na tomada), rádio e controle remoto. Morreu pobre, mas iluminou o mundo. 💡"
+  },
+  {
+    "pergunta": "Quem foi Shakespeare?",
+    "resposta": "O maior escritor da língua inglesa. 🎭 'Ser ou não ser?'. Escreveu Romeu e Julieta, Hamlet. Entendia a alma humana como ninguém. 💀"
+  },
+  {
+    "pergunta": "O que é um Buraco de Minhoca?",
+    "resposta": "Um atalho no espaço! 🐛 Teoricamente, conecta dois pontos distantes do universo dobrando o espaço-tempo. Viagem interestelar rápida. Tipo Interestelar! 🚀"
+  },
+  {
+    "pergunta": "O que é Matéria Escura?",
+    "resposta": "Algo invisível que segura as galáxias. 🌌 Tem gravidade, mas não emite luz. É 85% da matéria do universo e não sabemos o que é. Mistério total! 👻"
+  },
+  {
+    "pergunta": "O que é Supernova?",
+    "resposta": "A explosão de uma estrela gigante! 💥 Brilha mais que uma galáxia inteira. Espalha ouro e ferro pelo espaço. Nós somos poeira de estrelas mortas! ✨"
+  },
+  {
+    "pergunta": "O que é Exoplaneta?",
+    "resposta": "Planeta fora do nosso sistema solar. 🪐 Já achamos milhares! Alguns podem ter água e vida. A caça por uma 'nova Terra' continua. 🔭"
+  },
+  {
+    "pergunta": "O que é a ISS?",
+    "resposta": "Estação Espacial Internacional. 🛰️ Um laboratório gigante orbitando a Terra com astronautas morando lá. Dá pra ver a olho nu passando rápido no céu. Cooperação mundial! 🌍"
+  },
+  {
+    "pergunta": "O homem foi à Lua?",
+    "resposta": "Sim! 🌕 Em 1969, Neil Armstrong pisou lá. 'Um pequeno passo para um homem...'. Deixaram pegadas, bandeira e espelhos. Foi a corrida espacial! 🚀"
+  },
+  {
+    "pergunta": "O que é um Eclipse?",
+    "resposta": "Sombra no espaço! 🌑 Solar: Lua tapa o Sol. Lunar: Terra tapa a Lua. É um alinhamento cósmico perfeito. Lindo de ver! 🕶️"
+  },
+  {
+    "pergunta": "O que é Aurora Boreal?",
+    "resposta": "Luzes no céu do polo norte! 💚 O vento solar bate no campo magnético da Terra e brilha verde/rosa. Mágica da física! ✨"
+  },
+  {
+    "pergunta": "O que é Ano-Luz?",
+    "resposta": "É distância, não tempo! 📏 A distância que a luz viaja em um ano (9 trilhões de km). O universo é grande demais pra medir em metros! 🌌"
+  },
+  {
+    "pergunta": "O que é o Big Bang?",
+    "resposta": "O início de tudo! 💥 O universo era um ponto minúsculo e quente que expandiu e criou tudo que existe. Ainda estamos expandindo! 🎈"
+  },
+  {
+    "pergunta": "O que é Marketing Digital?",
+    "resposta": "Vender pela internet! 💻 Usar redes sociais, Google e e-mail para atrair clientes. É onde a atenção das pessoas está hoje. 📱"
+  },
+  {
+    "pergunta": "O que é SEO?",
+    "resposta": "Fazer seu site aparecer no Google! 🔎 Usar palavras-chave certas para ficar na primeira página sem pagar anúncio. É ser encontrado! 🥇"
+  },
+  {
+    "pergunta": "O que é Copywriting?",
+    "resposta": "Escrever para vender. ✍️ Textos persuasivos que te fazem clicar ou comprar. Gatilhos mentais. A arte da venda escrita! 💰"
+  },
+  {
+    "pergunta": "O que é Branding?",
+    "resposta": "Gestão de marca. 🍎 Não é só o logo, é o sentimento que a marca passa. A Apple vende inovação, a Coca vende felicidade. É a personalidade da empresa! ™️"
+  },
+  {
+    "pergunta": "O que é Lead?",
+    "resposta": "Um cliente interessado. 🎣 Alguém que deixou o e-mail ou telefone. É um potencial comprador. O objetivo do marketing é gerar Leads! 📧"
+  },
+  {
+    "pergunta": "O que é B2B?",
+    "resposta": "Business to Business. 🏭 Empresa vendendo para empresa. Ex: Fábrica de pneu vendendo para montadora de carros. Vendas grandes e racionais! 🤝"
+  },
+  {
+    "pergunta": "O que é B2C?",
+    "resposta": "Business to Consumer. 🛍️ Empresa vendendo para você. Ex: Supermercado, loja de roupa. Venda emocional e rápida! 🛒"
+  },
+  {
+    "pergunta": "O que é Startup?",
+    "resposta": "Empresa jovem de tecnologia com potencial de crescer muito rápido. 🚀 Uber, Airbnb, Nubank. Começam pequenas, pensam grande. Inovação! 💡"
+  },
+  {
+    "pergunta": "O que é Unicórnio?",
+    "resposta": "Startup que vale mais de 1 bilhão de dólares! 🦄 Era raro (como o animal), hoje tem várias. O sonho de todo empreendedor! 💰"
+  },
+  {
+    "pergunta": "O que é Networking?",
+    "resposta": "Fazer contatos! 🤝 Conhecer pessoas da sua área. Não é ser interesseiro, é criar relações. Quem indica é rei! 👑"
+  },
+  {
+    "pergunta": "O que é Freelancer?",
+    "resposta": "Trabalhador autônomo. 💻 Não tem chefe nem horário fixo, mas também não tem férias pagas. Vende projetos. Liberdade com instabilidade! ☕"
+  },
+  {
+    "pergunta": "O que é Home Office?",
+    "resposta": "Trabalho remoto. 🏠 Escritório em casa. Reunião de pijama (embaixo). Menos trânsito, mais conforto (e gato no teclado!). 🐱"
+  },
+  {
+    "pergunta": "O que é Burnout?",
+    "resposta": "Esgotamento pelo trabalho. 🤯 Quando o estresse vence. Cansaço, desânimo, doença. É sério. Saúde mental em primeiro lugar! 🛑"
+  },
+  {
+    "pergunta": "O que é Procrastinação?",
+    "resposta": "A arte de enrolar. ⏳ Deixar pra última hora. O cérebro quer prazer agora, não dever chato. A cura é começar pequeno! 🍫"
+  },
+  {
+    "pergunta": "O que é Resiliência?",
+    "resposta": "A capacidade de apanhar e levantar. 🥊 Envergar mas não quebrar. Superar crises e sair mais forte. É o músculo da alma! 💪"
+  },
+  {
+    "pergunta": "O que é Empatia?",
+    "resposta": "Sentir a dor do outro. ❤️ Se colocar no lugar. Não é ter pena, é conexão. O mundo precisa de mais! 🌍"
+  },
+  {
+    "pergunta": "O que é Inteligência Emocional?",
+    "resposta": "Controlar seus sentimentos. 🧠 Não explodir de raiva, entender sua tristeza, motivar a si mesmo. É tão importante quanto o QI! 🧘"
+  },
+  {
+    "pergunta": "O que é Mindfulness?",
+    "resposta": "Atenção Plena. 👁️ Estar 100% no agora. Não sofrer pelo passado nem pelo futuro. Focar na respiração ou no gosto da comida. Paz! 🍃"
+  },
+  {
+    "pergunta": "O que é Minimalismo?",
+    "resposta": "Menos é mais. 📦 Ter poucas coisas, só o essencial que traz alegria. Menos bagunça, mais vida. Liberdade material! ✨"
+  },
+  {
+    "pergunta": "O que é Veganismo?",
+    "resposta": "Não consumir nada animal. 🚫🥩 Nem comida, nem roupa (couro/lã), nem cosmético testado. É uma filosofia ética de respeito aos animais. 🌱"
+  },
+  {
+    "pergunta": "O que é Sustentabilidade?",
+    "resposta": "Usar sem acabar. ♻️ Cuidar do planeta hoje para ter planeta amanhã. Reciclar, economizar água, energia limpa. É dever de todos! 🌍"
+  },
+  {
+    "pergunta": "Quem é o Saci-Pererê?",
+    "resposta": "O moleque travesso da floresta! 🌪️ Tem uma perna só, gorro vermelho e fuma cachimbo. Ele adora dar nós em crinas de cavalo, esconder objetos e assustar viajantes. Para prendê-lo, precisa de uma peneira e uma garrafa! 🔴"
+  },
+  {
+    "pergunta": "Quem é o Curupira?",
+    "resposta": "O protetor das matas! 🌳 Tem cabelos de fogo e os pés virados para trás. Isso confunde os caçadores, que seguem as pegadas na direção errada e se perdem na floresta. Ele odeia quem desmata! 🔥"
+  },
+  {
+    "pergunta": "Quem é a Mula sem Cabeça?",
+    "resposta": "Uma lenda assustadora! 🐴 Dizem que é uma mulher que namorou um padre e foi amaldiçoada. Nas noites de quinta para sexta, vira uma mula que solta fogo pelo pescoço e galopa fazendo barulho de ferro. 🔥"
+  },
+  {
+    "pergunta": "Quem é a Iara?",
+    "resposta": "A mãe d'água. 🧜‍♀️ Uma sereia amazônica de beleza hipnotizante. Ela canta para atrair os homens para o fundo do rio, de onde nunca mais voltam. Cuidado com o canto dela! 🌊"
+  },
+  {
+    "pergunta": "Quem é o Boto Cor-de-Rosa?",
+    "resposta": "O conquistador dos rios. 🐬 Diz a lenda que, à noite, o boto vira um homem bonito, vestido de branco com chapéu (para esconder o furo na cabeça), seduz as moças nas festas e volta pro rio antes do amanhecer. 🎩"
+  },
+  {
+    "pergunta": "Quem é o Boitatá?",
+    "resposta": "A cobra de fogo! 🐍🔥 Uma serpente gigante com olhos brilhantes que protege a floresta contra quem causa queimadas. Dizem que quem olha direto nos olhos dela fica cego ou louco. 🌳"
+  },
+  {
+    "pergunta": "Quem é a Cuca?",
+    "resposta": "A bruxa do Sítio! 🐊 Uma velha com cara de jacaré que pega crianças desobedientes que não querem dormir. 'Dorme neném, que a Cuca vem pegar...'. É o nosso bicho-papão! 👵"
+  },
+  {
+    "pergunta": "Quem é o Negrinho do Pastoreio?",
+    "resposta": "Lenda do Sul. 🕯️ Um menino escravizado que perdeu os cavalos e foi castigado cruelmente. Hoje ele é considerado um anjo que ajuda as pessoas a encontrarem coisas perdidas. Se achar, acenda uma vela pra ele! 🐎"
+  },
+  {
+    "pergunta": "Quem é o Lobisomem?",
+    "resposta": "O homem-lobo! 🐺 Diz a lenda brasileira que o oitavo filho homem (depois de 7 mulheres) vira lobisomem nas noites de lua cheia. Ele corre por 7 cidades uivando antes do sol nascer. 🌕"
+  },
+  {
+    "pergunta": "O que é a Vitória-Régia?",
+    "resposta": "Uma planta mágica. 🌸 A lenda diz que uma índia chamada Naiá se apaixonou pela Lua (Jaci) e, ao tentar beijar seu reflexo no rio, se afogou. A Lua a transformou na estrela das águas, a planta gigante. 🌿"
+  },
+  {
+    "pergunta": "Como fazer fogo sem isqueiro?",
+    "resposta": "Atrito ou Lente! 🔥 Você pode esfregar um graveto seco numa base de madeira (com muita paciência) até criar brasa. Ou usar uma lente (óculos, vidro) para focar a luz do sol em folhas secas. Sobrevivência básica! 🪵"
+  },
+  {
+    "pergunta": "Como encontrar água na selva?",
+    "resposta": "Siga a gravidade! 💧 A água sempre corre para baixo. Procure em vales e onde a vegetação é mais verde. Cipós grossos e bambus também podem ter água potável dentro. Nunca beba água parada! 🌿"
+  },
+  {
+    "pergunta": "Pode beber água do mar?",
+    "resposta": "Nunca! 🚫 O sal desidrata seu corpo muito mais rápido do que a água hidrata. Beber água do mar leva à falência dos rins e alucinações. É melhor ter sede do que beber veneno salgado! 🌊"
+  },
+  {
+    "pergunta": "Como achar o Norte sem bússola?",
+    "resposta": "Olhe o sol! ☀️ Ele nasce no Leste e se põe no Oeste. Se você apontar o braço direito pro nascer do sol, seu rosto estará para o Norte (no hemisfério sul, é o contrário, o norte fica nas costas). À noite, use o Cruzeiro do Sul! 🧭"
+  },
+  {
+    "pergunta": "O que fazer se encontrar um urso?",
+    "resposta": "Não corra! 🐻 Se for um urso pardo (Grizzly), finja de morto (deite encolhido). Se for um urso preto, faça barulho e pareça grande para assustá-lo. Correr ativa o instinto de caça dele! 🌲"
+  },
+  {
+    "pergunta": "Como fugir de correnteza no mar?",
+    "resposta": "Nade paralelo à areia! 🏊‍♂️ Não tente nadar contra a correnteza de volta pra praia, você vai cansar e afundar. Nade para o lado até sair da corrente, e só então nade para a areia. Calma salva vidas! 🌊"
+  },
+  {
+    "pergunta": "O musgo aponta o Norte?",
+    "resposta": "Mito parcial! 🌲 O musgo cresce onde tem sombra e umidade. No hemisfério Norte, o lado norte das árvores pega menos sol, então tem mais musgo. Mas na floresta fechada, musgo cresce em todo lugar. Não confie cegamente! 🧭"
+  },
+  {
+    "pergunta": "Como filtrar água suja?",
+    "resposta": "Faça um filtro de camadas! 🥤 Uma garrafa com furos embaixo, coloque camadas de: pedras, areia, carvão (da fogueira) e tecido. A água passa e a sujeira fica. Depois, ferva para matar bactérias! 🦠"
+  },
+  {
+    "pergunta": "O que é um Abrigo?",
+    "resposta": "Sua casa na selva. ⛺ A regra dos 3: você sobrevive 3 horas sem abrigo (no frio extremo), 3 dias sem água e 3 semanas sem comida. Proteção contra chuva, vento e frio é prioridade! 🌧️"
+  },
+  {
+    "pergunta": "Sinal de fumaça funciona?",
+    "resposta": "Sim! 🌫️ Três colunas de fumaça são o sinal universal de socorro. Use folhas verdes na fogueira para criar muita fumaça branca visível de longe por aviões. 🔥"
+  },
+  {
+    "pergunta": "Como é feito o Vidro?",
+    "resposta": "Areia derretida! 🏖️ Misturam areia (sílica), barrilha e calcário e aquecem a 1500°C. Vira um líquido incandescente que pode ser moldado. Quando esfria, fica transparente e duro. Mágica da química! 🥛"
+  },
+  {
+    "pergunta": "Como é feito o Papel?",
+    "resposta": "Vem da madeira! 🌳 Troncos de eucalipto são picados e cozidos até virarem uma pasta de celulose (parece mingau). Essa pasta é lavada, branqueada, esticada e seca em rolos gigantes. 📄"
+  },
+  {
+    "pergunta": "Como é feito o Plástico?",
+    "resposta": "Vem do petróleo! 🛢️ O petróleo é refinado para tirar a Nafta. A Nafta passa por processos químicos e vira polímeros (cadeias longas de moléculas). É moldado com calor. Prático, mas polui muito! 🥤"
+  },
+  {
+    "pergunta": "Como é feita a Borracha?",
+    "resposta": "Do leite da árvore! 🌳 A seringueira solta um líquido branco chamado látex. Ele é coagulado e aquecido com enxofre (vulcanização) para ficar elástico e resistente. Pneus e elásticos vêm daí! 🚗"
+  },
+  {
+    "pergunta": "Como é feito o Aço?",
+    "resposta": "Ferro + Carbono. ⛓️ O ferro gusa (bruto) é derretido e misturado com um pouquinho de carbono e oxigênio para tirar impurezas. O resultado é um metal muito mais forte que o ferro puro. Constrói o mundo! 🏗️"
+  },
+  {
+    "pergunta": "Como é feito o Cimento?",
+    "resposta": "Calcário e Argila moídos e assados. 🧱 Essa mistura vira um pó cinza (clínquer) que, quando misturado com água, endurece como pedra. É a cola da construção civil! 🏠"
+  },
+  {
+    "pergunta": "Como é feito o Chocolate?",
+    "resposta": "Semente de Cacau. 🍫 As sementes são fermentadas, secas, torradas e moídas até virar uma pasta. Mistura-se açúcar e leite. O processo de 'conchagem' deixa ele liso e macio. Delícia! 🍬"
+  },
+  {
+    "pergunta": "Como é feito o Sabão?",
+    "resposta": "Gordura + Soda Cáustica. 🧼 Parece perigoso, mas a reação química (saponificação) transforma tudo em sabão e glicerina. Antigamente, usava-se gordura animal e cinzas! 🛁"
+  },
+  {
+    "pergunta": "Como é feita a Cerveja?",
+    "resposta": "Cozinhando cereais! 🍺 Cevada maltada é fervida com lúpulo (dá o amargo). Depois, a levedura (fungo) come o açúcar e solta álcool e gás. Fermentação pura! 🍻"
+  },
+  {
+    "pergunta": "Como é feito o Vinho?",
+    "resposta": "Uva pisada (ou prensada)! 🍇 O suco da uva fica em barris. As leveduras naturais da casca transformam o açúcar da fruta em álcool. Quanto mais tempo guarda, melhor fica (geralmente). 🍷"
+  },
+  {
+    "pergunta": "O que foi a Guerra dos Emus?",
+    "resposta": "A guerra que a Austrália perdeu para aves! 🐦 Em 1932, o exército usou metralhadoras para combater 20.000 emus que destruíam plantações. As aves eram rápidas demais e desviavam das balas. O exército desistiu. Emus venceram! 🇦🇺"
+  },
+  {
+    "pergunta": "O que foi a Guerra do Futebol?",
+    "resposta": "Um conflito entre El Salvador e Honduras em 1969. ⚽ A tensão já era alta, mas um jogo de futebol nas eliminatórias da Copa foi o estopim para 100 horas de guerra. O esporte mexe com os ânimos! 🥅"
+  },
+  {
+    "pergunta": "O que foi o Grande Incêndio de Londres?",
+    "resposta": "Em 1666, um incêndio numa padaria queimou a cidade por 3 dias. 🔥 Destruiu 13 mil casas, mas acabou matando os ratos que transmitiam a Peste Negra, salvando a cidade da doença. Males que vêm para o bem? 🏘️"
+  },
+  {
+    "pergunta": "O que foi a Revolta da Vacina?",
+    "resposta": "Rio de Janeiro, 1904. 💉 O povo se revoltou contra a vacinação obrigatória de varíola. Eles não entendiam a ciência e achavam que o governo queria invadir suas casas e corpos. Quebraram bondes e lojas! 🏙️"
+  },
+  {
+    "pergunta": "O que foi o Dia do Fico?",
+    "resposta": "9 de janeiro de 1822. 🤴 Portugal mandou D. Pedro I voltar, mas ele disse: 'Se é para o bem de todos e felicidade geral da Nação, diga ao povo que fico'. Passo decisivo para a independência do Brasil! 🇧🇷"
+  },
+  {
+    "pergunta": "O que é o Manuscrito Voynich?",
+    "resposta": "O livro mais misterioso do mundo. 📖 Escrito no século XV em uma língua que ninguém conhece e com desenhos de plantas que não existem. Até hoje, nem IA nem criptógrafos conseguiram ler. O que será? 🤔"
+  },
+  {
+    "pergunta": "O que é a Cidade Proibida?",
+    "resposta": "O palácio imperial da China em Pequim. 🏯 Por 500 anos, nenhum plebeu podia entrar lá, sob pena de morte. Tem 980 prédios. Hoje é museu e qualquer um pode visitar! 🇨🇳"
+  },
+  {
+    "pergunta": "O que é a Pedra de Roseta?",
+    "resposta": "A chave do Egito! 🗝️ Uma pedra com o mesmo texto em 3 línguas. Foi graças a ela que conseguimos traduzir os hieróglifos e entender a história dos faraós. 📜"
+  },
+  {
+    "pergunta": "Quem foi Jack, o Estripador?",
+    "resposta": "Um serial killer de Londres (1888). 🔪 Nunca foi pego. A identidade dele é um dos maiores mistérios criminais da história. Existem centenas de teorias, mas nenhuma prova. 🎩"
+  },
+  {
+    "pergunta": "O que aconteceu com Amelia Earhart?",
+    "resposta": "A primeira mulher a voar sozinha sobre o Atlântico. ✈️ Em 1937, ela tentou dar a volta ao mundo e desapareceu no Pacífico. O avião nunca foi achado. Mistério da aviação! 🌊"
+  },
+  {
+    "pergunta": "O que é o Princípio de Arquimedes?",
+    "resposta": "Eureka! 🛁 Todo corpo mergulhado na água sofre uma força para cima (empuxo) igual ao peso da água que ele deslocou. É por isso que navios de aço flutuam: eles deslocam muita água! 🚢"
+  },
+  {
+    "pergunta": "O que é a Gaiola de Faraday?",
+    "resposta": "Um escudo contra eletricidade! ⚡ Se você estiver dentro de um carro ou avião (metal) e cair um raio, a eletricidade passa por fora e você fica seguro dentro. O metal conduz a carga ao redor, não através. 🚗"
+  },
+  {
+    "pergunta": "O que é Efeito Estroboscópico?",
+    "resposta": "Ilusão de ótica! 🌀 Quando uma roda gira na mesma velocidade que a luz pisca (ou a câmera grava), parece que a roda está parada ou girando ao contrário. Truque dos olhos! 🎡"
+  },
+  {
+    "pergunta": "Por que o céu é azul?",
+    "resposta": "Dispersão de Rayleigh! ☀️ A luz do sol é branca (todas as cores). Quando bate na atmosfera, a cor azul se espalha mais que as outras porque tem ondas curtas. O céu é um espelho de luz azul! ☁️"
+  },
+  {
+    "pergunta": "Por que o pôr do sol é vermelho?",
+    "resposta": "Caminho longo! 🌅 Quando o sol está baixo, a luz atravessa mais atmosfera. O azul se perde no caminho, e só as ondas longas (vermelho e laranja) conseguem chegar nos seus olhos. Física romântica! 🧡"
+  },
+  {
+    "pergunta": "O que é Zero Absoluto?",
+    "resposta": "O frio máximo possível! ❄️ -273,15°C (ou 0 Kelvin). Nessa temperatura, os átomos parariam de se mexer completamente. É impossível chegar lá na prática, só chegamos bem perto! 🥶"
+  },
+  {
+    "pergunta": "O que é Antimatéria?",
+    "resposta": "O gêmeo do mal da matéria! 😈 Para cada partícula (elétron), existe uma antipartícula igual mas com carga oposta (pósitron). Se elas se tocam, se aniquilam e viram energia pura. Combustível de nave estelar! 🚀"
+  },
+  {
+    "pergunta": "O que é Teletransporte?",
+    "resposta": "Sonho da ficção! ✨ Seria desintegrar seus átomos num lugar e remontar em outro. A física quântica já teletransportou informações de partículas, mas humanos... ainda estamos longe de Star Trek! 🖖"
+  },
+  {
+    "pergunta": "O que é Warp Drive (Dobra Espacial)?",
+    "resposta": "Viajar mais rápido que a luz sem violar as leis da física! 🚀 A ideia é 'dobrar' o espaço: encolher o espaço na frente da nave e expandir atrás. A nave surfa na onda do espaço. Teoria da NASA! 🌌"
+  },
+  {
+    "pergunta": "O que é Terraformação?",
+    "resposta": "Engenharia planetária! 🌍 Transformar um planeta hostil (como Marte) para ficar igual à Terra: criar atmosfera, água líquida e plantas. É o plano B da humanidade para o futuro. 🌱"
+  },
+  {
+    "pergunta": "O que significa 'Chorar sobre o leite derramado'?",
+    "resposta": "Lamentar algo que já aconteceu e não tem conserto. 🥛 O leite caiu, não volta pra jarra. A lição é: limpe a bagunça e siga em frente, reclamar não resolve! 😿"
+  },
+  {
+    "pergunta": "O que significa 'Onde Judas perdeu as botas'?",
+    "resposta": "Lugar muito longe e isolado. 👢 Diz a lenda que Judas, após trair Jesus, se enforcou sem as botas (ou as perdeu no caminho). O lugar era tão escondido que ninguém achou as botas. 🗺️"
+  },
+  {
+    "pergunta": "O que significa 'Comprar gato por lebre'?",
+    "resposta": "Ser enganado! 🐈 Antigamente, na guerra, carne era rara. Alguns vendiam carne de gato dizendo que era lebre (coelho). Hoje usamos para qualquer golpe comercial. 🐇"
+  },
+  {
+    "pergunta": "O que significa 'Dar com os burros n'água'?",
+    "resposta": "Fracassar. 🐴 No Brasil colonial, tropeiros precisavam atravessar rios. Se o burro empacasse ou a carga molhasse, todo o esforço era perdido. Deu tudo errado! 🌊"
+  },
+  {
+    "pergunta": "O que significa 'Salvo pelo gongo'?",
+    "resposta": "Escapar no último segundo. 🔔 No boxe, se você está apanhando e o gongo toca, a luta para e você se salva do nocaute. Ufa! 🥊"
+  },
+  {
+    "pergunta": "O que é Síndrome de Cotard?",
+    "resposta": "A Síndrome do Cadáver Caminhante. 🧟‍♂️ A pessoa acredita firmemente que está morta, que seus órgãos apodreceram ou que ela não existe. É um transtorno neuropsiquiátrico raríssimo e assustador. 🧠"
+  },
+  {
+    "pergunta": "O que é Ilusão de Capgras?",
+    "resposta": "A pessoa acha que um familiar (mãe, esposo) foi substituído por um impostor idêntico! 🎭 Ela reconhece o rosto, mas não sente a conexão emocional, então o cérebro conclui: 'É um sósia!'. 👽"
+  },
+  {
+    "pergunta": "O que é Sinestesia?",
+    "resposta": "Sentidos cruzados! 🌈 A pessoa ouve uma música e vê cores, ou sente gosto ao tocar numa textura. O cérebro processa vários sentidos ao mesmo tempo. Muitos artistas têm isso! 🎨"
+  },
+  {
+    "pergunta": "O que é Paralisia do Sono?",
+    "resposta": "Acordar e não conseguir mexer! 🛌 Seu cérebro acordou, mas esqueceu de 'ligar' os músculos (que ficam desligados no sonho para você não chutar a parede). Dura segundos, mas dá pânico! 👻"
+  },
+  {
+    "pergunta": "O que é Efeito Dunning-Kruger?",
+    "resposta": "A ignorância confiante. 📉 Pessoas que sabem pouco sobre um assunto acham que sabem tudo (superestimam). Já os especialistas sabem o quanto é complexo e duvidam de si mesmos. Cuidado com o 'especialista de internet'! 🤓"
+  },
+  {
+    "pergunta": "O que é Ouro de Tolo (Pirita)?",
+    "resposta": "Uma pedra que brilha e parece ouro, mas não vale nada. ✨ Enganou muitos garimpeiros novatos. Na vida, são coisas que parecem valiosas mas são falsas. Nem tudo que reluz é ouro! 🪙"
+  },
+  {
+    "pergunta": "O que é Amianto?",
+    "resposta": "Um mineral fibroso que resiste ao fogo. 🔥 Era usado em telhas e caixas d'água. Foi proibido porque o pó causa câncer no pulmão. Um material milagroso que virou vilão. 😷"
+  },
+  {
+    "pergunta": "O que é Obsidiana?",
+    "resposta": "Vidro de vulcão! 🌋 Lava que esfriou super rápido. É preta e corta mais que bisturi de aço. Usada por povos antigos (como os Astecas) para fazer facas e espelhos. Cortante! 🗡️"
+  },
+  {
+    "pergunta": "O que é Âmbar?",
+    "resposta": "Resina de árvore fossilizada. 🧡 É uma pedra laranja que pode ter insetos presos dentro há milhões de anos (como em Jurassic Park). Uma cápsula do tempo natural! 🦟"
+  },
+  {
+    "pergunta": "O que é Grafeno?",
+    "resposta": "O material do futuro! 🕸️ Uma camada de carbono da espessura de um átomo. É mais forte que o aço, transparente e conduz eletricidade melhor que o cobre. Vai revolucionar tudo! 🔋"
+  },
+  {
+    "pergunta": "O que fazer se o elevador cair?",
+    "resposta": "Mito: não pule antes de bater! 🛑 A melhor chance (se é que existe) é deitar no chão de barriga pra cima e proteger a cabeça. Isso distribui o impacto pelo corpo todo. Mas calma, elevadores têm freios de emergência! 🛗"
+  },
+  {
+    "pergunta": "O que fazer em um terremoto?",
+    "resposta": "Se estiver dentro: vá para baixo de uma mesa forte e segure. 🏚️ Fique longe de janelas e estantes. Se estiver fora: vá para uma área aberta, longe de prédios e postes. Proteja a cabeça! ⛑️"
+  },
+  {
+    "pergunta": "O que fazer se for enterrado vivo na neve (avalanche)?",
+    "resposta": "Cuspa! ❄️ Se você não sabe onde é 'cima', deixe a saliva cair. Ela vai pro chão (gravidade). Cave na direção oposta. E faça um bolsão de ar na frente do rosto para respirar. 🌨️"
+  },
+  {
+    "pergunta": "Como fugir de um cachorro bravo?",
+    "resposta": "Não corra e não olhe nos olhos! 🐕 Fique imóvel ('árvore'). Se ele atacar, coloque algo na frente (mochila, jaqueta) para ele morder. Proteja o pescoço e o rosto. 🎒"
+  },
+  {
+    "pergunta": "O que fazer se o carro cair na água?",
+    "resposta": "Abra a janela imediatamente! 🚗 A porta não vai abrir por causa da pressão da água. Se a janela elétrica falhar, quebre o vidro com o encosto de cabeça ou chute forte. Saia rápido! 🌊"
+  },
+  {
+    "pergunta": "Escrever em CAPS LOCK é gritar?",
+    "resposta": "Sim! 📢 Na etiqueta da internet, escrever tudo em maiúsculo passa a impressão de que você está gritando ou bravo. Use com moderação para destacar algo, mas evite frases inteiras. Fica agressivo! 😠"
+  },
+  {
+    "pergunta": "O que é Phubbing?",
+    "resposta": "É ignorar quem está com você para ficar no celular. 📱 Vem de 'Phone' + 'Snubbing' (esnobar). É muito rude! Se estiver num jantar ou conversa, guarde o celular. A pessoa real importa mais! 📵"
+  },
+  {
+    "pergunta": "O que é Catfish?",
+    "resposta": "É criar um perfil falso para enganar alguém romanticamente. 🎭 A pessoa usa fotos de modelos ou desconhecidos e cria uma vida fake. Se o 'amor da sua vida' nunca pode ligar a câmera de vídeo... desconfie! 🚩"
+  },
+  {
+    "pergunta": "O que é Stalkear?",
+    "resposta": "Investigar a vida de alguém online. 🕵️‍♂️ Olhar fotos antigas, ver quem curtiu, onde foi. Um pouco é curiosidade, muito é obsessão e invasão de privacidade. Cuidado para não curtir foto de 2012 sem querer! 🖱️"
+  },
+  {
+    "pergunta": "Áudio longo no WhatsApp: pode?",
+    "resposta": "Evite! 🚫 Áudios de mais de 1 minuto são considerados 'podcast'. Se o assunto é longo, ligue ou escreva. Se tiver que mandar, avise antes: 'Posso mandar um áudio explicando?'. Respeite o tempo do outro! ⏳"
+  },
+  {
+    "pergunta": "Visualizar e não responder é feio?",
+    "resposta": "Depende! 👁️ Ninguém é obrigado a estar disponível 24h. Às vezes a pessoa viu, mas não pode responder agora. Mas deixar no vácuo por dias propositalmente (Ghosting) é falta de educação. O equilíbrio é chave! ⚖️"
+  },
+  {
+    "pergunta": "O que é Floodar?",
+    "resposta": "Inundar o chat! 🌊 Mandar várias mensagens curtas seguidas ('Oi', 'Tudo bem?', 'Viu?', 'Ei') ou muitos stickers. Isso faz o celular da pessoa vibrar sem parar e irrita. Tente mandar tudo numa mensagem só! 📨"
+  },
+  {
+    "pergunta": "O que é Spam?",
+    "resposta": "Lixo eletrônico. 🗑️ Mensagens não solicitadas, propagandas ou correntes que chegam para milhares de pessoas ao mesmo tempo. Nunca clique em links de spam, pode ser vírus! 🦠"
+  },
+  {
+    "pergunta": "O que é Cancelamento Virtual?",
+    "resposta": "É o boicote em massa. 🚫 Quando a internet decide 'apagar' alguém famoso por um erro ou opinião. Pode ser uma ferramenta de justiça, mas muitas vezes vira linchamento sem direito de defesa. O tribunal da internet é cruel! ⚖️"
+  },
+  {
+    "pergunta": "O que é Espaguetificação?",
+    "resposta": "O que acontece se você cair num buraco negro! 🍝 A gravidade nos pés seria tão mais forte que na cabeça que você seria esticado como um espaguete até desintegrar. Termo científico real (e aterrorizante)! 🕳️"
+  },
+  {
+    "pergunta": "Qual o cheiro do espaço?",
+    "resposta": "Astronautas dizem que cheira a carne queimada, pólvora e metal quente! 🥩 Esse cheiro fica na roupa deles quando voltam da caminhada espacial. É causado por reações químicas de alta energia. O universo tem cheiro de churrasco! 🔥"
+  },
+  {
+    "pergunta": "O espaço é silencioso?",
+    "resposta": "Sim! 🔇 O som precisa de ar (matéria) para viajar. Como o espaço é vácuo, ninguém ouviria você gritar (como no filme Alien). Mas planetas e estrelas emitem ondas de rádio que podemos converter em som (e são assustadores!). 📻"
+  },
+  {
+    "pergunta": "O que é uma Estrela de Nêutrons?",
+    "resposta": "O objeto mais denso do universo (depois do buraco negro). 🌟 Uma colher de chá dessa estrela pesaria o mesmo que uma montanha (ou 900 pirâmides)! É o núcleo que sobra de uma estrela gigante que explodiu. 🥄"
+  },
+  {
+    "pergunta": "Chove diamante em Netuno?",
+    "resposta": "Provavelmente! 💎 A pressão em Netuno e Urano é tão absurda que o carbono na atmosfera é esmagado até virar diamante sólido. Pode haver oceanos de diamante líquido lá. Riqueza inalcançável! 🌧️"
+  },
+  {
+    "pergunta": "O que é a Grande Mancha Vermelha?",
+    "resposta": "Uma tempestade em Júpiter maior que a Terra! 🔴 Ela gira há pelo menos 300 anos. Ventos de 400 km/h. É o maior furacão do Sistema Solar. 🌪️"
+  },
+  {
+    "pergunta": "O Sol vai apagar?",
+    "resposta": "Sim, mas vai demorar! ☀️ Daqui a 5 bilhões de anos, ele vai virar uma Gigante Vermelha (engolindo a Terra) e depois encolher para uma Anã Branca. Aproveite o solzinho enquanto dura! 🕶️"
+  },
+  {
+    "pergunta": "O que é um Planeta Órfão?",
+    "resposta": "Um planeta sem sol! 🌑 Ele vaga sozinho pela escuridão do espaço, expulso de seu sistema solar original. É frio e solitário. Existem bilhões deles vagando por aí. 🪐"
+  },
+  {
+    "pergunta": "O que é a Escala de Kardashev?",
+    "resposta": "Mede o nível tecnológico de uma civilização. 👽 Tipo I: Usa toda energia do planeta. Tipo II: Usa toda energia da estrela (Sol). Tipo III: Usa toda energia da galáxia. Nós somos Tipo 0,7 (ainda usamos plantas mortas/petróleo!). 🔋"
+  },
+  {
+    "pergunta": "Significado da cor Azul no marketing",
+    "resposta": "Confiança e calma. 🔵 Usado por bancos (Itaú, Caixa) e redes sociais (Facebook, LinkedIn) para passar segurança e tranquilidade. É a cor favorita da maioria das pessoas. 🏦"
+  },
+  {
+    "pergunta": "Significado da cor Vermelha no marketing",
+    "resposta": "Urgência e fome! 🔴 Usado por fast-foods (McDonald's, Coca-Cola) para estimular o apetite e em liquidações para criar senso de urgência. Aumenta a frequência cardíaca! 🍟"
+  },
+  {
+    "pergunta": "Significado da cor Amarela no marketing",
+    "resposta": "Otimismo e atenção. 🟡 Usado para chamar a atenção em vitrines e placas de trânsito. Passa ideia de alegria e juventude. Mas cuidado: em excesso, cansa a vista! ⚠️"
+  },
+  {
+    "pergunta": "Significado da cor Verde no marketing",
+    "resposta": "Saúde e dinheiro. 🟢 Usado por marcas naturais (Whole Foods) e finanças. Relaxa os olhos e remete à natureza e crescimento. 🌿"
+  },
+  {
+    "pergunta": "Significado da cor Preta no marketing",
+    "resposta": "Luxo e sofisticação. ⚫ Usado por marcas de grife (Chanel, Prada). Passa ideia de exclusividade, poder e elegância. O pretinho básico nunca falha! 💎"
+  },
+  {
+    "pergunta": "Significado da cor Laranja no marketing",
+    "resposta": "Criatividade e amizade. 🟠 Uma cor energética e convidativa (Fanta, Nickelodeon). Menos agressiva que o vermelho, mas ainda chama para a ação. 🍊"
+  },
+  {
+    "pergunta": "O que é a Água-viva Imortal?",
+    "resposta": "A Turritopsis dohrnii. 🪼 Quando ela fica velha ou doente, ela reverte suas células e volta a ser bebê (pólipo). Ela pode fazer isso para sempre. O único animal biologicamente imortal! ♾️"
+  },
+  {
+    "pergunta": "O que é o Rato-toupeira-pelado?",
+    "resposta": "Um bicho feio mas incrível! 🐀 Vive embaixo da terra, não sente dor na pele, quase nunca tem câncer e vive 30 anos (muito pra um roedor). A ciência estuda ele para curar doenças humanas! 🦷"
+  },
+  {
+    "pergunta": "O que é o Camarão-pistola?",
+    "resposta": "Ele tem uma garra sônica! 🦐 Ele fecha a garra tão rápido que cria uma bolha de cavitação. Quando a bolha estoura, gera calor (quase como o sol) e um som mais alto que um tiro, atordoando a presa. O pistoleiro do mar! 🔫"
+  },
+  {
+    "pergunta": "Polvos têm cérebro nos braços?",
+    "resposta": "Sim! 🐙 Dois terços dos neurônios do polvo estão nos tentáculos. Cada braço pode 'pensar' e agir sozinho (ex: explorar uma toca) enquanto o cérebro central faz outra coisa. Multitarefa real! 🧠"
+  },
+  {
+    "pergunta": "Tubarões nunca param de nadar?",
+    "resposta": "A maioria sim! 🦈 Espécies como o Tubarão Branco precisam nadar para a água passar pelas guelras e respirar. Se pararem, afundam e sufocam. Eles dormem nadando (no piloto automático). 🌊"
+  },
+  {
+    "pergunta": "O que é o Fungo Zumbi?",
+    "resposta": "O Cordyceps (do The Last of Us). 🍄 Ele infecta formigas, controla o cérebro delas e as faz subir numa planta alta para morrer e espalhar esporos. Na vida real, só ataca insetos, humanos estão salvos (por enquanto)! 🐜"
+  },
+  {
+    "pergunta": "Formigas têm cemitério?",
+    "resposta": "Sim! 🐜 Elas são super higiênicas. Quando uma morre, as outras carregam o corpo para uma área específica (lixão/cemitério) longe da rainha para evitar doenças. Organização total! ☠️"
+  },
+  {
+    "pergunta": "O que é a Flor-cadáver?",
+    "resposta": "A maior flor do mundo (Rafflesia). 🌺 Pode ter 1 metro de diâmetro. O problema? Ela cheira a carne podre! É para atrair moscas para polinização. Bonita, mas fedida! 🤢"
+  },
+  {
+    "pergunta": "Gatos ronronam para curar?",
+    "resposta": "Teoria forte! 🐈 A frequência do ronronado (20-140 Hz) ajuda a regenerar ossos e tecidos e reduz o estresse. O gato pode estar se curando (ou te curando) quando ronrona. Dr. Miau! 🩺"
+  },
+  {
+    "pergunta": "Como surgiu o Sutiã?",
+    "resposta": "Mary Phelps Jacob, em 1914. 👙 Ela odiava o espartilho (que apertava e machucava). Costurou dois lenços com fita rosa e criou o primeiro sutiã moderno. Liberdade para as mulheres! 🎀"
+  },
+  {
+    "pergunta": "Como surgiu o Salto Alto?",
+    "resposta": "Era para homens! 👠 Persas usavam para prender o pé no estribo do cavalo. Luís XIV da França usava para parecer mais alto e poderoso. Só depois virou moda feminina. 🐎"
+  },
+  {
+    "pergunta": "Como surgiu a Gravata?",
+    "resposta": "Vem da Croácia! 🇭🇷 Mercenários croatas usavam lenços no pescoço. Os franceses acharam chique ('cravate' vem de croata) e a moda pegou na corte. Hoje é símbolo de formalidade. 👔"
+  },
+  {
+    "pergunta": "Como surgiu o Sanduíche?",
+    "resposta": "Pelo Conde de Sandwich! 🥪 Ele era viciado em jogos de cartas e não queria parar para comer. Pediu carne entre dois pães para comer com uma mão sem sujar as cartas. Gênio da preguiça! 🃏"
+  },
+  {
+    "pergunta": "Como surgiu a Batata Chips?",
+    "resposta": "Vingança de chef! 🥔 Um cliente reclamou que as batatas estavam grossas. O chef George Crum cortou fatias finíssimas, fritou até esturricar e encheu de sal para irritar. O cliente amou! 🍟"
+  },
+  {
+    "pergunta": "Como surgiu o Chiclete?",
+    "resposta": "Os Maias já mascavam seiva de árvore (chicle). 🍬 Mas a versão moderna surgiu quando tentaram usar essa seiva para fazer pneu de carro. Não deu certo, mas viram que dava pra mascar! 🚗"
+  },
+  {
+    "pergunta": "Como surgiu o Viagra?",
+    "resposta": "Era remédio para o coração! 💙 Testavam para angina (dor no peito). Não funcionou pro coração, mas os pacientes relataram um 'efeito colateral' curioso... O resto é história! 💊"
+  },
+  {
+    "pergunta": "O que é a Regra dos 5 Segundos?",
+    "resposta": "Caiu no chão, pegou em 5s, tá limpo? Mito! 🦠 Bactérias grudam instantaneamente. Depende mais da sujeira do chão e da umidade da comida (melancia pega mais bactéria que bolacha). Melhor lavar ou jogar fora! 🗑️"
+  },
+  {
+    "pergunta": "Engolir chiclete cola no estômago?",
+    "resposta": "Mito! 🍬 Ele não é digerido, mas passa direto pelo sistema e sai no cocô depois de uns dias. Não fica 7 anos lá dentro. Mas não engula, pode engasgar! 🚽"
+  },
+  {
+    "pergunta": "Estalar dedo dá artrite?",
+    "resposta": "Mito! 🖐️ Um médico estalou os dedos da mão esquerda por 60 anos e a direita não. Resultado: as duas mãos estavam iguais. O barulho é só gás estourando. Pode estalar (mas irrita quem ouve)! 🦴"
+  },
+  {
+    "pergunta": "Barata sobrevive a bomba atômica?",
+    "resposta": "Mais ou menos! 🪳 Elas aguentam muito mais radiação que humanos, mas não são imortais. Se a bomba cair em cima, elas morrem com o calor. Formigas e vespas aguentam ainda mais radiação! ☢️"
+  },
+  {
+    "pergunta": "Touro odeia vermelho?",
+    "resposta": "Mito total! 🐂 Touros não distinguem vermelho. Eles atacam o movimento da capa. Se a capa fosse azul e o toureiro balançasse, ele atacaria do mesmo jeito. 🚩"
+  },
+  {
+    "pergunta": "Acordar sonâmbulo mata?",
+    "resposta": "Mito! 🛌 Não mata, mas ele pode ficar muito confuso e assustado (e pode te bater sem querer). O ideal é guiar a pessoa gentilmente de volta pra cama sem acordar bruscamente. 😴"
+  },
+  {
+    "pergunta": "Sair no frio dá gripe?",
+    "resposta": "Indiretamente. ❄️ O frio não causa gripe (vírus causa). Mas o frio resseca o nariz e aglomera as pessoas em lugares fechados, o que facilita o vírus passar. Casaco não é vacina, mas ajuda! 🧥"
+  },
+  {
+    "pergunta": "O que é Efeito Borboleta?",
+    "resposta": "Teoria do Caos! 🦋 O bater de asas de uma borboleta no Brasil pode causar um tornado no Texas semanas depois. Pequenas ações iniciais geram consequências gigantescas e imprevisíveis. Tudo conecta! 🌪️"
+  },
+  {
+    "pergunta": "O que é o Paradoxo do Navio de Teseu?",
+    "resposta": "Se você troca todas as peças de um navio, uma por uma, até não sobrar nenhuma original... ainda é o mesmo navio? ⛵ E se você montar outro com as peças velhas, qual é o verdadeiro? Questão de identidade! 🤔"
+  },
+  {
+    "pergunta": "O que é a Alegoria da Caverna?",
+    "resposta": "De Platão. 🕯️ Pessoas presas numa caverna só veem sombras e acham que aquilo é a realidade. Um foge e vê o sol (a verdade). Ao voltar, ninguém acredita nele. Mostra como a ignorância prende e o saber liberta. ⛓️"
+  },
+  {
+    "pergunta": "O que é o Mito de Sísifo?",
+    "resposta": "O castigo eterno. 🪨 Sísifo empurra uma pedra montanha acima, mas ela sempre rola de volta antes do topo. Metáfora para o trabalho repetitivo e o absurdo da vida. O segredo é encontrar alegria na subida! ⛰️"
+  },
+  {
+    "pergunta": "O que é a Navalha de Hanlon?",
+    "resposta": "Não atribua à maldade o que pode ser explicado pela burrice. 🤪 Se alguém te fechou no trânsito, provavelmente foi distração, não um plano maligno contra você. Ajuda a viver com menos raiva! 🚗"
+  },
+  {
+    "pergunta": "O que é o Dilema do Porco-espinho?",
+    "resposta": "Metáfora de Schopenhauer. 🦔 No frio, porcos-espinhos se juntam para aquecer, mas se espetam. Se afastam, sentem frio. Precisam achar a distância ideal. Assim são os relacionamentos humanos: precisamos de proximidade, mas ela machuca. ❤️"
+  },
+  {
+    "pergunta": "O que é Ubuntu?",
+    "resposta": "Filosofia africana: 'Eu sou porque nós somos'. 🌍 Ninguém vence sozinho. Nossa humanidade só existe através da conexão com os outros. Comunidade acima do ego. 🤝"
+  },
+  {
+    "pergunta": "Como funciona o Wi-Fi?",
+    "resposta": "Ondas de rádio invisíveis! 📡 O roteador traduz os dados da internet em ondas de rádio e manda pro seu celular. O celular traduz de volta para vídeo de gatinho. É como um rádio que envia e recebe! 📶"
+  },
+  {
+    "pergunta": "Como funciona o Código de Barras?",
+    "resposta": "Linguagem binária de luz. 🦓 O laser bate nas barras pretas (não reflete) e nos espaços brancos (reflete). O computador lê esse pisca-pisca de luz como números que identificam o produto. Rápido! 🛒"
+  },
+  {
+    "pergunta": "Como funciona o Airbag?",
+    "resposta": "Química explosiva! 💥 Um sensor detecta a batida e aciona uma mini explosão controlada que enche a bolsa de gás em milissegundos (mais rápido que piscar). Salva sua cara do volante! 🚗"
+  },
+  {
+    "pergunta": "Como funciona a Tela E-ink (Kindle)?",
+    "resposta": "Tinta eletrônica. 📖 A tela tem microcápsulas com partículas pretas e brancas. A eletricidade puxa as pretas pra cima (letra) ou as brancas (papel). Não emite luz no olho, parece papel mesmo! 📚"
+  },
+  {
+    "pergunta": "Como funciona o Cancelamento de Ruído (Fone)?",
+    "resposta": "Anti-som! 🎧 O fone tem um microfone que ouve o barulho de fora. Ele cria uma onda de som exatamente oposta (invertida). O som de fora + o som invertido se anulam e sobra... silêncio. Mágica da física! 🔇"
+  },
+  {
+    "pergunta": "O que é NFT?",
+    "resposta": "Certificado digital de posse. 🖼️ Um código no Blockchain que diz que aquele arquivo JPG (ou vídeo) é o original e é seu. É como ter a Mona Lisa original, enquanto os outros têm pôsteres. 💎"
+  },
+  {
+    "pergunta": "O que é Metaverso?",
+    "resposta": "Internet 3D. 🕶️ Um mundo virtual onde você entra (com óculos VR) e interage como um avatar. Reuniões, shows, jogos. É viver dentro da internet (tipo Matrix, mas com gráficos piores). 🌐"
+  },
+  {
+    "pergunta": "O que é Deepfake?",
+    "resposta": "Máscara digital perfeita. 🎭 Inteligência Artificial que troca o rosto de uma pessoa em vídeo de forma super realista. Pode fazer o presidente dizer o que nunca disse. Cuidado com o que vê! 📹"
+  },
+  {
+    "pergunta": "O que é Algoritmo?",
+    "resposta": "A receita do robô. 🤖 Uma sequência de regras que o computador segue. Nas redes sociais, é o algoritmo que decide o que você vê no feed para te manter viciado. Ele manda em você! 📱"
+  },
+  {
+    "pergunta": "O que é Nuvem (Cloud)?",
+    "resposta": "O computador de outra pessoa. ☁️ Quando você salva fotos na nuvem, está salvando em servidores gigantes da Google ou Amazon. É seguro e acessível de qualquer lugar, mas precisa de internet. 💾"
+  },
+  {
+    "pergunta": "Qual a capital do Canadá?",
+    "resposta": "Ottawa! 🇨🇦 Não é Toronto nem Vancouver. Fica entre a parte inglesa e a francesa para não ter briga. É fria e linda! ❄️"
+  },
+  {
+    "pergunta": "Qual a capital da Austrália?",
+    "resposta": "Camberra! 🇦🇺 Sydney e Melbourne brigavam para ser a capital, então construíram uma cidade nova no meio do nada. Tipo Brasília! 🦘"
+  },
+  {
+    "pergunta": "Qual a capital da Turquia?",
+    "resposta": "Ancara! 🇹🇷 Istambul é a maior e mais famosa, mas a capital política é Ancara. Istambul é a única cidade do mundo em dois continentes (Europa e Ásia). 🕌"
+  },
+  {
+    "pergunta": "Onde fica o Timbuktu?",
+    "resposta": "No Mali, África! 🇲🇱 Existe mesmo. Era uma cidade riquíssima e centro de saber na antiguidade, no meio do deserto do Saara. Hoje é sinônimo de lugar longe ('Onde Judas perdeu as botas'). 🐫"
+  },
+  {
+    "pergunta": "Qual o país mais novo do mundo?",
+    "resposta": "Sudão do Sul. 🇸🇸 Ficou independente do Sudão em 2011. Fica na África. Ainda enfrenta muitos conflitos. 🌍"
+  },
+  {
+    "pergunta": "Qual o lugar mais frio da Terra?",
+    "resposta": "Antártida. 🧊 A estação russa Vostok registrou -89,2°C. É um deserto de gelo. Ninguém mora lá permanentemente, só cientistas (congelados). 🐧"
+  },
+  {
+    "pergunta": "Qual o lugar mais quente da Terra?",
+    "resposta": "Vale da Morte (EUA). 🔥 Chegou a 56,7°C. É um deserto na Califórnia. O chão frita ovo de verdade! 🍳"
+  },
+  {
+    "pergunta": "Onde fica o Ponto Nemo?",
+    "resposta": "O lugar mais isolado do oceano. 🌊 Fica no Pacífico. A pessoa mais perto de você lá... são os astronautas na Estação Espacial! É o cemitério de naves espaciais. 🛰️"
+  },
+  {
+    "pergunta": "Qual o menor país do mundo?",
+    "resposta": "Vaticano. 🇻🇦 Fica dentro de Roma. Tem 0,44 km². O Papa é o rei (monarquia absoluta). Tem correio, rádio e exército (Guarda Suíça). ⛪"
+  },
+  {
+    "pergunta": "Qual a montanha mais alta do mundo?",
+    "resposta": "Monte Everest (8.848m). 🏔️ Fica no Himalaia (Nepal/China). Mas se medir da base (fundo do mar), é o Mauna Kea no Havaí. Se medir do centro da Terra, é o Chimborazo no Equador! Depende da régua! 📏"
+  },
+  {
+    "pergunta": "Quem pintou a Capela Sistina?",
+    "resposta": "Michelangelo. 🎨 Ele pintou o teto deitado de costas por 4 anos! A cena de Deus tocando o dedo de Adão é a mais famosa. Fica no Vaticano. Gênio! 🖌️"
+  },
+  {
+    "pergunta": "Quem escreveu Dom Quixote?",
+    "resposta": "Miguel de Cervantes. 🇪🇸 O cavaleiro louco que lutava contra moinhos de vento. É considerado o primeiro romance moderno. Clássico espanhol! 🤺"
+  },
+  {
+    "pergunta": "Quem escreveu O Pequeno Príncipe?",
+    "resposta": "Antoine de Saint-Exupéry. 🇫🇷 Um piloto francês. 'O essencial é invisível aos olhos'. Parece livro de criança, mas é filosofia pura para adultos. 🌹"
+  },
+  {
+    "pergunta": "Quem compôs as Quatro Estações?",
+    "resposta": "Vivaldi. 🎻 Compositor italiano barroco. Você ouve a primavera, a tempestade de verão, o gelo do inverno na música. Obra-prima do violino! 🎼"
+  },
+  {
+    "pergunta": "Quem esculpiu O Pensador?",
+    "resposta": "Rodin. 🗿 Uma estátua de bronze de um homem sentado, com a mão no queixo, pensando profundamente. Símbolo da filosofia e do intelecto. 🤔"
+  },
+  {
+    "pergunta": "O que é a Pedra de Roseta?",
+    "resposta": "A chave do Egito! 🪨 Uma pedra com o mesmo texto em 3 línguas (Grego, Hieróglifo, Demótico). Foi graças a ela que deciframos os hieróglifos. Está no Museu Britânico. 📜"
+  },
+  {
+    "pergunta": "O que é a Torre de Babel?",
+    "resposta": "História bíblica. 🗼 A humanidade tentou construir uma torre até o céu. Deus confundiu as línguas para eles não se entenderem e a obra parou. Explica por que falamos línguas diferentes. 🗣️"
+  },
+  {
+    "pergunta": "O que é o Santo Graal?",
+    "resposta": "O cálice de Jesus. 🍷 Lenda medieval. O Rei Arthur e seus cavaleiros buscavam o cálice sagrado da Última Ceia. Símbolo da busca pela perfeição espiritual. 🏆"
+  },
+  {
+    "pergunta": "O que é a Caixa de Pandora?",
+    "resposta": "Mito grego. 📦 Pandora abriu uma caixa proibida e soltou todos os males do mundo (doença, morte). Só sobrou a Esperança no fundo. Por isso a esperança é a última que morre! 🦋"
+  },
+  {
+    "pergunta": "O que é o Cavalo de Troia?",
+    "resposta": "Presente de grego! 🐴 Um cavalo de madeira gigante deixado na porta de Troia. Os troianos acharam que era presente e puseram pra dentro. À noite, soldados saíram da barriga dele e abriram os portões. Estratégia genial! ⚔️"
+  },
+  {
+    "pergunta": "O que é a Rota da Seda?",
+    "resposta": "A internet da antiguidade! 🐫 Rede de estradas ligando China e Europa. Trocavam seda, ouro, temperos e ideias (e doenças). Marco Polo viajou por ela. Globalização raiz! 🌏"
+  },
+  {
+    "pergunta": "O que é o Muro de Berlim?",
+    "resposta": "Dividia o mundo! 🧱 Separava a Alemanha em Capitalista (Oeste) e Comunista (Leste). Símbolo da Guerra Fria. Caiu em 1989, marcando o fim da URSS. As pessoas quebraram com marretas! 🔨"
+  },
+  {
+    "pergunta": "O que é a Corrida do Ouro?",
+    "resposta": "Febre de riqueza! ⛏️ Século 19 na Califórnia (e Brasil). Milhares largaram tudo para garimpar. Poucos ficaram ricos, mas desenvolveram o velho oeste. Nasceu a calça jeans (Levi's) pra aguentar o trabalho! 👖"
+  },
+  {
+    "pergunta": "O que é a Lei Seca (EUA)?",
+    "resposta": "Proibição do álcool nos anos 20. 🍸 O governo proibiu vender bebida. Resultado? Máfia (Al Capone), bares secretos (speakeasy) e crime. Ensinou que proibir não funciona se o povo quer beber! 🥃"
+  },
+  {
+    "pergunta": "O que é o Apartheid?",
+    "resposta": "Separação brutal. 🇿🇦 Regime racista na África do Sul. Brancos e negros não podiam morar ou casar juntos. Nelson Mandela lutou contra isso e venceu. Uma lição de humanidade. ✊🏿"
+  },
+  {
+    "pergunta": "O que é o Feminismo?",
+    "resposta": "A ideia radical de que mulheres são gente. ♀️ Luta por direitos iguais: voto, salário, respeito. Não é o contrário de machismo (que é superioridade), é igualdade. 💪"
+  },
+  {
+    "pergunta": "O que é Sustentabilidade?",
+    "resposta": "Usar sem acabar. ♻️ Garantir que a gente tenha recursos hoje sem deixar o futuro na mão. Envolve economia, social e ambiente. É o equilíbrio pra Terra não pifar. 🌍"
+  },
+  {
+    "pergunta": "O que é Meritocracia?",
+    "resposta": "Sucesso pelo esforço. 🏆 A ideia de que quem trabalha mais, ganha mais. O problema é que nem todos saem da mesma linha de largada (uns de Ferrari, outros a pé). É polêmico! 🏃"
+  },
+  {
+    "pergunta": "O que é Fake News?",
+    "resposta": "Mentira vestida de notícia. 📰 Feita para enganar, gerar clique ou ódio. Espalha rápido no Zap. Cheque a fonte antes de compartilhar! A verdade importa. 🔍"
+  },
+  {
+    "pergunta": "O que é Inteligência Artificial?",
+    "resposta": "Máquinas que pensam (ou fingem bem). 🤖 Programas que aprendem com dados, reconhecem padrões e tomam decisões. Eu sou uma! O futuro já chegou. 🧠"
   }
 ]

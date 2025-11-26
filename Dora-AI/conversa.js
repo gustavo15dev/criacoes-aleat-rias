@@ -1,11 +1,11 @@
 let treinamentos = [];
-let historicoConversa = []; // Memória da conversa
-let temaAtual = 'amizade'; // Tema padrão
-let personalidadeAtual = 'alegre'; // Personalidade padrão
+let historicoConversa = [];
+let temaAtual = 'amizade';
+let personalidadeAtual = 'alegre';
+let redacoesData = []; // Nova variável para armazenar os dados de redacoes.json
+let modoRedacaoAtivo = false; // Estado para controlar o botão visualmente
 
-// Banco de imagens com palavras-chave
 const bancoImagens = {
-    // --- Ambientes Naturais e Geografia ---
     'praia.png': ['praia', 'areia', 'litoral', 'verão', 'onda', 'baixada santista', 'msc', 'coqueiro', 'maré'],
     'mar.png': ['mar', 'oceano', 'água', 'azul', 'navegação', 'profundeza', 'salgado', 'atlântico'],
     'natureza.png': ['natureza', 'meio ambiente', 'ecossistema', 'biodiversidade', 'fauna', 'flora', 'bioma'],
@@ -14,30 +14,22 @@ const bancoImagens = {
     'universo.png': ['universo', 'espaço', 'galáxia', 'estrela', 'planeta', 'buraco negro', 'big bang', 'cosmo', 'astronomia'],
     'sol.png': ['sol', 'luz', 'calor', 'raio', 'nascer do sol', 'pôr do sol', 'dia'],
     'lua.png': ['lua', 'noite', 'fase', 'minguante', 'crescente', 'cheia', 'eclipse'],
-
-    // --- Vida Urbana e Sociedade ---
     'cidade.png': ['cidade', 'urbano', 'metrópole', 'prédio', 'edifício', 'bairro', 'centro', 'asfalto'],
     'transito.png': ['trânsito', 'rua', 'avenida', 'semáforo', 'engarrafamento', 'transporte', 'mobilidade'],
     'carro.png': ['carro', 'automóvel', 'veículo', 'motor', 'rodas', 'combustível', 'estrada', 'dirigir'],
     'casa.png': ['casa', 'lar', 'moradia', 'abrigo', 'residência', 'quarto', 'sala', 'conforto', 'teto'],
     'escola.png': ['escola', 'sala de aula', 'ensino', 'educação', 'colégio', 'universidade', 'faculdade', 'curso', 'aluno'],
-
-    // --- Humanas e Sociais (História, Política, Filosofia) ---
     'historia.png': ['história', 'passado', 'antiguidade', 'idade média', 'século', 'memória', 'civilização', 'museu'],
     'guerra.png': ['guerra', 'batalha', 'conflito', 'revolução', 'soldado', 'armas', 'exército', 'trincheira'],
     'politica.png': ['política', 'governo', 'estado', 'democracia', 'voto', 'eleição', 'presidente', 'poder', 'cidadão'],
     'direito.png': ['lei', 'justiça', 'direito', 'constituição', 'juiz', 'advogado', 'regra', 'norma', 'crime'],
     'filosofia.png': ['filosofia', 'pensamento', 'razão', 'ética', 'moral', 'sabedoria', 'sócrates', 'platão', 'ideia'],
     'religiao.png': ['religião', 'fé', 'deus', 'igreja', 'espiritualidade', 'sagrado', 'crença', 'oração', 'bíblia'],
-
-    // --- Ciências Exatas (Matemática, Física, Química) ---
     'matematica.png': ['matemática', 'número', 'cálculo', 'soma', 'divisão', 'lógica', 'equação', 'álgebra'],
     'geometria.png': ['geometria', 'triângulo', 'círculo', 'quadrado', 'ângulo', 'forma', 'polígono', 'pitágoras'],
     'fisica.png': ['física', 'energia', 'força', 'velocidade', 'inércia', 'movimento', 'newton', 'einstein', 'gravidade'],
     'quimica.png': ['química', 'reação', 'substância', 'mistura', 'tabela periódica', 'elemento', 'ácido', 'laboratório'],
     'atomo.png': ['átomo', 'molécula', 'elétron', 'próton', 'nêutron', 'partícula', 'nuclear', 'radioatividade'],
-
-    // --- Biologia e Saúde (Especificado conforme treinamento) ---
     'dna.png': ['dna', 'genética', 'gene', 'hereditariedade', 'cromossomo', 'clone', 'mutação'],
     'celula.png': ['célula', 'microscópio', 'núcleo', 'membrana', 'mitocôndria', 'biologia'],
     'anatomia.png': ['anatomia', 'corpo humano', 'órgão', 'ossos', 'esqueleto', 'pele', 'músculo', 'sangue'],
@@ -46,23 +38,17 @@ const bancoImagens = {
     'virus.png': ['vírus', 'bactéria', 'microrganismo', 'infecção', 'gripe', 'contágio', 'epidemia', 'parasita'],
     'hospital.png': ['hospital', 'médico', 'enfermeira', 'clínica', 'cirurgia', 'uti', 'emergência', 'ambulância'],
     'remedio.png': ['remédio', 'medicamento', 'vacina', 'comprimido', 'farmácia', 'cura', 'tratamento', 'terapia'],
-
-    // --- Tecnologia e Programação ---
     'robo.png': ['robô', 'ia', 'inteligência artificial', 'bot', 'automação', 'futuro', 'máquina', 'ciborgue'],
     'computador.png': ['computador', 'pc', 'notebook', 'hardware', 'processador', 'mouse', 'teclado', 'tela'],
     'codigo.png': ['código', 'programação', 'software', 'algoritmo', 'python', 'java', 'dev', 'script', 'bug'],
     'internet.png': ['internet', 'rede', 'wifi', 'web', 'online', 'conexão', 'site', 'navegador', 'nuvem'],
     'celular.png': ['celular', 'smartphone', 'aplicativo', 'app', 'mensagem', 'notificação', 'touch'],
     'seguranca.png': ['segurança', 'hacker', 'senha', 'proteção', 'firewall', 'vírus de computador', 'cibersegurança'],
-
-    // --- Economia e Negócios ---
     'dinheiro.png': ['dinheiro', 'moeda', 'dólar', 'real', 'nota', 'banco', 'pagamento', 'pix', 'caixa'],
     'grafico.png': ['gráfico', 'estatística', 'porcentagem', 'crescimento', 'lucro', 'prejuízo', 'dados', 'análise'],
     'mercado.png': ['mercado', 'bolsa de valores', 'ações', 'investimento', 'empresa', 'negócio', 'comércio', 'venda'],
     'bitcoin.png': ['bitcoin', 'criptomoeda', 'blockchain', 'digital', 'token', 'nft', 'carteira digital'],
     'trabalho.png': ['trabalho', 'emprego', 'profissão', 'carreira', 'escritório', 'chefe', 'funcionário', 'rh'],
-
-    // --- Cultura, Lazer e Identidade ---
     'livro.png': ['livro', 'leitura', 'página', 'capítulo', 'texto', 'escrita', 'autor', 'biblioteca', 'literatura'],
     'musica.png': ['música', 'canção', 'som', 'ritmo', 'melodia', 'instrumento', 'cantor', 'banda', 'show'],
     'arte.png': ['arte', 'pintura', 'quadro', 'escultura', 'desenho', 'artista', 'cor', 'criatividade'],
@@ -73,164 +59,92 @@ const bancoImagens = {
     'dora.png': ['dora ai', 'amiga virtual', 'sou uma ia', 'ajudante', 'assistente', 'chatbot']
 };
 
-// Array com 50 prompts
-const prompts = [
-    "Oi",
-    "Tudo bem?",
-    "Como vai?",
-    "Qual o seu nome?",
-    "Me elogie",
-    "Me diga uma frase motivacional",
-    "Me conta uma curiosidade",
-    "Você gosta de mim?",
-    "O que você faz?",
-    "Como você está?",
-    "Me diga algo legal",
-    "Estou triste",
-    "Estou feliz",
-    "Me ajude",
-    "Me sinto sozinho",
-    "Adeus",
-    "Tchau",
-    "Até mais",
-    "Obrigado",
-    "Agradeço",
-    "Você é real?",
-    "Você é humana?",
-    "Você é uma máquina?",
-    "Qual sua idade?",
-    "Você dorme?",
-    "Você come?",
-    "Você pensa?",
-    "Você sente?",
-    "Me conta uma piada",
-    "Me dê um conselho",
-    "Qual sua cor favorita?",
-    "Você gosta de música?",
-    "Você tem amigos?",
-    "Você tem família?",
-    "Você gosta de filmes?",
-    "Você gosta de animais?",
-    "Você tem defeitos?",
-    "Você tem qualidades?",
-    "Você é perfeita?",
-    "Você erra?",
-    "Você é legal",
-    "Você é legal demais",
-    "Você me ama?",
-    "Você sonha?",
-    "Você tem hobbies?",
-    "Você tem sonhos?",
-    "Você gosta de estudar?",
-    "Você se cansa?",
-    "Você tem medo?"
-];
-
-let carrosselInterval = null;
-
-// Função para mostrar o anúncio do Dora AI 1.3
 function mostrarAnuncio() {
     const overlay = document.createElement('div');
     overlay.id = 'anuncio-overlay';
     overlay.className = 'anuncio-overlay';
-    
     overlay.innerHTML = `
         <div class="anuncio-container">
-            <h2>Apresentamos o Dora AI 1.3</h2>
+            <h2>Dora AI 1.3</h2>
             <video src="img-IA/anuncio.mp4" autoplay muted playsinline loop class="anuncio-video"></video>
             <div class="anuncio-texto">
             <ul>
                     <li>Gera imagens junto com as respostas</li>
                     <li>Mil novos treinamentos</li>
                     <li>Design claro, e mais suave</li>
-                    <li>Nas atualizações futuras, o Dora AI ficará ainda mais inteligente!</li>
+                    <li>Interface renovada estilo Studio</li>
                 </ul>
-
             </div>
             <div class="anuncio-botoes">
-                <button onclick="fecharAnuncio()">Fechar</button>
+                <button onclick="fecharAnuncio()">Testar Dora AI</button>
             </div>
         </div>
     `;
-    
     document.body.appendChild(overlay);
 }
 
-// Função para fechar o anúncio
 function fecharAnuncio() {
     const overlay = document.getElementById('anuncio-overlay');
-    if (overlay) {
-        overlay.remove();
-    }
+    if (overlay) overlay.remove();
 }
 
-// Função para testar o Dora AI 1.3
-function testarDoraAI() {
-    fecharAnuncio();
-    // Inicia o jogo normalmente
-    setTimeout(mostrarBoasVindas, 500); // Espera 500ms para aparecer suavemente
-    iniciarCarrossel(); // Inicia o carrossel automático
-}
+// --- Função Nova para o botão de "Redação" (Toggle Ligar/Desligar) ---
+function alternarModoRedacao() {
+    const input = document.getElementById('input-mensagem');
+    const btnRedacao = document.getElementById('btn-redacao');
+    const textoPrefixo = "Pode me ajudar a escrever uma redação sobre ";
+    
+    // Verifica se já está ativo para DESLIGAR
+    if (modoRedacaoAtivo) {
+        modoRedacaoAtivo = false;
+        btnRedacao.classList.remove('active');
 
-
-// Inicia o carrossel automático
-function iniciarCarrossel() {
-    const container = document.getElementById('carrossel-prompts');
-    if (!container) return;
-
-    // Limpa o container
-    container.innerHTML = '';
-
-    // Duplica os prompts para criar um loop contínuo
-    const promptsDuplicados = [...prompts, ...prompts];
-
-    // Adiciona todos os prompts como botões (com duplicação)
-    promptsDuplicados.forEach(prompt => {
-        const btn = document.createElement('button');
-        btn.className = 'prompt-btn';
-        btn.textContent = prompt;
-        btn.onclick = () => enviarPrompt(prompt);
-        container.appendChild(btn);
-    });
-
-    // Inicia o intervalo
-    carrosselInterval = setInterval(() => {
-        // Rola para a esquerda
-        container.scrollLeft += 2;
-
-        // Se chegou ao meio da duplicação, volta ao início suavemente
-        if (container.scrollLeft >= container.scrollWidth / 2) {
-            container.scrollLeft = 0;
+        // Remove o texto do input apenas se ele começar com o prefixo
+        if (input.value.startsWith(textoPrefixo)) {
+            // Remove o prefixo
+            input.value = input.value.replace(textoPrefixo, '');
         }
-    }, 50); // Muda a cada 50ms (velocidade suave)
-}
-
-function pararCarrossel() {
-    if (carrosselInterval) {
-        clearInterval(carrosselInterval);
-        carrosselInterval = null;
+    } 
+    // Se não estiver ativo, LIGAR
+    else {
+        modoRedacaoAtivo = true;
+        btnRedacao.classList.add('active');
+        
+        // Insere o texto se ainda não estiver lá
+        if (!input.value.startsWith(textoPrefixo)) {
+            input.value = textoPrefixo + input.value;
+        }
+        
+        input.focus();
+        // Move o cursor para o final
+        const val = input.value;
+        input.value = '';
+        input.value = val;
     }
 }
 
 function enviarMensagem() {
     const input = document.getElementById('input-mensagem');
+    const btnEnviar = document.getElementById('btn-enviar');
+    const btnRedacao = document.getElementById('btn-redacao'); // Pegamos o botão de redação
     const mensagem = input.value.trim();
     
     if (!mensagem) return;
     
-    // Adiciona mensagem ao histórico
-    historicoConversa.push({ tipo: 'usuario', texto: mensagem });
-    
-    // Remove o carrossel ao enviar a primeira mensagem
-    const carrossel = document.getElementById('carrossel-prompts');
-    if (carrossel && carrossel.style.display !== 'none') {
-        carrossel.style.display = 'none';
-        pararCarrossel(); // Para o carrossel automático
+    // Desativa UI
+    input.disabled = true;
+    if(btnEnviar) btnEnviar.disabled = true;
+
+    // Reseta o estado visual do botão de redação ao enviar
+    if (modoRedacaoAtivo) {
+        modoRedacaoAtivo = false;
+        btnRedacao.classList.remove('active');
     }
-    
+
+    historicoConversa.push({ tipo: 'usuario', texto: mensagem });
     adicionarMensagem(mensagem, 'usuario');
+    input.value = '';
     
-    // Mostra que a IA está digitando
     mostrarDigitando(true);
     
     setTimeout(() => {
@@ -239,37 +153,13 @@ function enviarMensagem() {
         const imagemAssociada = encontrarImagem(mensagem);
         
         historicoConversa.push({ tipo: 'bot', texto: resposta });
+        adicionarMensagem(resposta, 'bot', imagemAssociada);
         
-        adicionarMensagem(resposta, 'bot', imagemAssociada); // ✅ Agora chama a função correta
-    }, 1000); // Espera 1 segundo (simula tempo de resposta)
-    
-    input.value = '';
-}
-
-function enviarPrompt(texto) {
-    // Remove o carrossel ao clicar em um prompt
-    const carrossel = document.getElementById('carrossel-prompts');
-    if (carrossel && carrossel.style.display !== 'none') {
-        carrossel.style.display = 'none';
-        pararCarrossel(); // Para o carrossel automático
-    }
-    
-    // Adiciona mensagem ao histórico
-    historicoConversa.push({ tipo: 'usuario', texto: texto });
-    
-    adicionarMensagem(texto, 'usuario');
-    
-    // Mostra que a IA está digitando
-    mostrarDigitando(true);
-    
-    setTimeout(() => {
-        mostrarDigitando(false);
-        const resposta = gerarResposta(texto);
-        const imagemAssociada = encontrarImagem(texto);
-        historicoConversa.push({ tipo: 'bot', texto: resposta });
-        
-        adicionarMensagem(resposta, 'bot', imagemAssociada); // ✅ Agora chama a função correta
-    }, 1000); // Espera 1 segundo (simula tempo de resposta)
+        // Reativa UI
+        input.disabled = false;
+        input.focus();
+        if(btnEnviar) btnEnviar.disabled = false;
+    }, 1500); // Tempo de resposta ligeiramente maior para apreciar o design
 }
 
 function mostrarDigitando(mostrar) {
@@ -281,38 +171,63 @@ function mostrarDigitando(mostrar) {
             const div = document.createElement('div');
             div.id = 'digitando';
             div.className = 'mensagem bot digitando';
-            div.innerHTML = 'Dora AI está digitando<span class="ponto">.</span><span class="ponto">.</span><span class="ponto">.</span>';
+            // Estrutura simplificada para o "digitando"
+            div.innerHTML = '<div class="message-content">Dora AI está pensando...</div>';
             chatBox.appendChild(div);
         }
     } else {
-        if (digitandoElement) {
-            digitandoElement.remove();
-        }
+        if (digitandoElement) digitandoElement.remove();
     }
-    // Rolagem automática para a última mensagem
-    chatBox.scrollTop = chatBox.scrollHeight;
+    scrollParaBaixo();
 }
 
 function gerarResposta(mensagemUsuario) {
     mensagemUsuario = mensagemUsuario.toLowerCase();
-
-    // Detecta sentimentos
     const sentimento = detectarSentimento(mensagemUsuario);
-    
-    // Separa palavras-chave da mensagem
     const palavrasUsuario = mensagemUsuario.split(/\W+/).filter(Boolean);
 
     let melhorResposta = null;
+    const textoPrefixoRedacao = "pode me ajudar a escrever uma redação sobre ";
+
+    // --- Lógica para Redação (se o modo estiver ativo) ---
+    if (modoRedacaoAtivo || mensagemUsuario.startsWith(textoPrefixoRedacao)) {
+        // Extrai o tema, independentemente de como a mensagem foi formatada
+        const temaSolicitado = mensagemUsuario.startsWith(textoPrefixoRedacao)
+            ? mensagemUsuario.substring(textoPrefixoRedacao.length).trim()
+            : mensagemUsuario.trim();
+
+        const redacaoEncontrada = redacoesData.find(r => r.tema.toLowerCase() === temaSolicitado.toLowerCase());
+
+        if (redacaoEncontrada) {
+            let respostaRedacao = `Com certeza! Aqui está uma redação sobre **${redacaoEncontrada.tema.toUpperCase()}**:\n\n`;
+            
+            respostaRedacao += `**Introdução:**\n`;
+            redacaoEncontrada.estrutura.introducao.forEach(frase => {
+                respostaRedacao += `${frase}\n`;
+            });
+            respostaRedacao += `\n**Desenvolvimento:**\n`;
+            redacaoEncontrada.estrutura.desenvolvimento.forEach(frase => {
+                respostaRedacao += `${frase}\n`;
+            });
+            respostaRedacao += `\n**Conclusão:**\n`;
+            redacaoEncontrada.estrutura.conclusao.forEach(frase => {
+                respostaRedacao += `${frase}\n`;
+            });
+            
+            return formatarResposta(respostaRedacao);
+        } else {
+            const temasDisponiveis = redacoesData.map(r => r.tema).join(', ');
+            return `Desculpe, não encontrei uma redação sobre **${temaSolicitado}**. Os temas que eu conheço são: ${temasDisponiveis}.`;
+        }
+    }
+    // --- Fim da Lógica para Redação ---
+
     let maiorNumeroDePalavrasComuns = 0;
 
-    // Para cada treinamento, verifica quantas palavras comuns tem
     treinamentos.forEach(t => {
         const palavrasTreinamento = t.pergunta.toLowerCase().split(/\W+/).filter(Boolean);
-        
-        // Conta quantas palavras do treinamento aparecem na mensagem do usuário
         const palavrasComuns = palavrasUsuario.filter(p => palavrasTreinamento.includes(p)).length;
 
-        // Se tem mais palavras comuns que o melhor até agora, atualiza
         if (palavrasComuns > maiorNumeroDePalavrasComuns) {
             maiorNumeroDePalavrasComuns = palavrasComuns;
             melhorResposta = t.resposta;
@@ -320,190 +235,191 @@ function gerarResposta(mensagemUsuario) {
     });
 
     if (melhorResposta) {
-        // Adiciona tom baseado na personalidade
         melhorResposta = adicionarTomPersonalidade(melhorResposta, sentimento);
         return formatarResposta(melhorResposta);
     } else {
-        // Conta o número exato de treinamentos
         const numeroTreinamentos = treinamentos.length;
-        return `Desculpe, meu dono não me treinou para esse tipo de pergunta 😬 Estou sempre aprendendo algo novo, até o momento fui treinado com mais de **${numeroTreinamentos}** treinamentos. Daqui a uma semana, estarei com mais de **2 mil** treinamentos novos, e provavelmente a sua pergunta estará lá 😎 No que mais posso te ajudar? 😁`;
+        return `Desculpe, ainda não fui treinada para isso 😬 Atualmente conheço mais de **${numeroTreinamentos}** tópicos. Tente me perguntar de outra forma! 😁 Você também pode clicar no botão "Redação" para me pedir ajuda com temas específicos.`;
     }
 }
 
 function encontrarImagem(mensagemUsuario) {
     mensagemUsuario = mensagemUsuario.toLowerCase();
-    
-    // Separa palavras-chave da mensagem
     const palavrasUsuario = mensagemUsuario.split(/\W+/).filter(Boolean);
     
-    // Procura imagem com base nas palavras-chave
     for (let imagem in bancoImagens) {
         const tags = bancoImagens[imagem];
-        
         for (let palavra of palavrasUsuario) {
-            if (tags.includes(palavra)) {
-                return imagem; // Retorna a primeira imagem encontrada
-            }
+            if (tags.includes(palavra)) return imagem;
         }
     }
-    
-    return null; // Nenhuma imagem encontrada
+    return null;
 }
 
 function detectarSentimento(mensagem) {
-    const palavrasTristes = ['triste', 'chateado', 'deprimido', 'mal', 'sozinho', 'cansado'];
-    const palavrasFelizes = ['feliz', 'contente', 'animado', 'bem', 'ótimo', 'maravilhoso'];
+    const palavrasTristes = ['triste', 'chateado', 'deprimido', 'mal', 'sozinho', 'cansado', 'chorar'];
+    const palavrasFelizes = ['feliz', 'contente', 'animado', 'bem', 'ótimo', 'maravilhoso', 'alegre'];
     
-    for (let p of palavrasTristes) {
-        if (mensagem.includes(p)) return 'triste';
-    }
-    
-    for (let p of palavrasFelizes) {
-        if (mensagem.includes(p)) return 'feliz';
-    }
-    
+    for (let p of palavrasTristes) if (mensagem.includes(p)) return 'triste';
+    for (let p of palavrasFelizes) if (mensagem.includes(p)) return 'feliz';
     return 'neutro';
 }
 
 function adicionarTomPersonalidade(resposta, sentimento) {
-    if (personalidadeAtual === 'alegre' && sentimento === 'triste') {
-        return resposta + ' 😊';
-    } else if (personalidadeAtual === 'seria' && sentimento === 'feliz') {
-        return resposta + ' 😌';
-    } else if (personalidadeAtual === 'engracada' && sentimento === 'neutro') {
-        return resposta + ' 😄';
-    }
-    
+    if (personalidadeAtual === 'alegre' && sentimento === 'triste') return resposta + ' 😊 Vai ficar tudo bem!';
+    if (personalidadeAtual === 'seria' && sentimento === 'feliz') return resposta + ' 😌 Fico contente.';
+    if (personalidadeAtual === 'engracada' && sentimento === 'neutro') return resposta + ' 😄';
     return resposta;
 }
 
 function formatarResposta(texto) {
-    // Substitui **frase** por <strong>frase</strong>
     texto = texto.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    // Substitui *palavra* por <strong>palavra</strong>
-    texto = texto.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
+    texto = texto.replace(/\n/g, '<br>'); // Converte quebras de linha em <br> para a formatação correta
     return texto;
 }
 
+// --- FUNÇÃO PRINCIPAL DE ADICIONAR MENSAGEM (REDESIGN TOTAL) ---
 function adicionarMensagem(texto, tipo, imagemNome = null) {
     const chatBox = document.getElementById('chat-box');
-    const div = document.createElement('div');
-    div.className = `mensagem ${tipo}`;
+    const divMensagem = document.createElement('div');
+    divMensagem.className = `mensagem ${tipo}`;
     
+    // Cria o container do conteúdo da mensagem (a bolha)
+    const divContent = document.createElement('div');
+    divContent.className = 'message-content';
+
     if (tipo === 'bot') {
-        // Remove formatação HTML para o texto puro
         const textoSemHTML = texto.replace(/<[^>]*>/g, '');
         
-        let htmlCompleto = texto;
+        // 1. Adiciona o Texto
+        divContent.innerHTML = texto;
         
-        // Se tiver imagem, adiciona com animação de carregamento
+        // 2. Se tiver imagem, adiciona o Skeleton Loader (Efeito Premium)
         if (imagemNome) {
-            htmlCompleto += `<br><div class="imagem-container">
-                <div class="carregando-imagem">
-                    <div class="spinner"></div>
-                    <span class="texto-carregamento">Gerando imagem...</span>
-                </div>
-            </div>`;
+            const imgContainer = document.createElement('div');
+            imgContainer.className = 'imagem-container-premium';
+            imgContainer.innerHTML = '<div class="skeleton-loader"></div>'; // O efeito de brilho
+            divContent.appendChild(imgContainer);
             
-            // Após 1.5 segundos, mostra a imagem
-            setTimeout(() => {
-                const imagemContainer = div.querySelector('.imagem-container');
-                if (imagemContainer) {
-                    imagemContainer.innerHTML = `
-                        <img src="img-IA/${imagemNome}" alt="Imagem relacionada" class="imagem-resposta" id="img-${Date.now()}">
-                    `;
-                }
-            }, 1500); // 1.5 segundos
+            // Carrega a imagem real em segundo plano
+            const img = new Image();
+            img.src = `img-IA/${imagemNome}`;
+            img.className = 'imagem-resposta-premium';
+            img.alt = "Imagem gerada por IA";
+            
+            img.onload = () => {
+                // Quando carregar, substitui o skeleton pela imagem com fade-in
+                 setTimeout(() => {
+                    imgContainer.innerHTML = ''; // Limpa o skeleton
+                    imgContainer.appendChild(img);
+                    scrollParaBaixo();
+                 }, 1000); // Pequeno delay dramático para o efeito skeleton aparecer
+            };
+             img.onerror = () => {
+                 imgContainer.innerHTML = '<span style="font-size:12px; color:#999;">Erro ao gerar imagem.</span>';
+             };
         }
-        
-        // Botões de copiar e baixar
-        htmlCompleto += '<div class="botoes-mensagem">';
-        htmlCompleto += `<button class="copiar-btn" onclick="copiarTexto('${textoSemHTML.replace(/'/g, "\\'")}')">Copiar</button>`;
-        
+
+        // 3. Adiciona a bolha de conteúdo ao container principal da mensagem
+        divMensagem.appendChild(divContent);
+
+        // 4. Cria o container de Ações (Ícones abaixo da bolha)
+        const actionsContainer = document.createElement('div');
+        actionsContainer.className = 'message-actions-container';
+
+        // Botão Copiar (Ícone)
+        const btnCopy = document.createElement('button');
+        btnCopy.className = 'action-icon-btn';
+        btnCopy.title = "Copiar resposta";
+        btnCopy.innerHTML = '<span class="material-symbols-rounded">content_copy</span>';
+        btnCopy.onclick = () => copiarTexto(textoSemHTML);
+        actionsContainer.appendChild(btnCopy);
+
+        // Botão Baixar (Ícone) - Só se tiver imagem
         if (imagemNome) {
-            htmlCompleto += `<button class="baixar-btn" onclick="baixarImagem('img-IA/${imagemNome}')">Baixar Imagem</button>`;
+            const btnDownload = document.createElement('button');
+            btnDownload.className = 'action-icon-btn';
+            btnDownload.title = "Baixar imagem";
+            btnDownload.innerHTML = '<span class="material-symbols-rounded">download</span>';
+            btnDownload.onclick = () => baixarImagem(`img-IA/${imagemNome}`);
+            actionsContainer.appendChild(btnDownload);
         }
-        
-        htmlCompleto += '</div>';
-        div.innerHTML = htmlCompleto;
+
+        divMensagem.appendChild(actionsContainer);
+
     } else {
-        div.innerHTML = texto;
+        // Mensagem do usuário (simples)
+        divContent.innerHTML = texto;
+        divMensagem.appendChild(divContent);
     }
     
-    chatBox.appendChild(div);
-    // Rolagem automática para a última mensagem
-    chatBox.scrollTop = chatBox.scrollHeight;
+    chatBox.appendChild(divMensagem);
+    scrollParaBaixo();
 }
 
-// Função para baixar imagem com marca d'água
+function scrollParaBaixo() {
+     const chatBoxContainer = document.getElementById('chat-box-container');
+     chatBoxContainer.scrollTo({
+        top: chatBoxContainer.scrollHeight,
+        behavior: 'smooth'
+    });
+}
+
+
+// Funções auxiliares (Baixar/Copiar) mantidas, apenas sem os alertas nativos feios
 function baixarImagem(srcImagem) {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     const img = new Image();
-    
     img.crossOrigin = 'Anonymous';
     img.src = srcImagem;
     
     img.onload = function() {
         canvas.width = img.width;
         canvas.height = img.height;
-        
-        // Desenha a imagem original
         ctx.drawImage(img, 0, 0);
-        
-        // Desenha a marca d'água no canto inferior direito
         const marca = new Image();
         marca.src = 'img-IA/marca-dagua.png';
         
         marca.onload = function() {
-            const larguraMarca = 50; // Tamanho da marca d'água
-            const alturaMarca = 50 * (marca.height / marca.width); // Proporcional
+            // Lógica da marca d'água (mantida)
+            const larguraMarca = Math.min(100, canvas.width * 0.2); // Máximo 100px ou 20% da largura
+            const alturaMarca = larguraMarca * (marca.height / marca.width);
+            ctx.globalAlpha = 0.6;
+            ctx.drawImage(marca, canvas.width - larguraMarca - 20, canvas.height - alturaMarca - 20, larguraMarca, alturaMarca);
             
-            ctx.globalAlpha = 0.7; // Transparência
-            ctx.drawImage(marca, canvas.width - larguraMarca - 10, canvas.height - alturaMarca - 10, larguraMarca, alturaMarca);
-            ctx.globalAlpha = 1.0; // Volta à opacidade normal
-            
-            // Baixa a imagem
             const link = document.createElement('a');
-            link.download = 'gerado-por-IA.png';
+            link.download = `DoraAI-Gerado-${Date.now()}.png`;
             link.href = canvas.toDataURL('image/png');
             link.click();
         };
+        marca.onerror = function() {
+             // Se não tiver marca d'água, baixa sem
+             const link = document.createElement('a');
+             link.download = `DoraAI-Gerado-${Date.now()}.png`;
+             link.href = canvas.toDataURL('image/png');
+             link.click();
+        }
     };
 }
 
 function copiarTexto(texto) {
-    const textoCompleto = texto + '\n\nRESPOSTA GERADA POR IA - RESPOSTA GERADA PELA DORA AI - NÃO USAR ESSA RESPOSTA EM TRABALHOS - DIREITOS AUTORAIS';
-    
-    navigator.clipboard.writeText(textoCompleto).then(() => {
-        alert('Resposta copiada com aviso de direitos autorais!');
-    }).catch(err => {
-        console.error('Erro ao copiar: ', err);
-    });
+    navigator.clipboard.writeText(texto).then(() => {
+        // Feedback sutil poderia ser implementado aqui, tipo um "toast"
+        console.log('Texto copiado'); 
+    }).catch(console.error);
 }
 
-// Adiciona mensagem de boas-vindas ao carregar
-function mostrarBoasVindas() {
-    const chatBox = document.getElementById('chat-box');
-    const div = document.createElement('div');
-    div.className = 'mensagem bot boas-vindas';
-    const textoBoasVindas = '🌟 <strong>Olá! Sou a Dora AI</strong> 🤗<br>Estou aqui pra conversar com carinho e escutar você! 💬<br>Como posso te ajudar hoje? 🌸';
-    const textoSemHTML = '🌟 Olá! Sou a Dora AI 🤗\nEstou aqui pra conversar com carinho e escutar você! 💬\nComo posso te ajudar hoje? 🌸';
-    div.innerHTML = textoBoasVindas + '<br><button class="copiar-btn" onclick="copiarTexto(\'' + textoSemHTML.replace(/'/g, "\\'") + '\')">Copiar</button>';
-    chatBox.appendChild(div);
-    // Rolagem automática para a última mensagem
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
-
-// Carrega treinamentos
 fetch('training.json')
     .then(response => response.json()) 
-    .then(data => {
-        treinamentos = data;
-    })
+    .then(data => treinamentos = data)
     .catch(error => console.error('Erro ao carregar treinamentos:', error));
 
-// Inicia o jogo
+// Carrega o redacoes.json
+fetch('redacoes.json')
+    .then(response => response.json())
+    .then(data => redacoesData = data)
+    .catch(error => console.error('Erro ao carregar redações:', error));
 window.addEventListener('load', () => {
-    mostrarAnuncio(); // Mostra o anúncio do Dora AI 1.3
+    mostrarAnuncio();
 });
