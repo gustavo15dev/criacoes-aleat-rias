@@ -3,6 +3,8 @@
     --primary-color: #000000; /* Preto premium */
     --accent-blue: #0284c7; /* Azul vibrante para destaques */
     --accent-blue-soft: #e0f2fe; /* Azul suave para fundos */
+    --accent-green: #15803d; /* Verde para o modo Resumo */
+    --accent-green-soft: #dcfce7; /* Verde suave para o modo Resumo */
     --bg-page: #ffffff; /* Fundo da página branco puro */
     --bg-chat-bubble-user: #f4f4f4;
     --bg-chat-bubble-bot: #ffffff;
@@ -21,7 +23,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background: var(--bg-page);
     color: var(--text-primary);
     height: 100vh;
@@ -281,6 +283,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Campo de input principal (agora textarea responsiva) */
 #input-mensagem {
     width: 100%;
     border: none;
@@ -289,14 +292,72 @@ body {
     color: var(--text-primary);
     outline: none;
     font-family: inherit;
-    padding: 4px 0;
-    resize: none;
-    max-height: 120px;
+    padding: 6px 0;
+    line-height: 1.4;
+    resize: none; /* usuário não redimensiona manualmente */
+    overflow-y: hidden; /* será toggled via JS */
+    min-height: 40px;
+    max-height: 45vh; /* nunca ultrapassar ~45% da altura da viewport */
+    box-sizing: border-box;
 }
 
 #input-mensagem::placeholder {
     color: #9ca3af;
     font-weight: 400;
+}
+
+/* Se o conteúdo exceder max-height, o textarea terá scroll interno */
+#input-mensagem.scrolling {
+    overflow-y: auto;
+    padding-right: 6px; /* espaço para a barra de rolagem */
+}
+
+/* --- Mobile specific adjustments: mantém a caixa de escrita acessível --- */
+@media (max-width: 480px) {
+    /* fixa a área de input na base para evitar que o teclado esconda o campo */
+    .input-area-container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: env(safe-area-inset-bottom, 0);
+        padding: 12px 12px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(250,250,250,0.98));
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        box-shadow: 0 -8px 30px rgba(0,0,0,0.08);
+        z-index: 60;
+    }
+
+    .chat-input-wrapper {
+        padding: 10px 12px;
+        border-radius: 12px;
+    }
+
+    #input-mensagem {
+        font-size: 15px;
+        min-height: 44px;
+        max-height: 30vh; /* menos espaço para o teclado */
+        padding: 8px 0;
+    }
+
+    .input-row-bottom {
+        gap: 8px;
+    }
+
+    .tool-icon-btn.send-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* garante espaço para a área fixa do input, evitando sobreposição do conteúdo */
+    #chat-box-container {
+        padding-bottom: calc(140px + env(safe-area-inset-bottom, 0));
+    }
+}
+
+@media (max-width: 360px) {
+    #input-mensagem { font-size: 14px; }
+    .login-container { padding: 28px; }
 }
 
 /* Linha de baixo: Ferramentas e Enviar */
@@ -342,6 +403,40 @@ body {
 }
 .function-pill-btn.active:hover {
     background: #bae6fd;
+}
+/* Estilo para o botão Resumo ativo */
+.function-pill-btn.resumo.active {
+    background: var(--accent-green-soft);
+    color: var(--accent-green);
+}
+.function-pill-btn.resumo.active:hover {
+    background: #bbf7d0;
+}
+
+/* Estilo para o botão Correção ativo */
+.function-pill-btn.correcao.active {
+    background: #ffedd5; /* Laranja suave */
+    color: #9a3412; /* Laranja escuro */
+}
+.function-pill-btn.correcao.active:hover {
+    background: #fed7aa;
+}
+
+/* --- ETIQUETA BETA --- */
+.beta-label {
+    font-size: 9px;
+    font-weight: 700;
+    background: #fb923c; /* Laranja */
+    color: white;
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-left: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+/* Etiqueta beta no modo ativo */
+.function-pill-btn.correcao.active .beta-label {
+    background: #c2410c;
 }
 
 .function-pill-btn .material-symbols-rounded {
@@ -423,8 +518,143 @@ body {
 }
 
 /* === Anúncio (Mantido, apenas pequenos ajustes de cor) === */
-.anuncio-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center; z-index: 10000; backdrop-filter: blur(5px); }
-.anuncio-container { background: white; padding: 30px; border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); max-width: 600px; width: 90%; text-align: center; animation: fadeInUp 0.4s ease-out; }
+.anuncio-overlay { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 10000; 
+    backdrop-filter: blur(5px); 
+}
+
+.anuncio-container { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 24px; 
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+    max-width: 550px; 
+    width: 90%; 
+    text-align: center; 
+    animation: fadeInUp 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Logo principal do anúncio */
+ .anuncio-logo-principal {
+    max-width: 220px; /* aumentado um pouco mais para maior legibilidade */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* sem animação — imagem estática */
+ }
+
+/* Ajustes responsivos para o logo do anúncio */
+@media (max-width: 480px) {
+    .anuncio-logo-principal { max-width: 140px; }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .anuncio-logo-principal { max-width: 180px; }
+}
+/* Novo: Título com Badge */
+.titulo-com-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.titulo-com-badge h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* --- Título Animado com Gradiente Abrangente (inclui tons pastéis) --- */
+.titulo-animado {
+    background: linear-gradient(90deg,
+        #ff5f6d 0%, /* vermelho-alaranjado */
+        #ffc371 10%, /* amarelo quente */
+        #f6d365 18%, /* amarelo pastel */
+        #fda085 26%, /* pêssego */
+        #f8cdda 34%, /* rosa suave */
+        #ffd1dc 40%, /* rosa pastel */
+        #e0c3fc 48%, /* lilás pastel */
+        #a1c4fd 56%, /* azul claro */
+        #8fd3f4 64%, /* aqua */
+        #84fab0 72%, /* verde menta */
+        #c2e9fb 80%, /* gelo */
+        #fbc2eb 88%, /* rosa claro */
+        #ff9a9e 96%  /* coral suave */
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding: 0;
+    animation: gradientShift 6s linear infinite;
+    font-weight: 800;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.08);
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .titulo-animado {
+        animation: none;
+        background-size: cover;
+        -webkit-text-fill-color: initial;
+        color: var(--text-primary);
+        background: none;
+    }
+}
+
+.badge-beta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 6px 12px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+    animation: badgePulse 2s ease-in-out infinite;
+    white-space: nowrap;
+}
+
+@keyframes badgePulse {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 6px 16px rgba(249, 115, 22, 0.5);
+        transform: scale(1.05);
+    }
+}
+
 .anuncio-container h2 { font-size: 26px; margin-bottom: 20px; font-weight: 700; color: var(--text-primary); }
 .anuncio-video { width: 100%; border-radius: 16px; margin: 20px 0; pointer-events: none; box-shadow: var(--shadow-soft); }
 .anuncio-texto { margin: 25px 0; text-align: left; font-size: 15px; color: var(--text-secondary); line-height: 1.6; }
@@ -463,4 +693,52 @@ body {
     color: #888;
     font-size: 0.9em;
     margin-top: 10px;
+}
+
+/* === NOVO CARD DE RESUMO === */
+.resumo-card {
+    background: var(--accent-green-soft);
+    border: 1px solid #a7f3d0;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 12px;
+}
+
+.resumo-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent-green);
+    margin: 0 0 12px 0;
+}
+
+.resumo-card h3 .material-symbols-rounded {
+    font-size: 22px;
+}
+
+.resumo-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.resumo-card li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #065f46;
+    padding-left: 22px;
+    position: relative;
+}
+
+.resumo-card li::before {
+    content: '•';
+    position: absolute;
+    left: 8px;
+    color: var(--accent-green);
+    font-weight: 700;
 }

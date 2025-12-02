@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -25,7 +26,7 @@
 
     <div class="main-wrapper">
         <header>
-            <div class="badge">v2.0 Beta</div>
+            <div class="badge">v2.4</div>
             <h1>Sala de <span class="text-gradient">Experimentos</span></h1>
             <h2>Onde a criatividade encontra a <span class="text-highlight">tecnologia</span>.</h2>
         </header>
@@ -47,6 +48,101 @@
         </div>
 
         <div id="container-cards">
+            
+            <!-- ========== CARD 01: GERADOR DE CORES ========== -->
+            <div class="glass-card" data-projeto="gerador-cores" data-categoria="ferramentas">
+                <div class="card-image-wrapper">
+                    <img src="imagens/cor.png" alt="Gerador de Cores" onerror="this.src='https://placehold.co/600x400/1a1a1a/FFF?text=Gerador+de+Cores'">
+                    <span class="status-tag dev">NOVO</span>
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Gerador de Cores</h3>
+                        <span class="category-icon" data-icon="palette"></span>
+                    </div>
+                    <p>Gere paletas perfeitas respondendo perguntas simples — design inteligente e exportável.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-eye"></i> <span id="gerador-cores-count">0</span> vezes você usou</span>
+                    </div>
+                    <a href="gerador-cores/cor.html" onclick="atualizarEstatistica('gerador-cores')" class="action-btn">Acessar Projeto</a>
+                </div>
+            </div>
+
+            <!-- ========== CARD 02: BILIONÁRIO ========== -->
+            <div class="glass-card" data-projeto="bilionario" data-categoria="diversao">
+                <div class="card-image-wrapper">
+                    <img src="imagens/elon-musk.png" alt="Bilionário" onerror="this.src='https://placehold.co/600x400/1a1a1a/FFF?text=Bilionario'">
+                    <span class="status-tag dev">NOVO</span>
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Compre como Elon Musk</h3>
+                        <span class="category-icon"><i class="fa-solid fa-rocket"></i></span>
+                    </div>
+                    <p>O que você faria com quase 500 bilhões de Dólares?</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-eye"></i> <span id="bilionario-count">0</span> vezes você usou</span>
+                    </div>
+                    <a href="bilionário/bilionario.html" onclick="atualizarEstatistica('bilionario')" class="action-btn">Simular Vida Luxuosa</a>
+                </div>
+            </div>
+
+            <!-- ========== CARD 03: DORA AI ========== -->
+            <div class="glass-card" data-projeto="conversa" data-categoria="ia">
+                <div class="card-image-wrapper">
+                    <img src="Dora-AI/img-IA/logo.png" alt="Dora AI" onerror="this.src='https://placehold.co/600x400/4b0082/FFF?text=Dora+AI'">
+                    <span class="status-tag dev">POPULAR <br>NOVA ATUALIZAÇÃO</span>
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Dora AI 1.3 Flash Pro</h3>
+                        <span class="category-icon"><i class="fa-solid fa-brain"></i></span>
+                    </div>
+                    <p>Inteligência artificial empática para conversas acolhedoras e suporte emocional.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-eye"></i> <span id="conversa-count">0</span> vezes você usou</span>
+                    </div>
+                    <a href="Dora-AI/conversa.html" onclick="atualizarEstatistica('conversa')" class="action-btn">Conversar</a>
+                </div>
+            </div>
+
+            <!-- ========== CARD 04: DAILY MOTIVATION ========== -->
+            <div class="glass-card" data-projeto="frases" data-categoria="diversao">
+                <div class="card-image-wrapper">
+                    <img src="imagens/frases.png" alt="Frases" onerror="this.src='https://placehold.co/600x400/ff6b6b/FFF?text=Motivacao'">
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Daily Motivation</h3>
+                        <span class="category-icon"><i class="fa-solid fa-bolt"></i></span>
+                    </div>
+                    <p>Gerador de doses diárias de energia e sabedoria para começar o seu dia.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-eye"></i> <span id="frases-count">0</span> vezes você usou</span>
+                    </div>
+                    <a href="frases/frases.html" onclick="atualizarEstatistica('frases')" class="action-btn">Inspirar-se</a>
+                </div>
+            </div>
+
+            <!-- ========== CARD 05: CONTADOR DE MOSQUITOS ========== -->
+            <div class="glass-card" data-projeto="mosquito" data-categoria="diversao">
+                <div class="card-image-wrapper">
+                    <img src="imagens/mosquito.png" alt="Mosquito" onerror="this.src='https://placehold.co/600x400/333/FFF?text=Mosquito'">
+                </div>
+                <div class="card-info">
+                    <div class="card-header">
+                        <h3>Contador de Mosquitos</h3>
+                        <span class="category-icon"><i class="fa-solid fa-crosshairs"></i></span>
+                    </div>
+                    <p>Ferramenta essencial (e cômica) para rastrear suas vitórias contra insetos locais.</p>
+                    <div class="card-meta">
+                        <span><i class="fa-regular fa-eye"></i> <span id="mosquito-count">0</span> vezes você usou</span>
+                    </div>
+                    <a href="contar_mosquitos/contar-mosquitos.html" onclick="atualizarEstatistica('mosquito')" class="action-btn">Iniciar Caçada</a>
+                </div>
+            </div>
+
+            <!-- ========== CARD 06: RELÓGIO UNIVERSAL ========== -->
             <div class="glass-card" data-projeto="relogio" data-categoria="ferramentas">
                 <div class="card-image-wrapper">
                     <img src="imagens/relogio.png" alt="Relógio Digital" onerror="this.src='https://placehold.co/600x400/1a1a1a/FFF?text=Relogio'">
@@ -59,65 +155,44 @@
                     </div>
                     <p>Monitoramento global de fusos horários em tempo real com interface de alto contraste.</p>
                     <div class="card-meta">
-                        <span><i class="fa-regular fa-eye"></i> <span id="relogio-count">0</span> views</span>
+                        <span><i class="fa-regular fa-eye"></i> <span id="relogio-count">0</span> vezes você usou</span>
                     </div>
                     <a href="relógio/relogio.html" onclick="atualizarEstatistica('relogio')" class="action-btn">Acessar Projeto</a>
                 </div>
             </div>
 
-            <div class="glass-card" data-projeto="conversa" data-categoria="ia">
+            <!-- ========== NOVO CARD (TEMPLATE COMENTADO PARA REFERÊNCIA) ========== 
+            INSTRUÇÕES PARA ADICIONAR NOVO CARD:
+            1. data-projeto: ID único do projeto (sem espaços, com hífen)
+            2. data-categoria: 'ferramentas', 'jogos', 'ia', 'diversao'
+            3. Imagem: em imagens/[nome].png
+            4. ID count: [data-projeto]-count (DEVE SER ÚNICO!)
+            5. onclick: atualizarEstatistica('[data-projeto]')
+            6. href: caminho até a página HTML do projeto
+            7. Adicione também o ID no array do script (linha ~180): ['gerador-cores', 'relogio', 'conversa', 'frases', 'mosquito', 'SEU-NOVO-ID']
+            
+            <div class="glass-card" data-projeto="seu-projeto" data-categoria="ferramentas">
                 <div class="card-image-wrapper">
-                    <img src="Dora-AI/img-IA/logo.png" alt="Dora AI" onerror="this.src='https://placehold.co/600x400/4b0082/FFF?text=Dora+AI'">
-                    <span class="status-tag dev">O mais acessado</span>
+                    <img src="imagens/seu-projeto.png" alt="Seu Projeto" onerror="this.src='https://placehold.co/600x400/1a1a1a/FFF?text=Seu+Projeto'">
+                    <span class="status-tag dev">NOVO</span>
                 </div>
                 <div class="card-info">
                     <div class="card-header">
-                        <h3>Dora AI 1.3</h3>
-                        <span class="category-icon"><i class="fa-solid fa-brain"></i></span>
+                        <h3>Título do Seu Projeto</h3>
+                        <span class="category-icon" data-icon="nome-icone"></span>
                     </div>
-                    <p>Inteligência artificial empática para conversas acolhedoras e suporte emocional.</p>
+                    <p>Descrição breve e atraente do seu projeto...</p>
                     <div class="card-meta">
-                        <span><i class="fa-regular fa-eye"></i> <span id="conversa-count">0</span> views</span>
+                        <span><i class="fa-regular fa-eye"></i> <span id="seu-projeto-count">0</span> views</span>
                     </div>
-                    <a href="Dora-AI/conversa.html" onclick="atualizarEstatistica('conversa')" class="action-btn">Conversar</a>
+                    <a href="seu-projeto/index.html" onclick="atualizarEstatistica('seu-projeto')" class="action-btn">Acessar Projeto</a>
                 </div>
             </div>
-
-            <div class="glass-card" data-projeto="frases" data-categoria="diversao">
-                <div class="card-image-wrapper">
-                    <img src="imagens/frases.png" alt="Frases" onerror="this.src='https://placehold.co/600x400/ff6b6b/FFF?text=Motivacao'">
-                </div>
-                <div class="card-info">
-                    <div class="card-header">
-                        <h3>Daily Motivation</h3>
-                        <span class="category-icon"><i class="fa-solid fa-bolt"></i></span>
-                    </div>
-                    <p>Gerador de doses diárias de energia e sabedoria para começar o seu dia.</p>
-                    <div class="card-meta">
-                        <span><i class="fa-regular fa-eye"></i> <span id="frases-count">0</span> views</span>
-                    </div>
-                    <a href="frases/frases.html" onclick="atualizarEstatistica('frases')" class="action-btn">Inspirar-se</a>
-                </div>
-            </div>
-
-            <div class="glass-card" data-projeto="mosquito" data-categoria="diversao">
-                <div class="card-image-wrapper">
-                    <img src="imagens/mosquito.png" alt="Mosquito" onerror="this.src='https://placehold.co/600x400/333/FFF?text=Mosquito'">
-                </div>
-                <div class="card-info">
-                    <div class="card-header">
-                        <h3>Contador de Mosquitos</h3>
-                        <span class="category-icon"><i class="fa-solid fa-crosshairs"></i></span>
-                    </div>
-                    <p>Ferramenta essencial (e cômica) para rastrear suas vitórias contra insetos locais.</p>
-                    <div class="card-meta">
-                        <span><i class="fa-regular fa-eye"></i> <span id="frases-count">0</span> views</span>
-                    </div>
-                    <a href="contar_mosquitos/contar-mosquitos.html" onclick="atualizarEstatistica('frases')" class="action-btn">Iniciar Caçada</a>
-                </div>
-            </div>
+            ========== -->
         </div>
     </div>
+
+    <script src="scripts/icons.js"></script>
 
     <script>
         // Formatação de Números
@@ -137,9 +212,9 @@
             if (el) el.textContent = formatarNumero(valor);
         }
 
-        // Init
+        // Init - Carrega estatísticas de todos os projetos
         window.addEventListener('load', () => {
-            ['relogio', 'conversa', 'frases'].forEach(proj => {
+            ['gerador-cores', 'bilionario', 'conversa', 'frases', 'mosquito', 'relogio'].forEach(proj => {
                 let count = localStorage.getItem(proj) || 0;
                 atualizarDisplay(proj, count);
             });
