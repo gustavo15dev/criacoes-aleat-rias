@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 /* ---------------------------------------------------- */
 /* CONFIGURAÇÕES DE DESIGN SYSTEM */
 /* ---------------------------------------------------- */
@@ -14,7 +16,7 @@
     --accent-color: #00d2ff;
     
     /* Tipografia */
-    --font-main: 'Outfit', sans-serif;
+    --font-main: 'Inter', sans-serif;
     
     /* Espaçamento */
     --card-radius: 24px;
@@ -346,17 +348,61 @@ h2 {
 /* ---------------------------------------------------- */
 /* RESPONSIVIDADE */
 /* ---------------------------------------------------- */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    
+/* Mobile small */
+@media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1rem; }
+
+    .main-wrapper { padding: 20px 12px; }
+
     #container-cards {
         grid-template-columns: 1fr;
+        gap: 18px;
     }
 
-    .filter-btn {
-        padding: 10px 16px;
-        font-size: 0.85rem;
-    }
+    .card-image-wrapper { height: 140px; }
+    .card-info { padding: 18px; }
+
+    .filter-btn { padding: 8px 12px; font-size: 0.82rem; }
+    #busca-input { padding: 12px 16px 12px 44px; font-size: 0.95rem; }
 }
+
+/* Mobile / phablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.05rem; }
+
+    .main-wrapper { padding: 28px 18px; }
+
+    #container-cards { grid-template-columns: 1fr; gap: 22px; }
+    .card-image-wrapper { height: 160px; }
+    .card-info { padding: 20px; }
+
+    .filter-btn { padding: 10px 14px; font-size: 0.88rem; }
+}
+
+/* Tablet / small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 { font-size: 3rem; }
+
+    #container-cards { grid-template-columns: repeat(2, 1fr); gap: 26px; }
+    .card-image-wrapper { height: 200px; }
+}
+
+/* Desktop large */
+@media (min-width: 1025px) and (max-width: 1400px) {
+    .main-wrapper { max-width: 1000px; }
+    h1 { font-size: 3.4rem; }
+    #container-cards { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+}
+
+/* Wide screens */
+@media (min-width: 1401px) {
+    .main-wrapper { max-width: 1400px; padding: 50px 24px; }
+    h1 { font-size: 4rem; }
+    #container-cards { grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 36px; }
+}
+
+/* Pequenas melhorias gerais para melhorar responsividade dos botões */
+.filter-btn { white-space: nowrap; }
+.action-btn { font-size: 0.95rem; }
