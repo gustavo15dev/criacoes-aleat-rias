@@ -3,7 +3,10 @@ let historicoConversa = [];
 let temaAtual = 'amizade';
 let personalidadeAtual = 'alegre';
 let redacoesData = []; // Nova variável para armazenar os dados de redacoes.json
+let correcoesData = []; // Nova variável para armazenar os dados de correcoes.json
 let modoRedacaoAtivo = false; // Estado para controlar o botão visualmente
+let modoResumoAtivo = false; // Novo estado para o modo Resumo
+let modoCorrecaoAtivo = false; // Novo estado para o modo Correção
 
 const bancoImagens = {
     'praia.png': ['praia', 'areia', 'litoral', 'verão', 'onda', 'baixada santista', 'msc', 'coqueiro', 'maré'],
@@ -65,18 +68,24 @@ function mostrarAnuncio() {
     overlay.className = 'anuncio-overlay';
     overlay.innerHTML = `
         <div class="anuncio-container">
-            <h2>Dora AI 1.3</h2>
-            <video src="img-IA/anuncio.mp4" autoplay muted playsinline loop class="anuncio-video"></video>
+            <div class="titulo-com-badge">
+                <h2 class="titulo-animado">Dora AI 1.3 Flash Pro 
+            </div>
+
             <div class="anuncio-texto">
             <ul>
-                    <li>Gera imagens junto com as respostas</li>
-                    <li>Mil novos treinamentos</li>
-                    <li>Design claro, e mais suave</li>
-                    <li>Interface renovada estilo Studio</li>
+                    <li>Mais inteligente</li>
+                    <li>300 novos treinamentos</li>
+                    <li>Design premium, e mais suave</li>
+                    <li>Interface aprimorada estilo moderno</li>
+                    <li>Correção de erros de resposta</li>
+                    <li>Modo Resumo, redação e correção de textos</li>
+                    <li>Ficando cada vez mais profissional</li>
+
                 </ul>
             </div>
             <div class="anuncio-botoes">
-                <button onclick="fecharAnuncio()">Testar Dora AI</button>
+                <button onclick="fecharAnuncio()">Fechar</button>
             </div>
         </div>
     `;
@@ -94,6 +103,10 @@ function alternarModoRedacao() {
     const btnRedacao = document.getElementById('btn-redacao');
     const textoPrefixo = "Pode me ajudar a escrever uma redação sobre ";
     
+    // Desliga os outros modos se estiverem ativos
+    if (modoResumoAtivo) alternarModoResumo();
+    if (modoCorrecaoAtivo) alternarModoCorrecao();
+
     // Verifica se já está ativo para DESLIGAR
     if (modoRedacaoAtivo) {
         modoRedacaoAtivo = false;
@@ -123,43 +136,146 @@ function alternarModoRedacao() {
     }
 }
 
+// --- Função Nova para o botão de "Resumo" ---
+function alternarModoResumo() {
+    const input = document.getElementById('input-mensagem');
+    const btnResumo = document.getElementById('btn-resumo');
+    const placeholderAtivo = "Cole o texto que você deseja resumir aqui...";
+    const placeholderInativo = "Envie uma mensagem para Dora AI...";
+
+    // Desliga os outros modos se estiverem ativos
+    if (modoRedacaoAtivo) alternarModoRedacao();
+    if (modoCorrecaoAtivo) alternarModoCorrecao();
+
+    // Verifica se já está ativo para DESLIGAR
+    if (modoResumoAtivo) {
+        modoResumoAtivo = false;
+        btnResumo.classList.remove('active');
+        input.placeholder = placeholderInativo;
+        if (input.value.startsWith("resumir: ")) {
+            input.value = '';
+        }
+    } 
+    // Se não estiver ativo, LIGAR
+    else {
+        modoResumoAtivo = true;
+        btnResumo.classList.add('active');
+        input.placeholder = placeholderAtivo;
+        input.value = 'resumir: ';
+        input.focus();
+    }
+}
+
+// --- Função Nova para o botão de "Correção" ---
+function alternarModoCorrecao() {
+    const input = document.getElementById('input-mensagem');
+    const btnCorrecao = document.getElementById('btn-correcao');
+    const placeholderAtivo = "Cole o texto que você deseja corrigir aqui...";
+    const placeholderInativo = "Envie uma mensagem para Dora AI...";
+
+    // Desliga outros modos se estiverem ativos
+    if (modoRedacaoAtivo) alternarModoRedacao();
+    if (modoResumoAtivo) alternarModoResumo();
+
+    if (modoCorrecaoAtivo) {
+        modoCorrecaoAtivo = false;
+        btnCorrecao.classList.remove('active');
+        input.placeholder = placeholderInativo;
+        input.value = '';
+    } else {
+        modoCorrecaoAtivo = true;
+        btnCorrecao.classList.add('active');
+        input.placeholder = placeholderAtivo;
+        input.value = '';
+        input.focus();
+    }
+}
+
+
 function enviarMensagem() {
     const input = document.getElementById('input-mensagem');
     const btnEnviar = document.getElementById('btn-enviar');
-    const btnRedacao = document.getElementById('btn-redacao'); // Pegamos o botão de redação
-    const mensagem = input.value.trim();
-    
-    if (!mensagem) return;
-    
-    // Desativa UI
-    input.disabled = true;
-    if(btnEnviar) btnEnviar.disabled = true;
+    const btnRedacao = document.getElementById('btn-redacao');
+    const btnResumo = document.getElementById('btn-resumo');
+    const btnCorrecao = document.getElementById('btn-correcao');
+    let mensagem = input.value.trim();
+    const isModoResumoAtivo = modoResumoAtivo; // Captura o estado antes de resetar
+    const isModoCorrecaoAtivo = modoCorrecaoAtivo; // Captura o estado da correção
 
-    // Reseta o estado visual do botão de redação ao enviar
+    if (!mensagem) return;
+
+    if (isModoResumoAtivo) {
+        if (!mensagem.toLowerCase().startsWith("resumir: ")) {
+            mensagem = "resumir: " + mensagem;
+        }
+    }
+
+    input.disabled = true;
+    if (btnEnviar) btnEnviar.disabled = true;
+
     if (modoRedacaoAtivo) {
         modoRedacaoAtivo = false;
         btnRedacao.classList.remove('active');
+    }
+    if (modoResumoAtivo) {
+        modoResumoAtivo = false;
+        btnResumo.classList.remove('active');
+        input.placeholder = "Envie uma mensagem para Dora AI...";
+    }
+    if (modoCorrecaoAtivo) {
+        modoCorrecaoAtivo = false;
+        btnCorrecao.classList.remove('active');
+        input.placeholder = "Envie uma mensagem para Dora AI...";
     }
 
     historicoConversa.push({ tipo: 'usuario', texto: mensagem });
     adicionarMensagem(mensagem, 'usuario');
     input.value = '';
-    
+    // Reset altura do textarea ao enviar
+    input.style.height = '';
+    input.classList.remove('scrolling');
+
     mostrarDigitando(true);
-    
+
     setTimeout(() => {
         mostrarDigitando(false);
-        const resposta = gerarResposta(mensagem);
-        const imagemAssociada = encontrarImagem(mensagem);
+        const resposta = isModoCorrecaoAtivo ? gerarCorrecao(mensagem) : gerarResposta(mensagem);
         
+        // Lógica de imagem aprimorada
+        let imagemAssociada = null;
+        if (isModoResumoAtivo) {
+            // Se for um resumo, busca a imagem com base no CONTEÚDO do resumo
+            const textoResumido = resposta.replace(/<[^>]*>/g, ''); // Limpa HTML para análise
+            imagemAssociada = encontrarImagem(textoResumido);
+        } else if (!isModoCorrecaoAtivo) { // Não gera imagem para correções
+            // Comportamento normal
+            imagemAssociada = encontrarImagem(mensagem);
+        }
+
         historicoConversa.push({ tipo: 'bot', texto: resposta });
         adicionarMensagem(resposta, 'bot', imagemAssociada);
-        
-        // Reativa UI
+
         input.disabled = false;
         input.focus();
-        if(btnEnviar) btnEnviar.disabled = false;
-    }, 1500); // Tempo de resposta ligeiramente maior para apreciar o design
+        if (btnEnviar) btnEnviar.disabled = false;
+    }, 1500);
+}
+
+// ====== Auto-resize do textarea (cresce até um limite, depois scroll interno) ======
+function ajustarAlturaTextarea(textarea) {
+    if (!textarea) return;
+    // calcula o limite em pixels baseado na viewport (aprox 45%)
+    const maxHeight = Math.round(window.innerHeight * 0.45);
+    // reset para calcular corretamente
+    textarea.style.height = 'auto';
+    const scrollHeight = textarea.scrollHeight;
+    if (scrollHeight > maxHeight) {
+        textarea.style.height = maxHeight + 'px';
+        textarea.classList.add('scrolling');
+    } else {
+        textarea.style.height = scrollHeight + 'px';
+        textarea.classList.remove('scrolling');
+    }
 }
 
 function mostrarDigitando(mostrar) {
@@ -171,7 +287,6 @@ function mostrarDigitando(mostrar) {
             const div = document.createElement('div');
             div.id = 'digitando';
             div.className = 'mensagem bot digitando';
-            // Estrutura simplificada para o "digitando"
             div.innerHTML = '<div class="message-content">Dora AI está pensando...</div>';
             chatBox.appendChild(div);
         }
@@ -182,6 +297,7 @@ function mostrarDigitando(mostrar) {
 }
 
 function gerarResposta(mensagemUsuario) {
+    const mensagemOriginal = mensagemUsuario; 
     mensagemUsuario = mensagemUsuario.toLowerCase();
     const sentimento = detectarSentimento(mensagemUsuario);
     const palavrasUsuario = mensagemUsuario.split(/\W+/).filter(Boolean);
@@ -189,9 +305,15 @@ function gerarResposta(mensagemUsuario) {
     let melhorResposta = null;
     const textoPrefixoRedacao = "pode me ajudar a escrever uma redação sobre ";
 
-    // --- Lógica para Redação (se o modo estiver ativo) ---
+    if (mensagemUsuario.startsWith("resumir: ")) {
+        const textoParaResumir = mensagemOriginal.substring("resumir: ".length).trim();
+        if (textoParaResumir.length < 150) { 
+            return "Por favor, forneça um texto um pouco maior para que eu possa criar um resumo de qualidade! 😉";
+        }
+        return gerarResumo(textoParaResumir);
+    }
+    
     if (modoRedacaoAtivo || mensagemUsuario.startsWith(textoPrefixoRedacao)) {
-        // Extrai o tema, independentemente de como a mensagem foi formatada
         const temaSolicitado = mensagemUsuario.startsWith(textoPrefixoRedacao)
             ? mensagemUsuario.substring(textoPrefixoRedacao.length).trim()
             : mensagemUsuario.trim();
@@ -199,28 +321,27 @@ function gerarResposta(mensagemUsuario) {
         const redacaoEncontrada = redacoesData.find(r => r.tema.toLowerCase() === temaSolicitado.toLowerCase());
 
         if (redacaoEncontrada) {
-            let respostaRedacao = `Com certeza! Aqui está uma redação sobre **${redacaoEncontrada.tema.toUpperCase()}**:\n\n`;
+            let respostaRedacao = `Com certeza! Aqui estão alguns tópicos e ideias para você começar sua redação sobre **${redacaoEncontrada.tema.toUpperCase()}**:\n\n`;
             
-            respostaRedacao += `**Introdução:**\n`;
-            redacaoEncontrada.estrutura.introducao.forEach(frase => {
-                respostaRedacao += `${frase}\n`;
+            respostaRedacao += `**Sugestões para a Introdução:**\n`;
+            redacaoEncontrada.topicos.introducao.forEach(topico => {
+                respostaRedacao += `• ${topico}\n`;
             });
-            respostaRedacao += `\n**Desenvolvimento:**\n`;
-            redacaoEncontrada.estrutura.desenvolvimento.forEach(frase => {
-                respostaRedacao += `${frase}\n`;
+            respostaRedacao += `\n**Sugestões para o Desenvolvimento:**\n`;
+            redacaoEncontrada.topicos.desenvolvimento.forEach(topico => {
+                respostaRedacao += `• ${topico}\n`;
             });
-            respostaRedacao += `\n**Conclusão:**\n`;
-            redacaoEncontrada.estrutura.conclusao.forEach(frase => {
-                respostaRedacao += `${frase}\n`;
+            respostaRedacao += `\n**Sugestões para a Conclusão:**\n`;
+            redacaoEncontrada.topicos.conclusao.forEach(topico => {
+                respostaRedacao += `• ${topico}\n`;
             });
             
             return formatarResposta(respostaRedacao);
         } else {
             const temasDisponiveis = redacoesData.map(r => r.tema).join(', ');
-            return `Desculpe, não encontrei uma redação sobre **${temaSolicitado}**. Os temas que eu conheço são: ${temasDisponiveis}.`;
+            return `Desculpe, não encontrei tópicos sobre **${temaSolicitado}**. Os temas que eu conheço são: ${temasDisponiveis}.`;
         }
     }
-    // --- Fim da Lógica para Redação ---
 
     let maiorNumeroDePalavrasComuns = 0;
 
@@ -239,21 +360,134 @@ function gerarResposta(mensagemUsuario) {
         return formatarResposta(melhorResposta);
     } else {
         const numeroTreinamentos = treinamentos.length;
-        return `Desculpe, ainda não fui treinada para isso 😬 Atualmente conheço mais de **${numeroTreinamentos}** tópicos. Tente me perguntar de outra forma! 😁 Você também pode clicar no botão "Redação" para me pedir ajuda com temas específicos.`;
+        return formatarResposta(`Desculpe, ainda não fui treinada para isso 😬 Atualmente conheço mais de **${numeroTreinamentos}** tópicos. Tente me perguntar de outra forma! 😁 Você também pode clicar no botão "Redação" para me pedir ajuda com temas específicos.`);
     }
+}
+
+// --- ALGORITMO DE CORREÇÃO ---
+function gerarCorrecao(texto) {
+    if (!correcoesData || !correcoesData.regras) {
+        return "Desculpe, o módulo de correção não está carregado. Tente novamente em instantes.";
+    }
+
+    let textoCorrigido = texto;
+    let correcoesFeitas = 0;
+
+    for (const regra of correcoesData.regras) {
+        // Cria uma RegExp para encontrar a palavra/frase errada, ignorando o caso e garantindo que seja uma palavra inteira
+        const regex = new RegExp(`\\b${regra.errado}\\b`, 'gi');
+        
+        if (regex.test(textoCorrigido)) {
+            // Conta apenas se a substituição realmente for acontecer
+            textoCorrigido = textoCorrigido.replace(regex, (match) => {
+                correcoesFeitas++;
+                // Retorna a palavra correta envolta em <mark> para destaque
+                return `<mark>${regra.correto}</mark>`;
+            });
+        }
+    }
+
+    if (correcoesFeitas === 0) {
+        return "Não encontrei nenhum erro para corrigir. Parece que seu texto está ótimo! 👍";
+    }
+
+    let respostaFormatada = '<div class="resumo-card">';
+    respostaFormatada += '<h3><span class="material-symbols-rounded">edit_note</span> Texto Corrigido</h3>';
+    respostaFormatada += `<p>${textoCorrigido}</p>`;
+    respostaFormatada += '</div>';
+
+    return respostaFormatada;
+}
+
+
+// --- ALGORITMO DE RESUMO INTELIGENTE "GÊNIO DA SÍNTESE" ---
+function gerarResumo(texto) {
+    const stopWords = new Set(['de', 'a', 'o', 'que', 'e', 'do', 'da', 'em', 'um', 'para', 'é', 'com', 'não', 'uma', 'os', 'no', 'se', 'na', 'por', 'mais', 'as', 'dos', 'como', 'mas', 'foi', 'ao', 'ele', 'das', 'tem', 'à', 'seu', 'sua', 'ou', 'ser', 'quando', 'muito', 'há', 'nos', 'já', 'está', 'eu', 'também', 'só', 'pelo', 'pela', 'até', 'isso', 'ela', 'entre', 'era', 'depois', 'sem', 'mesmo', 'aos', 'ter', 'seus', 'quem', 'nas', 'me', 'esse', 'eles', 'estão', 'você', 'tinha', 'foram', 'essa', 'num', 'nem', 'suas', 'meu', 'às', 'minha', 'numa', 'pelos', 'elas', 'havia', 'seja', 'qual', 'será', 'nós', 'tenho', 'lhe', 'deles', 'essas', 'esses', 'pelas', 'este', 'fosse', 'dele', 'tu', 'te', 'vocês', 'vos', 'lhes', 'meus', 'minhas', 'teu', 'tua', 'teus', 'tuas', 'nosso', 'nossa', 'nossos', 'nossas', 'dela', 'delas', 'esta', 'estes', 'estas', 'aquele', 'aquela', 'aqueles', 'aquelas', 'isto', 'aquilo', 'estou', 'está', 'estamos', 'estão', 'estive', 'esteve', 'estivemos', 'estiveram', 'estava', 'estávamos', 'estavam', 'estivera', 'estivéramos', 'esteja', 'estejamos', 'estejam', 'estivesse', 'estivéssemos', 'estivessem', 'estiver', 'estivermos', 'estiverem', 'hei', 'há', 'havemos', 'hão', 'houve', 'houvemos', 'houveram', 'houvera', 'houvéramos', 'haja', 'hajamos', 'hajam', 'houvesse', 'houvéssemos', 'houvessem', 'houver', 'houvermos', 'houverem', 'houverei', 'houverá', 'houveremos', 'houverão', 'houveria', 'houveríamos', 'houveriam', 'sou', 'somos', 'são', 'era', 'éramos', 'eram', 'fui', 'foi', 'fomos', 'foram', 'fora', 'fôramos', 'seja', 'sejamos', 'sejam', 'fosse', 'fôssemos', 'fossem', 'for', 'formos', 'forem', 'serei', 'será', 'seremos', 'serão', 'seria', 'seríamos', 'seriam', 'tenho', 'tem', 'temos', 'tém', 'tinha', 'tínhamos', 'tinham', 'tive', 'teve', 'tivemos', 'tiveram', 'tivera', 'tivéramos', 'tenha', 'tenhamos', 'tenham', 'tivesse', 'tivéssemos', 'tivessem', 'tiver', 'tivermos', 'tiverem', 'terei', 'terá', 'teremos', 'terão', 'teria', 'teríamos', 'teriam']);
+
+    const sentencas = texto.match(/[^.!?]+[.!?]+/g) || [];
+    if (sentencas.length < 5) { // Aumenta o requisito mínimo
+        return "O texto é muito curto para um resumo de qualidade. Tente um texto com pelo menos 5 frases.";
+    }
+
+    const frequenciaPalavras = {};
+    const palavras = texto.toLowerCase().split(/[\s,.]+/).filter(Boolean);
+    palavras.forEach(palavra => {
+        if (!stopWords.has(palavra) && palavra.length > 2) {
+            frequenciaPalavras[palavra] = (frequenciaPalavras[palavra] || 0) + 1;
+        }
+    });
+
+    const pontuacaoSentencas = sentencas.map((sentenca, index) => {
+        let pontuacao = 0;
+        const palavrasSentenca = sentenca.toLowerCase().split(/[\s,.]+/).filter(Boolean);
+        
+        palavrasSentenca.forEach(palavra => {
+            if (frequenciaPalavras[palavra]) {
+                pontuacao += frequenciaPalavras[palavra];
+            }
+        });
+
+        if (index < 2 || index >= sentencas.length - 2) {
+            pontuacao *= 1.2;
+        }
+        
+        if (palavrasSentenca.length < 5 || palavrasSentenca.length > 35) { // Ajuste no tamanho
+            pontuacao *= 0.8;
+        }
+
+        const pontuacaoNormalizada = palavrasSentenca.length > 0 ? pontuacao / palavrasSentenca.length : 0;
+
+        return { sentenca, pontuacao: pontuacaoNormalizada, index };
+    });
+
+    pontuacaoSentencas.sort((a, b) => b.pontuacao - a.pontuacao);
+
+    // Lógica dinâmica para o número de sentenças: ajustada para ser mais generosa.
+    const numeroSentencasResumo = Math.max(5, Math.min(10, Math.floor(sentencas.length / 2.5)));
+    
+    const melhoresSentencas = pontuacaoSentencas.slice(0, numeroSentencasResumo);
+
+    melhoresSentencas.sort((a, b) => a.index - b.index);
+
+    let respostaFormatada = '<div class="resumo-card">';
+    respostaFormatada += '<h3><span class="material-symbols-rounded">insights</span> Pontos Principais do Texto</h3>';
+    respostaFormatada += '<ul>';
+    melhoresSentencas.forEach(item => {
+        respostaFormatada += `<li>${item.sentenca.trim()}</li>`;
+    });
+    respostaFormatada += '</ul></div>';
+
+    return respostaFormatada;
 }
 
 function encontrarImagem(mensagemUsuario) {
     mensagemUsuario = mensagemUsuario.toLowerCase();
-    const palavrasUsuario = mensagemUsuario.split(/\W+/).filter(Boolean);
+    const palavrasUsuario = new Set(mensagemUsuario.split(/\W+/).filter(Boolean)); // Usar Set para eficiência
     
-    for (let imagem in bancoImagens) {
+    let melhorImagem = null;
+    let maxPontos = 0;
+
+    // Itera sobre cada imagem e suas tags no banco de imagens
+    for (const imagem in bancoImagens) {
         const tags = bancoImagens[imagem];
-        for (let palavra of palavrasUsuario) {
-            if (tags.includes(palavra)) return imagem;
+        let pontos = 0;
+        
+        // Conta quantas palavras do usuário correspondem às tags da imagem
+        for (const tag of tags) {
+            if (palavrasUsuario.has(tag)) {
+                pontos++;
+            }
+        }
+        
+        // Se a imagem atual tiver mais correspondências que a melhor até agora, atualiza
+        if (pontos > maxPontos) {
+            maxPontos = pontos;
+            melhorImagem = imagem;
         }
     }
-    return null;
+    
+    // Retorna a imagem com a maior pontuação, ou null se nenhuma correspondência for encontrada
+    return melhorImagem;
 }
 
 function detectarSentimento(mensagem) {
@@ -273,7 +507,7 @@ function adicionarTomPersonalidade(resposta, sentimento) {
 }
 
 function formatarResposta(texto) {
-    texto = texto.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    texto = texto.replace(/\*\*(.*?)\*\*/g, '<strong></strong>');
     texto = texto.replace(/\n/g, '<br>'); // Converte quebras de linha em <br> para a formatação correta
     return texto;
 }
@@ -410,6 +644,37 @@ function copiarTexto(texto) {
     }).catch(console.error);
 }
 
+// --- NOVA FUNÇÃO PARA LIMPAR O CHAT ---
+function iniciarNovaConversa() {
+    historicoConversa = [];
+    const chatBox = document.getElementById('chat-box');
+    chatBox.innerHTML = `
+        <div class="mensagem bot boas-vindas-inicial">
+            <div class="message-content">
+                Olá! Sou a Dora AI. Como posso te ajudar hoje? ✨
+            </div>
+        </div>
+    `;
+
+    // Desativa os modos de Redação ou Resumo se estiverem ativos
+    if (modoRedacaoAtivo) {
+        alternarModoRedacao();
+    }
+    if (modoResumoAtivo) {
+        alternarModoResumo();
+    }
+    if (modoCorrecaoAtivo) { // Adiciona a verificação para o modo correção
+        alternarModoCorrecao();
+    }
+
+    // Limpa e reseta o campo de input
+    const input = document.getElementById('input-mensagem');
+    input.value = '';
+    input.placeholder = "Converse com a Dora AI...";
+    input.focus();
+}
+
+
 fetch('training.json')
     .then(response => response.json()) 
     .then(data => treinamentos = data)
@@ -420,6 +685,40 @@ fetch('redacoes.json')
     .then(response => response.json())
     .then(data => redacoesData = data)
     .catch(error => console.error('Erro ao carregar redações:', error));
-window.addEventListener('load', () => {
+
+// Carrega o correcoes.json
+fetch('correcoes.json')
+    .then(response => response.json())
+    .then(data => correcoesData = data)
+    .catch(error => console.error('Erro ao carregar correções:', error));
+
+// --- INICIALIZAÇÃO QUANDO O DOCUMENTO ESTIVER PRONTO ---
+document.addEventListener('DOMContentLoaded', () => {
+    // Mostra o anúncio de novidades
     mostrarAnuncio();
+
+    // Adiciona o listener para o botão de nova conversa
+    const newChatButton = document.getElementById('new-chat-btn');
+    if (newChatButton) {
+        newChatButton.addEventListener('click', iniciarNovaConversa);
+    }
+    
+    // Setup: autoresize do textarea e atalho Enter (Enter = enviar, Shift+Enter = nova linha)
+    const textarea = document.getElementById('input-mensagem');
+    if (textarea) {
+        // ajustar altura ao carregar (caso haja valor pré-carregado)
+        ajustarAlturaTextarea(textarea);
+
+        textarea.addEventListener('input', (e) => {
+            ajustarAlturaTextarea(e.target);
+        });
+
+        textarea.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                // envia mensagem
+                enviarMensagem();
+            }
+        });
+    }
 });
