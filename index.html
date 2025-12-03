@@ -10,8 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -48,8 +47,6 @@
         </div>
 
         <div id="container-cards">
-            
-            <!-- ========== CARD 01: GERADOR DE CORES ========== -->
             <div class="glass-card" data-projeto="gerador-cores" data-categoria="ferramentas">
                 <div class="card-image-wrapper">
                     <img src="imagens/cor.png" alt="Gerador de Cores" onerror="this.src='https://placehold.co/600x400/1a1a1a/FFF?text=Gerador+de+Cores'">
@@ -58,7 +55,7 @@
                 <div class="card-info">
                     <div class="card-header">
                         <h3>Gerador de Cores</h3>
-                        <span class="category-icon" data-icon="palette"></span>
+                        <span class="category-icon"><i class="fa-solid fa-palette"></i></span>
                     </div>
                     <p>Gere paletas perfeitas respondendo perguntas simples — design inteligente e exportável.</p>
                     <div class="card-meta">
@@ -68,7 +65,6 @@
                 </div>
             </div>
 
-            <!-- ========== CARD 02: BILIONÁRIO ========== -->
             <div class="glass-card" data-projeto="bilionario" data-categoria="diversao">
                 <div class="card-image-wrapper">
                     <img src="imagens/elon-musk.png" alt="Bilionário" onerror="this.src='https://placehold.co/600x400/1a1a1a/FFF?text=Bilionario'">
@@ -87,11 +83,10 @@
                 </div>
             </div>
 
-            <!-- ========== CARD 03: DORA AI ========== -->
             <div class="glass-card" data-projeto="conversa" data-categoria="ia">
                 <div class="card-image-wrapper">
                     <img src="Dora-AI/img-IA/logo.png" alt="Dora AI" onerror="this.src='https://placehold.co/600x400/4b0082/FFF?text=Dora+AI'">
-                    <span class="status-tag dev">POPULAR <br>NOVA ATUALIZAÇÃO</span>
+                    <span class="status-tag dev">POPULAR<br>NOVA ATUALIZAÇÃO</span>
                 </div>
                 <div class="card-info">
                     <div class="card-header">
@@ -106,7 +101,6 @@
                 </div>
             </div>
 
-            <!-- ========== CARD 04: DAILY MOTIVATION ========== -->
             <div class="glass-card" data-projeto="frases" data-categoria="diversao">
                 <div class="card-image-wrapper">
                     <img src="imagens/frases.png" alt="Frases" onerror="this.src='https://placehold.co/600x400/ff6b6b/FFF?text=Motivacao'">
@@ -124,7 +118,6 @@
                 </div>
             </div>
 
-            <!-- ========== CARD 05: CONTADOR DE MOSQUITOS ========== -->
             <div class="glass-card" data-projeto="mosquito" data-categoria="diversao">
                 <div class="card-image-wrapper">
                     <img src="imagens/mosquito.png" alt="Mosquito" onerror="this.src='https://placehold.co/600x400/333/FFF?text=Mosquito'">
@@ -142,7 +135,6 @@
                 </div>
             </div>
 
-            <!-- ========== CARD 06: RELÓGIO UNIVERSAL ========== -->
             <div class="glass-card" data-projeto="relogio" data-categoria="ferramentas">
                 <div class="card-image-wrapper">
                     <img src="imagens/relogio.png" alt="Relógio Digital" onerror="this.src='https://placehold.co/600x400/1a1a1a/FFF?text=Relogio'">
@@ -160,39 +152,8 @@
                     <a href="relógio/relogio.html" onclick="atualizarEstatistica('relogio')" class="action-btn">Acessar Projeto</a>
                 </div>
             </div>
-
-            <!-- ========== NOVO CARD (TEMPLATE COMENTADO PARA REFERÊNCIA) ========== 
-            INSTRUÇÕES PARA ADICIONAR NOVO CARD:
-            1. data-projeto: ID único do projeto (sem espaços, com hífen)
-            2. data-categoria: 'ferramentas', 'jogos', 'ia', 'diversao'
-            3. Imagem: em imagens/[nome].png
-            4. ID count: [data-projeto]-count (DEVE SER ÚNICO!)
-            5. onclick: atualizarEstatistica('[data-projeto]')
-            6. href: caminho até a página HTML do projeto
-            7. Adicione também o ID no array do script (linha ~180): ['gerador-cores', 'relogio', 'conversa', 'frases', 'mosquito', 'SEU-NOVO-ID']
-            
-            <div class="glass-card" data-projeto="seu-projeto" data-categoria="ferramentas">
-                <div class="card-image-wrapper">
-                    <img src="imagens/seu-projeto.png" alt="Seu Projeto" onerror="this.src='https://placehold.co/600x400/1a1a1a/FFF?text=Seu+Projeto'">
-                    <span class="status-tag dev">NOVO</span>
-                </div>
-                <div class="card-info">
-                    <div class="card-header">
-                        <h3>Título do Seu Projeto</h3>
-                        <span class="category-icon" data-icon="nome-icone"></span>
-                    </div>
-                    <p>Descrição breve e atraente do seu projeto...</p>
-                    <div class="card-meta">
-                        <span><i class="fa-regular fa-eye"></i> <span id="seu-projeto-count">0</span> views</span>
-                    </div>
-                    <a href="seu-projeto/index.html" onclick="atualizarEstatistica('seu-projeto')" class="action-btn">Acessar Projeto</a>
-                </div>
-            </div>
-            ========== -->
         </div>
     </div>
-
-    <script src="scripts/icons.js"></script>
 
     <script>
         // Formatação de Números
@@ -212,7 +173,7 @@
             if (el) el.textContent = formatarNumero(valor);
         }
 
-        // Init - Carrega estatísticas de todos os projetos
+        // Init
         window.addEventListener('load', () => {
             ['gerador-cores', 'bilionario', 'conversa', 'frases', 'mosquito', 'relogio'].forEach(proj => {
                 let count = localStorage.getItem(proj) || 0;

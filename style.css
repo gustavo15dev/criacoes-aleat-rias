@@ -3,6 +3,8 @@
 /* ---------------------------------------------------- */
 /* CONFIGURAÇÕES DE DESIGN SYSTEM */
 /* ---------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 :root {
     /* Cores Primárias */
     --bg-dark: #0f1014;
